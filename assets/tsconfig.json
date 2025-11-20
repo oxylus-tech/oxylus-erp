@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+
+    "noImplicitThis": true,
+    "strict": true,
+
+    "verbatimModuleSyntax": true,
+
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+
+    "lib": [
+        "esnext",
+        "dom"
+    ],
+
+    "baseUrl": "./",
+    "paths": {
+        "@oxylus/locations": ["./packages/locations/src/index.ts"],
+        "@oxylus/locations/*": ["./packages/locations/src/*"],
+        "@oxylus/contacts": ["./packages/contacts/src/index.ts"],
+        "@oxylus/contacts/*": ["./packages/contacts/src/*"],
+        "*": ["node_modules/*"]
+    },
+  }
+}

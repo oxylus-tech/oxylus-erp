@@ -1,0 +1,55 @@
+{
+  "_index2.js": {
+    "file": "index2.js",
+    "name": "index"
+  },
+  "_vuetify.js": {
+    "file": "vuetify.js",
+    "name": "vuetify"
+  },
+  "src/components/OxAutocomplete.vue": {
+    "file": "OxAutocomplete.js",
+    "name": "OxAutocomplete",
+    "src": "src/components/OxAutocomplete.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/components/index.ts"
+    ]
+  },
+  "src/components/index.ts": {
+    "file": "components.js",
+    "name": "components",
+    "src": "src/components/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_vuetify.js",
+      "_index2.js"
+    ],
+    "dynamicImports": [
+      "src/components/OxAutocomplete.vue"
+    ]
+  },
+  "src/lib.ts": {
+    "file": "index.js",
+    "name": "index",
+    "src": "src/lib.ts",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_vuetify.js"
+    ]
+  },
+  "src/vendor.ts": {
+    "file": "vendor.js",
+    "name": "vendor",
+    "src": "src/vendor.ts",
+    "isEntry": true,
+    "imports": [
+      "_vuetify.js"
+    ]
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}

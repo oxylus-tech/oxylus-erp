@@ -1,0 +1,16 @@
+from ox.core import apps
+
+from django.utils.translation import gettext_lazy as _
+
+
+__all__ = ("AppConfig",)
+
+
+class AppConfig(apps.AppConfig):
+    name = "ox_erp.locations"
+    label = "ox_locations"
+    verbose_name = _("Locations")
+    icon = "mdi-flag"
+
+    root_url = "ox/locations"
+    npm_package = "@oxylus/locations"
