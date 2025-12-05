@@ -1,15 +1,10 @@
-from django.utils.translation import gettext_lazy as _
-from rest_framework import serializers
-
 from ox.core.serializers import ModelSerializer, RelatedField
 
 from ox_erp.contacts.models import Contact, ContactList
 from . import models
 
 
-__all__ = (
-    "ContactMailSerializer",
-)
+__all__ = ("ContactMailSerializer",)
 
 
 class ContactMailSerializer(ModelSerializer):
@@ -18,4 +13,3 @@ class ContactMailSerializer(ModelSerializer):
 
     class Meta:
         model = models.ContactMail
-

@@ -24,4 +24,3 @@ export class ContactMail extends BaseMail {
         }
     }
 }
-

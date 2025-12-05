@@ -14,4 +14,3 @@ export function useContactMailModels() : Repos {
         models.ContactMail,
     ])
 }
-

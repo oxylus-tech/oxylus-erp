@@ -1,7 +1,3 @@
-from django.db.models import Count
-from rest_framework.permissions import DjangoModelPermissionsOrAnonReadOnly
-
-from ox.core.views import ModelViewSet
 from ox.apps.mails.views import BaseMailViewSet
 from . import models, serializers
 

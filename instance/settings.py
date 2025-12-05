@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     "ox_erp.contacts_mails",
     "ox_erp.contacts",
     "ox_erp.locations",
-    
     # --- Oxylus
     "ox.apps.mails",
     "ox.apps.content",
@@ -35,13 +34,11 @@ INSTALLED_APPS = [
     "ox.apps.files",
     "ox.apps.auth",
     "ox.core",
-    
     "caps",
     "django_filters",
     "django_tasks",
     "django_tasks.backends.database",
     "rest_framework",
-    
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

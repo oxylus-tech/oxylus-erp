@@ -14,5 +14,3 @@ To come:
 - `ox_erp.contacts_mails`: send to mails to contacts, contact list, subscriptions lists;
 - `ox.apps.fin`: accounting;
 - `ox.apps.cms`: CMS
-
-
