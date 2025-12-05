@@ -1,23 +1,11 @@
 {
   "components": {
-    "VApp": {
-      "from": "components/VApp",
-      "styles": []
-    },
-    "VAutocomplete": {
-      "from": "components/VAutocomplete",
-      "styles": []
-    },
-    "VAlert": {
-      "from": "components/VAlert",
-      "styles": []
-    },
-    "VAlertTitle": {
-      "from": "components/VAlert",
-      "styles": []
-    },
     "VAvatar": {
       "from": "components/VAvatar",
+      "styles": []
+    },
+    "VApp": {
+      "from": "components/VApp",
       "styles": []
     },
     "VAppBar": {
@@ -36,6 +24,14 @@
       "from": "components/VBadge",
       "styles": []
     },
+    "VAutocomplete": {
+      "from": "components/VAutocomplete",
+      "styles": []
+    },
+    "VBottomSheet": {
+      "from": "components/VBottomSheet",
+      "styles": []
+    },
     "VBanner": {
       "from": "components/VBanner",
       "styles": []
@@ -46,14 +42,6 @@
     },
     "VBannerText": {
       "from": "components/VBanner",
-      "styles": []
-    },
-    "VBottomNavigation": {
-      "from": "components/VBottomNavigation",
-      "styles": []
-    },
-    "VBottomSheet": {
-      "from": "components/VBottomSheet",
       "styles": []
     },
     "VBreadcrumbs": {
@@ -70,6 +58,14 @@
     },
     "VBtnGroup": {
       "from": "components/VBtnGroup",
+      "styles": []
+    },
+    "VAlert": {
+      "from": "components/VAlert",
+      "styles": []
+    },
+    "VAlertTitle": {
+      "from": "components/VAlert",
       "styles": []
     },
     "VCard": {
@@ -104,12 +100,28 @@
       "from": "components/VBtnToggle",
       "styles": []
     },
+    "VBottomNavigation": {
+      "from": "components/VBottomNavigation",
+      "styles": []
+    },
     "VCheckbox": {
       "from": "components/VCheckbox",
       "styles": []
     },
     "VCheckboxBtn": {
       "from": "components/VCheckbox",
+      "styles": []
+    },
+    "VChip": {
+      "from": "components/VChip",
+      "styles": []
+    },
+    "VCombobox": {
+      "from": "components/VCombobox",
+      "styles": []
+    },
+    "VChipGroup": {
+      "from": "components/VChipGroup",
       "styles": []
     },
     "VCarousel": {
@@ -120,28 +132,44 @@
       "from": "components/VCarousel",
       "styles": []
     },
-    "VChip": {
-      "from": "components/VChip",
-      "styles": []
-    },
-    "VChipGroup": {
-      "from": "components/VChipGroup",
-      "styles": []
-    },
-    "VCombobox": {
-      "from": "components/VCombobox",
-      "styles": []
-    },
     "VCode": {
       "from": "components/VCode",
+      "styles": []
+    },
+    "VColorPicker": {
+      "from": "components/VColorPicker",
       "styles": []
     },
     "VCounter": {
       "from": "components/VCounter",
       "styles": []
     },
-    "VDivider": {
-      "from": "components/VDivider",
+    "VDialog": {
+      "from": "components/VDialog",
+      "styles": []
+    },
+    "VDatePicker": {
+      "from": "components/VDatePicker",
+      "styles": []
+    },
+    "VDatePickerControls": {
+      "from": "components/VDatePicker",
+      "styles": []
+    },
+    "VDatePickerHeader": {
+      "from": "components/VDatePicker",
+      "styles": []
+    },
+    "VDatePickerMonth": {
+      "from": "components/VDatePicker",
+      "styles": []
+    },
+    "VDatePickerMonths": {
+      "from": "components/VDatePicker",
+      "styles": []
+    },
+    "VDatePickerYears": {
+      "from": "components/VDatePicker",
       "styles": []
     },
     "VDataTable": {
@@ -172,44 +200,8 @@
       "from": "components/VDataTable",
       "styles": []
     },
-    "VColorPicker": {
-      "from": "components/VColorPicker",
-      "styles": []
-    },
-    "VDatePicker": {
-      "from": "components/VDatePicker",
-      "styles": []
-    },
-    "VDatePickerControls": {
-      "from": "components/VDatePicker",
-      "styles": []
-    },
-    "VDatePickerHeader": {
-      "from": "components/VDatePicker",
-      "styles": []
-    },
-    "VDatePickerMonth": {
-      "from": "components/VDatePicker",
-      "styles": []
-    },
-    "VDatePickerMonths": {
-      "from": "components/VDatePicker",
-      "styles": []
-    },
-    "VDatePickerYears": {
-      "from": "components/VDatePicker",
-      "styles": []
-    },
-    "VFab": {
-      "from": "components/VFab",
-      "styles": []
-    },
-    "VEmptyState": {
-      "from": "components/VEmptyState",
-      "styles": []
-    },
-    "VDialog": {
-      "from": "components/VDialog",
+    "VDivider": {
+      "from": "components/VDivider",
       "styles": []
     },
     "VExpansionPanels": {
@@ -228,12 +220,8 @@
       "from": "components/VExpansionPanel",
       "styles": []
     },
-    "VFileInput": {
-      "from": "components/VFileInput",
-      "styles": []
-    },
-    "VFooter": {
-      "from": "components/VFooter",
+    "VFab": {
+      "from": "components/VFab",
       "styles": []
     },
     "VField": {
@@ -244,8 +232,12 @@
       "from": "components/VField",
       "styles": []
     },
-    "VImg": {
-      "from": "components/VImg",
+    "VEmptyState": {
+      "from": "components/VEmptyState",
+      "styles": []
+    },
+    "VFooter": {
+      "from": "components/VFooter",
       "styles": []
     },
     "VIcon": {
@@ -268,32 +260,28 @@
       "from": "components/VIcon",
       "styles": []
     },
-    "VItemGroup": {
-      "from": "components/VItemGroup",
-      "styles": []
-    },
-    "VItem": {
-      "from": "components/VItemGroup",
-      "styles": []
-    },
-    "VInput": {
-      "from": "components/VInput",
-      "styles": []
-    },
     "VInfiniteScroll": {
       "from": "components/VInfiniteScroll",
+      "styles": []
+    },
+    "VFileInput": {
+      "from": "components/VFileInput",
       "styles": []
     },
     "VKbd": {
       "from": "components/VKbd",
       "styles": []
     },
-    "VLabel": {
-      "from": "components/VLabel",
+    "VImg": {
+      "from": "components/VImg",
       "styles": []
     },
-    "VMain": {
-      "from": "components/VMain",
+    "VInput": {
+      "from": "components/VInput",
+      "styles": []
+    },
+    "VLabel": {
+      "from": "components/VLabel",
       "styles": []
     },
     "VList": {
@@ -332,6 +320,22 @@
       "from": "components/VList",
       "styles": []
     },
+    "VItemGroup": {
+      "from": "components/VItemGroup",
+      "styles": []
+    },
+    "VItem": {
+      "from": "components/VItemGroup",
+      "styles": []
+    },
+    "VMessages": {
+      "from": "components/VMessages",
+      "styles": []
+    },
+    "VMain": {
+      "from": "components/VMain",
+      "styles": []
+    },
     "VMenu": {
       "from": "components/VMenu",
       "styles": []
@@ -340,8 +344,12 @@
       "from": "components/VNavigationDrawer",
       "styles": []
     },
-    "VMessages": {
-      "from": "components/VMessages",
+    "VOtpInput": {
+      "from": "components/VOtpInput",
+      "styles": []
+    },
+    "VPagination": {
+      "from": "components/VPagination",
       "styles": []
     },
     "VNumberInput": {
@@ -352,24 +360,16 @@
       "from": "components/VOverlay",
       "styles": []
     },
-    "VOtpInput": {
-      "from": "components/VOtpInput",
-      "styles": []
-    },
-    "VProgressCircular": {
-      "from": "components/VProgressCircular",
-      "styles": []
-    },
-    "VPagination": {
-      "from": "components/VPagination",
-      "styles": []
-    },
     "VRadioGroup": {
       "from": "components/VRadioGroup",
       "styles": []
     },
     "VProgressLinear": {
       "from": "components/VProgressLinear",
+      "styles": []
+    },
+    "VProgressCircular": {
+      "from": "components/VProgressCircular",
       "styles": []
     },
     "VSelectionControl": {
@@ -380,20 +380,8 @@
       "from": "components/VRating",
       "styles": []
     },
-    "VSelect": {
-      "from": "components/VSelect",
-      "styles": []
-    },
     "VSkeletonLoader": {
       "from": "components/VSkeletonLoader",
-      "styles": []
-    },
-    "VSelectionControlGroup": {
-      "from": "components/VSelectionControlGroup",
-      "styles": []
-    },
-    "VSheet": {
-      "from": "components/VSheet",
       "styles": []
     },
     "VSlideGroup": {
@@ -404,20 +392,44 @@
       "from": "components/VSlideGroup",
       "styles": []
     },
-    "VSlider": {
-      "from": "components/VSlider",
+    "VSelect": {
+      "from": "components/VSelect",
       "styles": []
     },
-    "VSnackbar": {
-      "from": "components/VSnackbar",
+    "VSelectionControlGroup": {
+      "from": "components/VSelectionControlGroup",
+      "styles": []
+    },
+    "VSheet": {
+      "from": "components/VSheet",
+      "styles": []
+    },
+    "VSlider": {
+      "from": "components/VSlider",
       "styles": []
     },
     "VSwitch": {
       "from": "components/VSwitch",
       "styles": []
     },
-    "VSystemBar": {
-      "from": "components/VSystemBar",
+    "VSnackbar": {
+      "from": "components/VSnackbar",
+      "styles": []
+    },
+    "VTab": {
+      "from": "components/VTabs",
+      "styles": []
+    },
+    "VTabs": {
+      "from": "components/VTabs",
+      "styles": []
+    },
+    "VTabsWindow": {
+      "from": "components/VTabs",
+      "styles": []
+    },
+    "VTabsWindowItem": {
+      "from": "components/VTabs",
       "styles": []
     },
     "VStepper": {
@@ -444,56 +456,20 @@
       "from": "components/VStepper",
       "styles": []
     },
-    "VTextarea": {
-      "from": "components/VTextarea",
-      "styles": []
-    },
-    "VTab": {
-      "from": "components/VTabs",
-      "styles": []
-    },
-    "VTabs": {
-      "from": "components/VTabs",
-      "styles": []
-    },
-    "VTabsWindow": {
-      "from": "components/VTabs",
-      "styles": []
-    },
-    "VTabsWindowItem": {
-      "from": "components/VTabs",
-      "styles": []
-    },
-    "VTable": {
-      "from": "components/VTable",
+    "VSystemBar": {
+      "from": "components/VSystemBar",
       "styles": []
     },
     "VTextField": {
       "from": "components/VTextField",
       "styles": []
     },
-    "VToolbar": {
-      "from": "components/VToolbar",
+    "VTable": {
+      "from": "components/VTable",
       "styles": []
     },
-    "VToolbarTitle": {
-      "from": "components/VToolbar",
-      "styles": []
-    },
-    "VToolbarItems": {
-      "from": "components/VToolbar",
-      "styles": []
-    },
-    "VTimePicker": {
-      "from": "components/VTimePicker",
-      "styles": []
-    },
-    "VTimePickerClock": {
-      "from": "components/VTimePicker",
-      "styles": []
-    },
-    "VTimePickerControls": {
-      "from": "components/VTimePicker",
+    "VTextarea": {
+      "from": "components/VTextarea",
       "styles": []
     },
     "VTimeline": {
@@ -502,10 +478,6 @@
     },
     "VTimelineItem": {
       "from": "components/VTimeline",
-      "styles": []
-    },
-    "VTooltip": {
-      "from": "components/VTooltip",
       "styles": []
     },
     "VTreeview": {
@@ -518,6 +490,22 @@
     },
     "VTreeviewGroup": {
       "from": "components/VTreeview",
+      "styles": []
+    },
+    "VTooltip": {
+      "from": "components/VTooltip",
+      "styles": []
+    },
+    "VToolbar": {
+      "from": "components/VToolbar",
+      "styles": []
+    },
+    "VToolbarTitle": {
+      "from": "components/VToolbar",
+      "styles": []
+    },
+    "VToolbarItems": {
+      "from": "components/VToolbar",
       "styles": []
     },
     "VWindow": {
@@ -544,6 +532,10 @@
       "from": "components/VForm",
       "styles": []
     },
+    "VHover": {
+      "from": "components/VHover",
+      "styles": []
+    },
     "VContainer": {
       "from": "components/VGrid",
       "styles": []
@@ -560,10 +552,6 @@
       "from": "components/VGrid",
       "styles": []
     },
-    "VHover": {
-      "from": "components/VHover",
-      "styles": []
-    },
     "VLayout": {
       "from": "components/VLayout",
       "styles": []
@@ -572,12 +560,12 @@
       "from": "components/VLayout",
       "styles": []
     },
-    "VLocaleProvider": {
-      "from": "components/VLocaleProvider",
-      "styles": []
-    },
     "VLazy": {
       "from": "components/VLazy",
+      "styles": []
+    },
+    "VLocaleProvider": {
+      "from": "components/VLocaleProvider",
       "styles": []
     },
     "VNoSsr": {
@@ -588,12 +576,12 @@
       "from": "components/VParallax",
       "styles": []
     },
-    "VRangeSlider": {
-      "from": "components/VRangeSlider",
-      "styles": []
-    },
     "VRadio": {
       "from": "components/VRadio",
+      "styles": []
+    },
+    "VRangeSlider": {
+      "from": "components/VRangeSlider",
       "styles": []
     },
     "VResponsive": {
@@ -616,12 +604,12 @@
       "from": "components/VThemeProvider",
       "styles": []
     },
-    "VValidation": {
-      "from": "components/VValidation",
-      "styles": []
-    },
     "VVirtualScroll": {
       "from": "components/VVirtualScroll",
+      "styles": []
+    },
+    "VValidation": {
+      "from": "components/VValidation",
       "styles": []
     },
     "VFabTransition": {
@@ -686,6 +674,18 @@
     },
     "VDialogTransition": {
       "from": "components/transitions",
+      "styles": []
+    },
+    "VTimePicker": {
+      "from": "components/VTimePicker",
+      "styles": []
+    },
+    "VTimePickerClock": {
+      "from": "components/VTimePicker",
+      "styles": []
+    },
+    "VTimePickerControls": {
+      "from": "components/VTimePicker",
       "styles": []
     }
   },

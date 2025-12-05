@@ -31,6 +31,7 @@
         "@oxylus/locations/*": ["./packages/locations/src/*"],
         "@oxylus/contacts": ["./packages/contacts/src/index.ts"],
         "@oxylus/contacts/*": ["./packages/contacts/src/*"],
+        "@oxylus/*": ["./node_modules/@oxylus/*/src"],
         "*": ["node_modules/*"]
     },
   }

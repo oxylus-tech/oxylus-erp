@@ -14,7 +14,7 @@ panels = Panels(
             url="ox_contacts:index",
             order=0,
             permission="ox_contacts.view_person",
-            actions_template="ox/contacts/components/person_actions.html",
+            template="ox/contacts/components/person_panel.html",
         ),
         Panel(
             "organisations",
@@ -23,7 +23,7 @@ panels = Panels(
             "ox-organisation-panel",
             url="ox_contacts:index",
             permission="ox_contacts.view_organisation",
-            actions_template="ox/contacts/components/organisation_actions.html",
+            template="ox/contacts/components/organisation_panel.html",
         ),
         Panel(
             "contactlists",

@@ -10,7 +10,7 @@ class AppConfig(apps.AppConfig):
     name = "ox_erp.contacts"
     label = "ox_contacts"
     verbose_name = _("Contacts")
-    icon = "mdi-card-account-mail"
+    icon = "mdi-card-account-detail"
 
     root_url = "ox/contacts"
     npm_package = "@oxylus/contacts"

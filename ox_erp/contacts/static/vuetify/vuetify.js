@@ -1,5 +1,5 @@
 /*!
-* Vuetify v3.10.2
+* Vuetify v3.10.5
 * Forged by John Leider
 * Released under the MIT License.
 */
@@ -588,17 +588,19 @@
   }
 
   class Box {
-    constructor(_ref) {
-      let {
+    constructor(args) {
+      const pageScale = document.body.currentCSSZoom ?? 1;
+      const factor = args instanceof DOMRect ? 1 + (1 - pageScale) / pageScale : 1;
+      const {
         x,
         y,
         width,
         height
-      } = _ref;
-      this.x = x;
-      this.y = y;
-      this.width = width;
-      this.height = height;
+      } = args;
+      this.x = x * factor;
+      this.y = y * factor;
+      this.width = width * factor;
+      this.height = height * factor;
     }
     get top() {
       return this.y;
@@ -627,14 +629,16 @@
   }
   function getTargetBox(target) {
     if (Array.isArray(target)) {
+      const pageScale = document.body.currentCSSZoom ?? 1;
+      const factor = 1 + (1 - pageScale) / pageScale;
       return new Box({
-        x: target[0],
-        y: target[1],
-        width: 0,
-        height: 0
+        x: target[0] * factor,
+        y: target[1] * factor,
+        width: 0 * factor,
+        height: 0 * factor
       });
     } else {
-      return target.getBoundingClientRect();
+      return new Box(target.getBoundingClientRect());
     }
   }
   function getElementBox(el) {
@@ -647,11 +651,12 @@
           height: document.documentElement.clientHeight
         });
       } else {
+        const pageScale = document.body.currentCSSZoom ?? 1;
         return new Box({
           x: visualViewport.scale > 1 ? 0 : visualViewport.offsetLeft,
           y: visualViewport.scale > 1 ? 0 : visualViewport.offsetTop,
-          width: visualViewport.width * visualViewport.scale,
-          height: visualViewport.height * visualViewport.scale
+          width: visualViewport.width * visualViewport.scale / pageScale,
+          height: visualViewport.height * visualViewport.scale / pageScale
         });
       }
     } else {
@@ -669,7 +674,7 @@
 
   /** @see https://stackoverflow.com/a/57876601/2074736 */
   function nullifyTransforms(el) {
-    const rect = el.getBoundingClientRect();
+    const rect = new Box(el.getBoundingClientRect());
     const style = getComputedStyle(el);
     const tx = style.transform;
     if (tx) {
@@ -1589,7 +1594,7 @@
   // Utilities
   function getPrefixedEventHandlers(attrs, suffix, getData) {
     return Object.keys(attrs).filter(key => isOn(key) && key.endsWith(suffix)).reduce((acc, key) => {
-      acc[key.slice(0, -suffix.length)] = event => attrs[key](event, getData(event));
+      acc[key.slice(0, -suffix.length)] = event => callEvent(attrs[key], event, getData(event));
       return acc;
     }, {});
   }
@@ -5008,14 +5013,18 @@
     }
     const value = vue.toRef(() => props.value);
     const disabled = vue.computed(() => !!(group.disabled.value || props.disabled));
-    group.register({
-      id,
-      value,
-      disabled
-    }, vm);
-    vue.onBeforeUnmount(() => {
-      group.unregister(id);
-    });
+    function register() {
+      group?.register({
+        id,
+        value,
+        disabled
+      }, vm);
+    }
+    function unregister() {
+      group?.unregister(id);
+    }
+    vue.onMounted(() => register());
+    vue.onBeforeUnmount(() => unregister());
     const isSelected = vue.computed(() => {
       return group.isSelected(id);
     });
@@ -5043,7 +5052,9 @@
       selectedClass,
       value,
       disabled,
-      group
+      group,
+      register,
+      unregister
     };
   }
   function useGroup(props, injectKey) {
@@ -5890,6 +5901,7 @@
       const href = vue.toRef(() => props.href);
       return {
         isLink,
+        isRouterLink: vue.toRef(() => false),
         isClickable,
         href,
         linkProps: vue.reactive({
@@ -5913,8 +5925,10 @@
       return link.value.isExactActive?.value && deepEqual(link.value.route.value.query, route.value.query);
     });
     const href = vue.computed(() => props.to ? link.value?.route.value.href : props.href);
+    const isRouterLink = vue.toRef(() => !!props.to);
     return {
       isLink,
+      isRouterLink,
       isClickable,
       isActive,
       route: link.value?.route,
@@ -5922,7 +5936,9 @@
       href,
       linkProps: vue.reactive({
         href,
-        'aria-current': vue.toRef(() => isActive.value ? 'page' : undefined)
+        'aria-current': vue.toRef(() => isActive.value ? 'page' : undefined),
+        'aria-disabled': vue.toRef(() => props.disabled && isLink.value ? 'true' : undefined),
+        tabindex: vue.toRef(() => props.disabled && isLink.value ? '-1' : undefined)
       })
     };
   }
@@ -6372,7 +6388,7 @@
         if (props.active !== undefined) {
           return props.active;
         }
-        if (link.isLink.value) {
+        if (link.isRouterLink.value) {
           return link.isActive?.value;
         }
         return group?.isSelected.value;
@@ -6400,7 +6416,7 @@
       });
       function onClick(e) {
         if (isDisabled.value || link.isLink.value && (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0 || attrs.target === '_blank')) return;
-        if (link.isLink.value) {
+        if (link.isRouterLink.value) {
           link.navigate?.(e);
         } else {
           // Group active state for links is handled by useSelectLink
@@ -6413,7 +6429,7 @@
         const hasPrepend = !!(props.prependIcon || slots.prepend);
         const hasAppend = !!(props.appendIcon || slots.append);
         const hasIcon = !!(props.icon && props.icon !== true);
-        return vue.withDirectives(vue.createVNode(Tag, vue.mergeProps({
+        return vue.withDirectives(vue.createVNode(Tag, vue.mergeProps(link.linkProps, {
           "type": Tag === 'a' ? undefined : 'button',
           "class": ['v-btn', group?.selectedClass.value, {
             'v-btn--active': isActive.value,
@@ -6429,11 +6445,11 @@
           }, props.spaced ? ['v-btn--spaced', `v-btn--spaced-${props.spaced}`] : [], themeClasses.value, borderClasses.value, colorClasses.value, densityClasses.value, elevationClasses.value, loaderClasses.value, positionClasses.value, roundedClasses.value, sizeClasses.value, variantClasses.value, props.class],
           "style": [colorStyles.value, dimensionStyles.value, locationStyles.value, sizeStyles.value, props.style],
           "aria-busy": props.loading ? true : undefined,
-          "disabled": isDisabled.value || undefined,
+          "disabled": isDisabled.value && Tag !== 'a' || undefined,
           "tabindex": props.loading || props.readonly ? -1 : undefined,
           "onClick": onClick,
           "value": valueAttr.value
-        }, link.linkProps), {
+        }), {
           default: () => [genOverlays(true, 'v-btn'), !props.icon && hasPrepend && vue.createElementVNode("span", {
             "key": "prepend",
             "class": "v-btn__prepend"
@@ -8178,7 +8194,7 @@
     const rtl = goTo?.rtl.value;
     const target = (typeof _target === 'number' ? _target : getTarget$1(_target)) ?? 0;
     const container = options.container === 'parent' && target instanceof HTMLElement ? target.parentElement : getContainer(options.container);
-    const ease = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? options.patterns.instant : typeof options.easing === 'function' ? options.easing : options.patterns[options.easing];
+    const ease = PREFERS_REDUCED_MOTION() ? options.patterns.instant : typeof options.easing === 'function' ? options.easing : options.patterns[options.easing];
     if (!ease) throw new TypeError(`Easing function "${options.easing}" not found.`);
     let targetLocation;
     if (typeof target === 'number') {
@@ -8846,6 +8862,7 @@
       } = provideTheme(props);
       const isActive = useProxiedModel(props, 'modelValue');
       const group = useGroupItem(props, VChipGroupSymbol, false);
+      const slideGroup = useGroupItem(props, VSlideGroupSymbol, false);
       const link = useLink(props, attrs);
       const isLink = vue.toRef(() => props.link !== false && link.isLink.value);
       const isClickable = vue.computed(() => !props.disabled && props.link !== false && (!!group || props.link || link.isClickable.value));
@@ -8859,6 +8876,15 @@
           emit('click:close', e);
         }
       }));
+      vue.watch(isActive, val => {
+        if (val) {
+          group?.register();
+          slideGroup?.register();
+        } else {
+          group?.unregister();
+          slideGroup?.unregister();
+        }
+      });
       const {
         colorClasses,
         colorStyles,
@@ -8890,7 +8916,7 @@
         const hasFilter = !!(slots.filter || props.filter) && group;
         const hasPrependMedia = !!(props.prependIcon || props.prependAvatar);
         const hasPrepend = !!(hasPrependMedia || slots.prepend);
-        return isActive.value && vue.withDirectives(vue.createVNode(Tag, vue.mergeProps({
+        return isActive.value && vue.withDirectives(vue.createVNode(Tag, vue.mergeProps(link.linkProps, {
           "class": ['v-chip', {
             'v-chip--disabled': props.disabled,
             'v-chip--label': props.label,
@@ -8905,7 +8931,7 @@
           "tabindex": isClickable.value ? 0 : undefined,
           "onClick": onClick,
           "onKeydown": isClickable.value && !isLink.value && onKeyDown
-        }, link.linkProps), {
+        }), {
           default: () => [genOverlays(isClickable.value, 'v-chip'), hasFilter && vue.createVNode(VExpandXTransition, {
             "key": "filter"
           }, {
@@ -10012,7 +10038,7 @@
       const isLink = vue.toRef(() => props.link !== false && link.isLink.value);
       const isSelectable = vue.computed(() => !!list && (root.selectable.value || root.activatable.value || props.value != null));
       const isClickable = vue.computed(() => !props.disabled && props.link !== false && (props.link || link.isClickable.value || isSelectable.value));
-      const role = vue.computed(() => list ? isSelectable.value ? 'option' : 'listitem' : undefined);
+      const role = vue.computed(() => list ? isLink.value ? 'link' : isSelectable.value ? 'option' : 'listitem' : undefined);
       const ariaSelected = vue.computed(() => {
         if (!isSelectable.value) return undefined;
         return root.activatable.value ? isActivated.value : root.selectable.value ? isSelected.value : isActive.value;
@@ -10108,7 +10134,7 @@
         if (props.activeColor) {
           deprecate('active-color', ['color', 'base-color']);
         }
-        return vue.withDirectives(vue.createVNode(Tag, vue.mergeProps({
+        return vue.withDirectives(vue.createVNode(Tag, vue.mergeProps(link.linkProps, {
           "class": ['v-list-item', {
             'v-list-item--active': isActive.value,
             'v-list-item--disabled': props.disabled,
@@ -10124,7 +10150,7 @@
           "role": role.value,
           "onClick": onClick,
           "onKeydown": isClickable.value && !isLink.value && onKeyDown
-        }, link.linkProps), {
+        }), {
           default: () => [genOverlays(isClickable.value || isActive.value, 'v-list-item'), hasPrepend && vue.createElementVNode("div", {
             "key": "prepend",
             "class": "v-list-item__prepend"
@@ -14406,7 +14432,7 @@
         } else {
           if (!props.multiple && search.value == null) model.value = [];
           menu.value = false;
-          if (props.multiple || hasSelectionSlot.value) search.value = '';
+          search.value = '';
           selectionIndex.value = -1;
         }
       });
@@ -15040,10 +15066,11 @@
         scopeId
       } = useScopeId();
       const overlay = vue.ref();
-      function onFocusin(e) {
+      async function onFocusin(e) {
         const before = e.relatedTarget;
         const after = e.target;
-        if (before !== after && overlay.value?.contentEl &&
+        await vue.nextTick();
+        if (isActive.value && before !== after && overlay.value?.contentEl &&
         // We're the topmost dialog
         overlay.value?.globalTop &&
         // It isn't the document or the dialog body
@@ -15051,22 +15078,39 @@
         // It isn't inside the dialog body
         !overlay.value.contentEl.contains(after)) {
           const focusable = focusableChildren(overlay.value.contentEl);
-          if (!focusable.length) return;
-          const firstElement = focusable[0];
-          const lastElement = focusable[focusable.length - 1];
-          if (before === firstElement) {
-            lastElement.focus();
-          } else {
-            firstElement.focus();
-          }
+          focusable[0]?.focus();
+        }
+      }
+      function onKeydown(e) {
+        if (e.key !== 'Tab' || !overlay.value?.contentEl) return;
+        const focusable = focusableChildren(overlay.value.contentEl);
+        if (!focusable.length) return;
+        const firstElement = focusable[0];
+        const lastElement = focusable[focusable.length - 1];
+        const active = document.activeElement;
+        if (e.shiftKey && active === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        } else if (!e.shiftKey && active === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
         }
       }
       vue.onBeforeUnmount(() => {
         document.removeEventListener('focusin', onFocusin);
+        document.removeEventListener('keydown', onKeydown);
       });
       if (IN_BROWSER) {
         vue.watch(() => isActive.value && props.retainFocus, val => {
-          val ? document.addEventListener('focusin', onFocusin) : document.removeEventListener('focusin', onFocusin);
+          if (val) {
+            document.addEventListener('focusin', onFocusin, {
+              once: true
+            });
+            document.addEventListener('keydown', onKeydown);
+          } else {
+            document.removeEventListener('focusin', onFocusin);
+            document.removeEventListener('keydown', onKeydown);
+          }
         }, {
           immediate: true
         });
@@ -15629,7 +15673,7 @@
         const hasImage = !!(slots.image || props.image);
         const hasCardItem = hasHeader || hasPrepend || hasAppend;
         const hasText = !!(slots.text || props.text != null);
-        return vue.withDirectives(vue.createVNode(Tag, vue.mergeProps({
+        return vue.withDirectives(vue.createVNode(Tag, vue.mergeProps(link.linkProps, {
           "class": ['v-card', {
             'v-card--disabled': props.disabled,
             'v-card--flat': props.flat,
@@ -15639,7 +15683,7 @@
           "style": [colorStyles.value, dimensionStyles.value, locationStyles.value, props.style],
           "onClick": isClickable && link.navigate,
           "tabindex": props.disabled ? -1 : undefined
-        }, link.linkProps), {
+        }), {
           default: () => [hasImage && vue.createElementVNode("div", {
             "key": "image",
             "class": "v-card__image"
@@ -19454,6 +19498,7 @@
   // Types
 
   const makeVComboboxProps = propsFactory({
+    alwaysFilter: Boolean,
     autoSelectFirst: {
       type: [Boolean, String]
     },
@@ -19498,7 +19543,6 @@
       const isFocused = vue.shallowRef(false);
       const isPristine = vue.shallowRef(true);
       const listHasFocus = vue.shallowRef(false);
-      const showAllItemsForNoMatch = vue.shallowRef(false);
       const vMenuRef = vue.ref();
       const vVirtualScrollRef = vue.ref();
       const selectionIndex = vue.shallowRef(-1);
@@ -19554,22 +19598,14 @@
       const {
         filteredItems,
         getMatches
-      } = useFilter(props, items, search);
-      const hasMatchingItems = vue.computed(() => {
-        return props.hideSelected ? filteredItems.value.some(filteredItem => !model.value.some(s => s.value === filteredItem.value)) : filteredItems.value.length > 0;
-      });
+      } = useFilter(props, items, () => props.alwaysFilter || !isPristine.value ? search.value : '');
       const displayItems = vue.computed(() => {
         if (props.hideSelected) {
           return filteredItems.value.filter(filteredItem => !model.value.some(s => s.value === filteredItem.value));
         }
-        if (filteredItems.value.length === 0 && showAllItemsForNoMatch.value) {
-          return items.value;
-        }
         return filteredItems.value;
       });
-      const menuDisabled = vue.computed(() => {
-        return form.isReadonly.value || form.isDisabled.value;
-      });
+      const menuDisabled = vue.computed(() => props.hideNoData && !displayItems.value.length || form.isReadonly.value || form.isDisabled.value);
       const _menu = useProxiedModel(props, 'menu');
       const menu = vue.computed({
         get: () => _menu.value,
@@ -19586,17 +19622,13 @@
         ariaLabel
       } = useMenuActivator(props, menu);
       vue.watch(_search, value => {
-        showAllItemsForNoMatch.value = false;
         if (cleared) {
           // wait for clear to finish, VTextField sets _search to null
           // then search computed triggers and updates _search to ''
           vue.nextTick(() => cleared = false);
         } else if (isFocused.value && !menu.value) {
-          menu.value = hasMatchingItems.value || !props.hideNoData;
-        } else if (isFocused.value && menu.value && !hasMatchingItems.value && props.hideNoData) {
-          menu.value = false;
+          menu.value = true;
         }
-        isPristine.value = !value;
         emit('update:search', value);
       });
       vue.watch(model, value => {
@@ -19613,6 +19645,7 @@
       const listEvents = useScrolling(listRef, vTextFieldRef);
       function onClear(e) {
         cleared = true;
+        vue.nextTick(() => cleared = false);
         if (props.openOnClear) {
           menu.value = true;
         }
@@ -19775,19 +19808,13 @@
           }
         }
       });
-      vue.watch(menu, val => {
-        if (!props.hideSelected && val && model.value.length) {
+      vue.watch(menu, () => {
+        if (!props.hideSelected && menu.value && model.value.length) {
           const index = displayItems.value.findIndex(item => model.value.some(s => (props.valueComparator || deepEqual)(s.value, item.value)));
           IN_BROWSER && window.requestAnimationFrame(() => {
             index >= 0 && vVirtualScrollRef.value?.scrollToIndex(index);
           });
         }
-        if (val && search.value && !hasMatchingItems.value) {
-          showAllItemsForNoMatch.value = true;
-        }
-        isPristine.value = !search.value;
-      }, {
-        immediate: true
       });
       vue.watch(items, (newVal, oldVal) => {
         if (menu.value) return;
@@ -19984,7 +20011,7 @@
             for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
               args[_key] = arguments[_key];
             }
-            return vue.createElementVNode(vue.Fragment, null, [slots['append-inner']?.(...args), props.menuIcon ? vue.createVNode(VIcon, {
+            return vue.createElementVNode(vue.Fragment, null, [slots['append-inner']?.(...args), (!props.hideNoData || props.items.length) && props.menuIcon ? vue.createVNode(VIcon, {
               "class": "v-combobox__menu-icon",
               "color": vTextFieldRef.value?.fieldIconColor,
               "icon": props.menuIcon,
@@ -20127,20 +20154,20 @@
     }, v => {
       return [...v.values()];
     });
-    function getItemKey(item) {
-      return isObject(item.value) ? item.key : item.value;
-    }
     function expand(item, value) {
       const newExpanded = new Set(expanded.value);
+      const rawValue = vue.toRaw(item.value);
       if (!value) {
-        newExpanded.delete(getItemKey(item));
+        const item = [...expanded.value].find(x => vue.toRaw(x) === rawValue);
+        newExpanded.delete(item);
       } else {
-        newExpanded.add(getItemKey(item));
+        newExpanded.add(rawValue);
       }
       expanded.value = newExpanded;
     }
     function isExpanded(item) {
-      return expanded.value.has(getItemKey(item));
+      const rawValue = vue.toRaw(item.value);
+      return [...expanded.value].some(x => vue.toRaw(x) === rawValue);
     }
     function toggleExpand(item) {
       expand(item, !isExpanded(item));
@@ -21852,6 +21879,7 @@
     },
     /** @deprecated */
     sticky: Boolean,
+    ...makeDensityProps(),
     ...makeDisplayProps(),
     ...makeLoaderProps()
   }, 'VDataTableHeaders');
@@ -21976,6 +22004,7 @@
             if (isEmpty) return '';
             if (column.key === 'data-table-select') {
               return slots['header.data-table-select']?.(columnSlotProps) ?? (showSelectAll.value && vue.createVNode(VCheckboxBtn, {
+                "density": props.density,
                 "modelValue": allSelected.value,
                 "indeterminate": someSelected.value && !allSelected.value,
                 "onUpdate:modelValue": selectAll
@@ -22076,7 +22105,8 @@
     groupExpandIcon: {
       type: IconValue,
       default: '$tableGroupExpand'
-    }
+    },
+    ...makeDensityProps()
   }, 'VDataTableGroupHeaderRow');
   const VDataTableGroupHeaderRow = genericComponent()({
     name: 'VDataTableGroupHeaderRow',
@@ -22144,6 +22174,7 @@
             "noPadding": true
           }, {
             default: () => [vue.createVNode(VCheckboxBtn, {
+              "density": props.density,
               "modelValue": modelValue,
               "indeterminate": indeterminate,
               "onUpdate:modelValue": selectGroup
@@ -22172,6 +22203,7 @@
     onClick: EventProp(),
     onContextmenu: EventProp(),
     onDblclick: EventProp(),
+    ...makeDensityProps(),
     ...makeDisplayProps()
   }, 'VDataTableRow');
   const VDataTableRow = genericComponent()({
@@ -22280,6 +22312,7 @@
                 }
               }) ?? vue.createVNode(VCheckboxBtn, {
                 "disabled": !item.selectable,
+                "density": props.density,
                 "modelValue": isSelected([item]),
                 "onClick": vue.withModifiers(event => toggleSelect(item, props.index, event), ['stop'])
               }, null);
@@ -22332,8 +22365,8 @@
     },
     rowProps: [Object, Function],
     cellProps: [Object, Function],
-    ...pick(makeVDataTableRowProps(), ['collapseIcon', 'expandIcon']),
-    ...pick(makeVDataTableGroupHeaderRowProps(), ['groupCollapseIcon', 'groupExpandIcon']),
+    ...pick(makeVDataTableRowProps(), ['collapseIcon', 'expandIcon', 'density']),
+    ...pick(makeVDataTableGroupHeaderRowProps(), ['groupCollapseIcon', 'groupExpandIcon', 'density']),
     ...makeDisplayProps()
   }, 'VDataTableRows');
   const VDataTableRows = genericComponent()({
@@ -22368,7 +22401,7 @@
         mobile
       } = useDisplay(props);
       useRender(() => {
-        const groupHeaderRowProps = pick(props, ['groupCollapseIcon', 'groupExpandIcon']);
+        const groupHeaderRowProps = pick(props, ['groupCollapseIcon', 'groupExpandIcon', 'density']);
         if (props.loading && (!props.items.length || slots.loading)) {
           return vue.createElementVNode("tr", {
             "class": "v-data-table-rows-loading",
@@ -22434,6 +22467,7 @@
               cellProps: props.cellProps,
               collapseIcon: props.collapseIcon,
               expandIcon: props.expandIcon,
+              density: props.density,
               mobile: mobile.value
             }, getPrefixedEventHandlers(attrs, ':row', () => slotProps), typeof props.rowProps === 'function' ? props.rowProps({
               item: slotProps.item,
@@ -22449,6 +22483,8 @@
       return {};
     }
   });
+
+  // Types
 
   const makeVTableProps = propsFactory({
     fixedHeader: Boolean,
@@ -22479,37 +22515,26 @@
       const {
         densityClasses
       } = useDensity(props);
-      useRender(() => {
-        const tableContentDefaults = {
-          VCheckboxBtn: {
-            density: props.density
+      useRender(() => vue.createVNode(props.tag, {
+        "class": vue.normalizeClass(['v-table', {
+          'v-table--fixed-height': !!props.height,
+          'v-table--fixed-header': props.fixedHeader,
+          'v-table--fixed-footer': props.fixedFooter,
+          'v-table--has-top': !!slots.top,
+          'v-table--has-bottom': !!slots.bottom,
+          'v-table--hover': props.hover,
+          'v-table--striped-even': props.striped === 'even',
+          'v-table--striped-odd': props.striped === 'odd'
+        }, themeClasses.value, densityClasses.value, props.class]),
+        "style": vue.normalizeStyle(props.style)
+      }, {
+        default: () => [slots.top?.(), slots.default ? vue.createElementVNode("div", {
+          "class": "v-table__wrapper",
+          "style": {
+            height: convertToUnit(props.height)
           }
-        };
-        return vue.createVNode(props.tag, {
-          "class": vue.normalizeClass(['v-table', {
-            'v-table--fixed-height': !!props.height,
-            'v-table--fixed-header': props.fixedHeader,
-            'v-table--fixed-footer': props.fixedFooter,
-            'v-table--has-top': !!slots.top,
-            'v-table--has-bottom': !!slots.bottom,
-            'v-table--hover': props.hover,
-            'v-table--striped-even': props.striped === 'even',
-            'v-table--striped-odd': props.striped === 'odd'
-          }, themeClasses.value, densityClasses.value, props.class]),
-          "style": vue.normalizeStyle(props.style)
-        }, {
-          default: () => [slots.top?.(), vue.createVNode(VDefaultsProvider, {
-            "defaults": tableContentDefaults
-          }, {
-            default: () => [slots.default ? vue.createElementVNode("div", {
-              "class": "v-table__wrapper",
-              "style": {
-                height: convertToUnit(props.height)
-              }
-            }, [vue.createElementVNode("table", null, [slots.default()])]) : slots.wrapper?.()]
-          }), slots.bottom?.()]
-        });
-      });
+        }, [vue.createElementVNode("table", null, [slots.default()])]) : slots.wrapper?.(), slots.bottom?.()]
+      }));
       return {};
     }
   });
@@ -25292,7 +25317,8 @@
           'onClick:clear': onClear
         };
         const expectsDirectory = attrs.webkitdirectory !== undefined && attrs.webkitdirectory !== false;
-        const inputAccept = expectsDirectory ? undefined : props.filterByType ?? String(attrs.accept);
+        const acceptFallback = attrs.accept ? String(attrs.accept) : undefined;
+        const inputAccept = expectsDirectory ? undefined : props.filterByType ?? acceptFallback;
         return vue.createVNode(VInput, vue.mergeProps({
           "ref": vInputRef,
           "modelValue": props.multiple ? model.value : model.value[0],
@@ -27003,6 +27029,7 @@
       useRender(() => {
         const {
           modelValue: _,
+          type,
           ...textFieldProps
         } = VTextField.filterProps(props);
         function incrementControlNode() {
@@ -29452,7 +29479,7 @@
       } = useFocus(props);
       const control = vue.ref();
       const inputRef = vue.ref();
-      const isForcedColorsModeActive = IN_BROWSER && window.matchMedia('(forced-colors: active)').matches;
+      const isForcedColorsModeActive = SUPPORTS_MATCH_MEDIA && window.matchMedia('(forced-colors: active)').matches;
       const loaderColor = vue.toRef(() => {
         return typeof props.loading === 'string' && props.loading !== '' ? props.loading : props.color;
       });
@@ -31546,6 +31573,7 @@
               ...itemProps,
               ...activatorProps,
               value: itemProps?.value,
+              indentLines: indentLines.node,
               onToggleExpand: [() => checkChildren(item), activatorProps.onClick],
               onClick: isClickOnOpen.value ? [() => checkChildren(item), activatorProps.onClick] : () => selectItem(activatorItems.value[index]?.select, !activatorItems.value[index]?.isSelected)
             };
@@ -31559,7 +31587,6 @@
             }, listItemProps, {
               "hasCustomPrepend": !!slots.prepend,
               "hideActions": props.hideActions,
-              "indentLines": indentLines.node,
               "value": props.returnObject ? item.raw : itemProps.value,
               "loading": loading
             }), slotsWithItem));
@@ -32254,7 +32281,7 @@
       };
     });
   }
-  const version$1 = "3.10.2";
+  const version$1 = "3.10.5";
   createVuetify$1.version = version$1;
 
   // Vue's inject() can only be used in setup
@@ -32279,7 +32306,7 @@
       ...options
     });
   };
-  const version = "3.10.2";
+  const version = "3.10.5";
   createVuetify.version = version;
 
   exports.blueprints = index;

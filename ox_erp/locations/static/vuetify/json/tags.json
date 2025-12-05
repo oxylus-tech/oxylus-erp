@@ -1016,6 +1016,7 @@
   "VCombobox": {
     "attributes": [
       "active",
+      "always-filter",
       "append-icon",
       "auto-select-first",
       "autocomplete",
@@ -1272,6 +1273,7 @@
   "VDataTableHeaders": {
     "attributes": [
       "color",
+      "density",
       "disable-sort",
       "fixed-header",
       "header-props",
@@ -1289,6 +1291,7 @@
     "attributes": [
       "cell-props",
       "collapse-icon",
+      "density",
       "expand-icon",
       "index",
       "item",
@@ -1301,6 +1304,7 @@
     "attributes": [
       "cell-props",
       "collapse-icon",
+      "density",
       "expand-icon",
       "group-collapse-icon",
       "group-expand-icon",

@@ -20,12 +20,16 @@
       "from": "labs/VIconBtn",
       "styles": []
     },
-    "VPicker": {
-      "from": "labs/VPicker",
+    "VStepperVertical": {
+      "from": "labs/VStepperVertical",
       "styles": []
     },
-    "VPickerTitle": {
-      "from": "labs/VPicker",
+    "VStepperVerticalItem": {
+      "from": "labs/VStepperVertical",
+      "styles": []
+    },
+    "VStepperVerticalActions": {
+      "from": "labs/VStepperVertical",
       "styles": []
     },
     "VPie": {
@@ -40,16 +44,8 @@
       "from": "labs/VPie",
       "styles": []
     },
-    "VStepperVertical": {
-      "from": "labs/VStepperVertical",
-      "styles": []
-    },
-    "VStepperVerticalItem": {
-      "from": "labs/VStepperVertical",
-      "styles": []
-    },
-    "VStepperVerticalActions": {
-      "from": "labs/VStepperVertical",
+    "VHotkey": {
+      "from": "labs/VHotkey",
       "styles": []
     },
     "VVideo": {
@@ -64,8 +60,12 @@
       "from": "labs/VVideo",
       "styles": []
     },
-    "VHotkey": {
-      "from": "labs/VHotkey",
+    "VPicker": {
+      "from": "labs/VPicker",
+      "styles": []
+    },
+    "VPickerTitle": {
+      "from": "labs/VPicker",
       "styles": []
     },
     "VDateInput": {

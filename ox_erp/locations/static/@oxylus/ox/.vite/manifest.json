@@ -29,10 +29,10 @@
       "src/components/OxAutocomplete.vue"
     ]
   },
-  "src/lib.ts": {
+  "src/index.ts": {
     "file": "index.js",
     "name": "index",
-    "src": "src/lib.ts",
+    "src": "src/index.ts",
     "isEntry": true,
     "imports": [
       "_index2.js",
