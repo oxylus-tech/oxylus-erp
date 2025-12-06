@@ -10,7 +10,7 @@ __all__ = ("ContactMail",)
 
 class ContactMail(BaseMail):
     recipients = models.ManyToManyField(Contact, verbose_name=_("Recipients"))
-    recipient_lists = models.ManyToManyField(ContactList, verbose_name=_("Recipient lists"))
+    recipient_lists = models.ManyToManyField(ContactList, verbose_name=_("Contact lists"))
 
     State = BaseMail.State
 

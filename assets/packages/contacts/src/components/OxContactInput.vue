@@ -3,10 +3,15 @@
         item-value="id" item-title="name"
         lookup="search" v-model="value" v-bind="attrs"
         >
+        <template v-for="_, slot in slots" #[slot]="bind">
+            <slot :name="slot" v-bind="bind"/>
+        </template>
+
         <template #selection="{ item }">
             <ox-contact-name :item="item.raw"/>
         </template>
 
+        <!-- For some bizarre reason this doesn't work anymore
         <template #item="{ props, item }">
             <v-list-item v-bind="props">
                 <template #prepend>
@@ -15,11 +20,8 @@
                     </v-icon>
                 </template>
             </v-list-item>
-        </template>
-
-        <template v-for="_, slot in slots" #[slot]="bind">
-            <slot :name="slot" v-bind="bind"/>
-        </template>
+         </template>
+         -->
     </ox-autocomplete>
 </template>
 <script setup lang="ts">

@@ -340,12 +340,12 @@ const He = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   enumProxy: I,
   getSourceKey: B
 }, Symbol.toStringTag, { value: "Module" }));
-function Re(i) {
+function $e(i) {
   M(i);
   const e = ae();
   return q.useModel = i, M(q, e);
 }
-function $e(i, { useInject: e = !0, useDefaults: t = !0 } = {}) {
+function Re(i, { useInject: e = !0, useDefaults: t = !0 } = {}) {
   var s = e && (v("repos") || {});
   const r = e && !!Object.keys(s).length;
   Array.isArray(i) || (i = Object.values(i)), t && i.push(O);
@@ -353,7 +353,7 @@ function $e(i, { useInject: e = !0, useDefaults: t = !0 } = {}) {
     if (n && n.entity) {
       if (n.entity in s)
         continue;
-      s[n.entity] = Re(n);
+      s[n.entity] = $e(n);
     }
   return !r && f("repos", s), s;
 }
@@ -374,7 +374,7 @@ class je {
    * source element.
    */
   load(e = void 0) {
-    this.dataEl !== void 0 && (e === void 0 && (e = this.readData(this.dataEl)), e.dataEl = this.dataEl, this.data = e), this.models !== void 0 && (this.repos = $e(this.models));
+    this.dataEl !== void 0 && (e === void 0 && (e = this.readData(this.dataEl)), e.dataEl = this.dataEl, this.data = e), this.models !== void 0 && (this.repos = Re(this.models));
   }
   /**
    * Read data from the context of provided source element.
@@ -474,16 +474,16 @@ class g {
   }
   /** Fetch items from api. */
   async fetch(e = {}) {
-    var P, R, $, j, S;
+    var P, $, R, j, S;
     e = { ...this.opts, ...e };
     let { url: t, id: s, repo: r, lookup: n, params: o, relations: l, path: u, ...d } = e;
     n ?? (n = "id__in"), r ?? (r = this.repo);
     let _ = null;
     if (Array.isArray(s) && (s.length == 1 ? s = s[0] : (_ = s, s = null)), !t) {
       const Z = s;
-      t = (R = (P = r.use) == null ? void 0 : P.meta) == null ? void 0 : R.getUrl({ path: u, id: Z });
+      t = ($ = (P = r.use) == null ? void 0 : P.meta) == null ? void 0 : $.getUrl({ path: u, id: Z });
     }
-    if (s ? d.dataKey = null : "dataKey" in d || (d.dataKey = (S = (j = ($ = r.use) == null ? void 0 : $.config) == null ? void 0 : j.axiosApi) == null ? void 0 : S.dataKey), _ && n !== void 0) {
+    if (s ? d.dataKey = null : "dataKey" in d || (d.dataKey = (S = (j = (R = r.use) == null ? void 0 : R.config) == null ? void 0 : j.axiosApi) == null ? void 0 : S.dataKey), _ && n !== void 0) {
       if (s)
         throw Error("Both `ids` and `id` are provided while only one of those arguments is accepted.");
       o = { ...o || {} }, o[n] = _.join(",");
@@ -831,7 +831,7 @@ class Te {
     try {
       t = await this.fetch(e), t = await this.handleResponse(e, t);
     } catch (s) {
-      console.log(s), this.state.error(s);
+      console.log(s), this.state.error(s.message || `${s}`);
     }
     return this.state.isError || this.state.none(), t;
   }
@@ -1236,10 +1236,10 @@ export {
   it as useModelEditor,
   Le as useModelList,
   tt as useModelPanel,
-  $e as useModels,
+  Re as useModels,
   Fe as usePanel,
   et as usePanels,
   st as useQuery,
-  Re as useRepo
+  $e as useRepo
 };
 //# sourceMappingURL=index.js.map

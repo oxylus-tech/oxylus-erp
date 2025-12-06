@@ -1,7 +1,7 @@
-import { defineComponent as j, useAttrs as X, inject as U, createElementBlock as w, createCommentVNode as k, unref as e, openBlock as p, Fragment as h, createBlock as y, mergeProps as C, withModifiers as F, ref as R, computed as I, resolveComponent as Fe, withCtx as o, renderList as L, createVNode as b, createTextVNode as _, toDisplayString as N, mergeModels as oe, useModel as ie, renderSlot as v, useSlots as J, reactive as se, onMounted as ae, watch as W, onErrorCaptured as Ue, createElementVNode as G, createSlots as Q, normalizeProps as B, guardReactiveProps as P, shallowRef as je, h as De, defineAsyncComponent as ze, normalizeClass as Ne, withKeys as be, onUnmounted as Re, Teleport as ge, useTemplateRef as qe, toRefs as Ke, withDirectives as We, vShow as Ge } from "vue";
-import { useAction as Je, t as g, filterSlots as Y, useAppContext as Qe, usePanels as He, useQuery as Ye, ifNotEqualFn as Xe, defineAsyncComponent as Ze, rules as et, useModelList as tt, Query as lt, ifNotEqual as at, tKeys as st, useModelEditor as nt, useModelPanel as ot } from "@oxylus/ox";
-import { V as T, b as H, d as pe, e as it, f as rt, g as Z, h as ut, i as dt, j as pt, k as ke, l as he, n as fe, o as mt, p as Se, q as me, r as ct, s as vt, t as ft, u as yt, v as ne, w as bt, x as gt, y as ce, z as xe, A as Ce, B as kt, C as $t, D as Ae, E as wt, F as Vt, G as Le, H as Ot, I as ht, J as St, K as xt, L as te, M as K, N as Ct, O as At, P as Lt, Q as $e, R as we, S as Mt, T as Bt } from "./vuetify.js";
-import { l as ve, J as Pt, E as Tt, t as de, S as _t, r as It, m as Et } from "./index2.js";
+import { defineComponent as j, useAttrs as X, inject as U, createElementBlock as V, createCommentVNode as k, unref as e, openBlock as d, Fragment as h, createBlock as y, mergeProps as C, withModifiers as F, ref as R, computed as I, resolveComponent as Fe, withCtx as o, renderList as B, createVNode as b, createTextVNode as _, toDisplayString as D, mergeModels as oe, useModel as ie, renderSlot as v, useSlots as J, reactive as se, onMounted as ae, watch as G, onErrorCaptured as Ue, createElementVNode as W, createSlots as Q, normalizeProps as A, guardReactiveProps as L, shallowRef as je, h as ze, defineAsyncComponent as De, normalizeClass as Ne, withKeys as be, onUnmounted as Re, Teleport as ge, useTemplateRef as qe, toRefs as Ke, withDirectives as We, vShow as Ge } from "vue";
+import { useAction as Je, t as g, filterSlots as Y, useAppContext as Qe, usePanels as He, useQuery as Ye, ifNotEqualFn as Xe, defineAsyncComponent as Ze, rules as et, useModelList as tt, Query as lt, ifNotEqual as at, tKeys as st, States as nt, useModelEditor as ot, useModelPanel as it } from "@oxylus/ox";
+import { V as P, b as H, d as pe, e as rt, f as ut, g as Z, h as dt, i as pt, j as mt, k as ke, l as he, n as fe, o as ct, p as Se, q as me, r as vt, s as ft, t as yt, u as bt, v as ne, w as gt, x as kt, y as ce, z as xe, A as Ce, B as $t, C as wt, D as Ae, E as Vt, F as Ot, G as Le, H as ht, I as St, J as xt, K as Ct, L as te, M as K, N as At, O as Lt, P as Mt, Q as $e, R as we, S as Bt, T as Tt } from "./vuetify.js";
+import { l as ve, J as Pt, t as de, S as _t, r as It, m as Et } from "./index2.js";
 import "axios";
 import { components as Ft } from "@oxylus/ox/vendor";
 const le = /* @__PURE__ */ j({
@@ -19,23 +19,23 @@ const le = /* @__PURE__ */ j({
   },
   emits: ["completed"],
   setup(c, { emit: m }) {
-    const u = c, i = X(), n = m, r = U("user"), { run: t, processing: d, allowed: l } = Je({ user: r, emits: n, props: u });
-    return (s, a) => e(l) ? (p(), w(h, { key: 0 }, [
-      u.button ? (p(), y(T, C({
+    const u = c, i = X(), n = m, r = U("user"), { run: t, processing: p, allowed: l } = Je({ user: r, emits: n, props: u });
+    return (s, a) => e(l) ? (d(), V(h, { key: 0 }, [
+      u.button ? (d(), y(P, C({
         key: 0,
         variant: "text"
       }, e(i), {
-        disabled: e(d),
+        disabled: e(p),
         color: u.color,
         icon: u.icon,
         title: u.title,
         "aria-label": u.title,
         onClick: F(e(t), ["stop"])
-      }), null, 16, ["disabled", "color", "icon", "title", "aria-label", "onClick"])) : (p(), y(H, C({ key: 1 }, e(i), {
+      }), null, 16, ["disabled", "color", "icon", "title", "aria-label", "onClick"])) : (d(), y(H, C({ key: 1 }, e(i), {
         title: u.title,
         "base-color": u.color,
         "prepend-icon": u.icon,
-        disabled: e(d),
+        disabled: e(p),
         onClick: F(e(t), ["stop"])
       }), null, 16, ["title", "base-color", "prepend-icon", "disabled", "onClick"]))
     ], 64)) : k("", !0);
@@ -47,10 +47,10 @@ const le = /* @__PURE__ */ j({
   },
   setup(c) {
     const m = U("panel"), u = U("repos"), i = X(), n = c;
-    async function r(t, d) {
-      return await u[d.constructor.entity].api().delete(d.$url(), { delete: n.item.id });
+    async function r(t, p) {
+      return await u[p.constructor.entity].api().delete(p.$url(), { delete: n.item.id });
     }
-    return (t, d) => (p(), y(le, C(e(i), {
+    return (t, p) => (d(), y(le, C(e(i), {
       item: n.item,
       icon: "mdi-delete",
       color: "error",
@@ -58,7 +58,7 @@ const le = /* @__PURE__ */ j({
       confirm: e(g)("actions.delete.confirm"),
       permission: [n.item.constructor, "delete"],
       run: r,
-      onCompleted: d[0] || (d[0] = (l) => {
+      onCompleted: p[0] || (p[0] = (l) => {
         var s;
         return (s = e(m)) == null ? void 0 : s.show({ view: e(m).index });
       })
@@ -88,9 +88,9 @@ const le = /* @__PURE__ */ j({
       const t = u.repo.api();
       return await t[u.method.toLowerCase()].apply(t, [r.$url(u.path), u.data, u.options]);
     }
-    return (n, r) => (p(), y(e(le), C(e(m), { run: i }), null, 16));
+    return (n, r) => (d(), y(e(le), C(e(m), { run: i }), null, 16));
   }
-}), Dt = /* @__PURE__ */ j({
+}), zt = /* @__PURE__ */ j({
   __name: "OxAppNavItem",
   props: {
     name: {},
@@ -108,16 +108,16 @@ const le = /* @__PURE__ */ j({
     const u = U("user"), i = U("panels");
     I(() => !m.auto || panel.name == m.name);
     function n(t) {
-      return t.permission && !u.can(t.permission) ? !1 : t.items ? t.items.some((d) => n(d)) : !0;
+      return t.permission && !u.can(t.permission) ? !1 : t.items ? t.items.some((p) => n(p)) : !0;
     }
     function r() {
       const t = { panel: m.name, href: m.url };
       i.show(t);
     }
-    return (t, d) => {
+    return (t, p) => {
       const l = Fe("ox-app-nav-item", !0);
-      return n(m) ? (p(), w(h, { key: 0 }, [
-        m.type == "group" ? (p(), y(pe, {
+      return n(m) ? (d(), V(h, { key: 0 }, [
+        m.type == "group" ? (d(), y(pe, {
           key: 0,
           value: m.name
         }, {
@@ -128,7 +128,7 @@ const le = /* @__PURE__ */ j({
             }), null, 16, ["title", "prepend-icon"])
           ]),
           default: o(() => [
-            (p(!0), w(h, null, L(m.items, (s, a) => (p(), y(l, C({
+            (d(!0), V(h, null, B(m.items, (s, a) => (d(), y(l, C({
               key: a,
               ref_for: !0
             }, s, {
@@ -136,15 +136,15 @@ const le = /* @__PURE__ */ j({
             }), null, 16, ["type"]))), 128))
           ]),
           _: 1
-        }, 8, ["value"])) : m.type == "subheader" ? (p(), w(h, { key: 1 }, [
-          b(it, null, {
+        }, 8, ["value"])) : m.type == "subheader" ? (d(), V(h, { key: 1 }, [
+          b(rt, null, {
             default: o(() => [
-              _(N(m.title), 1)
+              _(D(m.title), 1)
             ]),
             _: 1
           }),
-          m.items ? (p(!0), w(h, { key: 0 }, L(m.items, (s) => (p(), y(l, C({ ref_for: !0 }, s), null, 16))), 256)) : k("", !0)
-        ], 64)) : (p(), y(H, {
+          m.items ? (d(!0), V(h, { key: 0 }, B(m.items, (s) => (d(), y(l, C({ ref_for: !0 }, s), null, 16))), 256)) : k("", !0)
+        ], 64)) : (d(), y(H, {
           key: 2,
           active: e(i).panel == m.name,
           value: m.name,
@@ -155,7 +155,7 @@ const le = /* @__PURE__ */ j({
       ], 64)) : k("", !0);
     };
   }
-}), zt = {
+}), Dt = {
   __name: "OxAppNav",
   props: /* @__PURE__ */ oe({
     /** The list of items */
@@ -168,20 +168,20 @@ const le = /* @__PURE__ */ j({
   setup(c) {
     const m = U("panels"), u = ie(c, "drawer"), i = R([]), n = c, r = I(() => (t(n.items), n.items));
     function t(l) {
-      i.value = d(l);
+      i.value = p(l);
     }
-    function d(l) {
+    function p(l) {
       if (m.panel) {
         for (const s of l)
           if (s.items) {
-            const a = d(s.items);
+            const a = p(s.items);
             if (a)
               return [a, s.name];
           } else if (s.name == m.panel)
             return [s.name];
       }
     }
-    return (l, s) => (p(), y(rt, {
+    return (l, s) => (d(), y(ut, {
       modelValue: u.value,
       "onUpdate:modelValue": s[1] || (s[1] = (a) => u.value = a),
       theme: "dark"
@@ -202,7 +202,7 @@ const le = /* @__PURE__ */ j({
           density: "compact"
         }, {
           default: o(() => [
-            (p(!0), w(h, null, L(r.value, (a, f) => (p(), y(Dt, C({
+            (d(!0), V(h, null, B(r.value, (a, f) => (d(), y(zt, C({
               key: f,
               ref_for: !0
             }, a), null, 16))), 128))
@@ -231,26 +231,26 @@ const Rt = /* @__PURE__ */ j({
     const m = J(), u = Y(m, "panels."), i = c, n = se({ drawer: !0 }), r = Qe(i), t = He();
     return ae(() => {
       t.panel = r.data.panel;
-    }), W(() => [r.state.state, r.state.data], () => {
+    }), G(() => [r.state.state, r.state.data], () => {
       r.showState = !0;
-    }), Ue((d, l, s) => {
-      r.state.error(`${d}`);
-    }), (d, l) => (p(), y(ut, null, {
+    }), Ue((p, l, s) => {
+      r.state.error(`${p}`);
+    }), (p, l) => (d(), y(dt, null, {
       default: o(() => [
-        b(dt, {
+        b(pt, {
           modelValue: e(r).showState,
           "onUpdate:modelValue": l[0] || (l[0] = (s) => e(r).showState = s),
           color: e(r).state.color,
           "multi-line": ""
         }, {
           default: o(() => [
-            _(N(e(r).state.toString()), 1)
+            _(D(e(r).state.toString()), 1)
           ]),
           _: 1
         }, 8, ["modelValue", "color"]),
-        b(pt, { color: "primary" }, {
+        b(mt, { color: "primary" }, {
           prepend: o(() => [
-            e(m)["nav-start"] || e(m)["nav-end"] ? (p(), y(he, {
+            e(m)["nav-start"] || e(m)["nav-end"] ? (d(), y(he, {
               key: 0,
               icon: "mdi-apps",
               title: e(g)("nav.panels"),
@@ -262,34 +262,34 @@ const Rt = /* @__PURE__ */ j({
             b(ke, { id: "app-bar-sheet-title" }),
             b(ke, { id: "app-bar-title" }, {
               default: o(() => [
-                v(d.$slots, "title")
+                v(p.$slots, "title")
               ]),
               _: 3
             }),
-            v(d.$slots, "app-bar-left"),
-            l[5] || (l[5] = G("div", {
+            v(p.$slots, "app-bar-left"),
+            l[5] || (l[5] = W("div", {
               id: "app-bar-right",
               class: "mr-3"
             }, null, -1)),
-            v(d.$slots, "app-bar-right")
+            v(p.$slots, "app-bar-right")
           ]),
           _: 3
         }),
-        e(m)["nav-start"] || e(m)["nav-end"] ? (p(), y(zt, {
+        e(m)["nav-start"] || e(m)["nav-end"] ? (d(), y(Dt, {
           key: 0,
           drawer: n.drawer,
           "onUpdate:drawer": l[3] || (l[3] = (s) => n.drawer = s),
           items: e(r).data.nav
         }, Q({
           prepend: o(() => [
-            G("a", Nt, [
-              c.logo ? (p(), y(fe, {
+            W("a", Nt, [
+              c.logo ? (d(), y(fe, {
                 key: 0,
                 src: c.logo,
                 class: "logo"
               }, null, 8, ["src"])) : k("", !0)
             ]),
-            v(d.$slots, "nav-start", { context: e(r) })
+            v(p.$slots, "nav-start", { context: e(r) })
           ]),
           _: 2
         }, [
@@ -301,7 +301,7 @@ const Rt = /* @__PURE__ */ j({
                 "onUpdate:opened": l[2] || (l[2] = (s) => n.opened = s)
               }, {
                 default: o(() => [
-                  v(d.$slots, "nav-end", { context: e(r) })
+                  v(p.$slots, "nav-end", { context: e(r) })
                 ]),
                 _: 3
               }, 8, ["opened"])
@@ -309,21 +309,21 @@ const Rt = /* @__PURE__ */ j({
             key: "0"
           } : void 0
         ]), 1032, ["drawer", "items"])) : k("", !0),
-        b(mt, null, {
+        b(ct, null, {
           default: o(() => [
-            v(d.$slots, "main", {}, () => [
+            v(p.$slots, "main", {}, () => [
               b(Se, {
                 modelValue: e(t).panel,
                 "onUpdate:modelValue": l[4] || (l[4] = (s) => e(t).panel = s)
               }, {
                 default: o((s) => [
-                  v(d.$slots, "default", C(s, { context: e(r) })),
-                  (p(!0), w(h, null, L(e(u), (a, f) => (p(), y(me, {
+                  v(p.$slots, "default", C(s, { context: e(r) })),
+                  (d(!0), V(h, null, B(e(u), (a, f) => (d(), y(me, {
                     key: f,
                     value: a
                   }, {
                     default: o(() => [
-                      v(d.$slots, f, C({ ref_for: !0 }, s, { context: e(r) }))
+                      v(p.$slots, f, C({ ref_for: !0 }, s, { context: e(r) }))
                     ]),
                     _: 2
                   }, 1032, ["value"]))), 128))
@@ -351,43 +351,43 @@ const Rt = /* @__PURE__ */ j({
   }),
   emits: ["update:modelValue"],
   setup(c, { expose: m }) {
-    const u = J(), i = ie(c, "modelValue"), n = R(""), r = c, t = X(), d = U("repos"), { state: l, query: s, fetch: a } = Ye(r.repo, d, { save: !1 }), f = se([]), S = R([]);
-    async function A(x) {
+    const u = J(), i = ie(c, "modelValue"), n = R(""), r = c, t = X(), p = U("repos"), { state: l, query: s, fetch: a } = Ye(r.repo, p, { save: !1 }), f = se([]), S = R([]);
+    async function M(x) {
       const O = x && E(x);
       if (O != null && O.length) {
-        const V = await a({ id: O });
-        f.splice(0, 0, ...V.entities);
+        const $ = await a({ id: O });
+        f.splice(0, 0, ...$.entities);
       }
       q(x);
     }
     function E(x) {
       if (!Array.isArray(x))
-        return f.findIndex((V) => V.id == x) == -1 ? [x] : null;
-      const O = new Set(f.map((V) => V.id));
-      return x.filter((V) => !O.has(V));
+        return f.findIndex(($) => $.id == x) == -1 ? [x] : null;
+      const O = new Set(f.map(($) => $.id));
+      return x.filter(($) => !O.has($));
     }
     function q(x) {
       Array.isArray(x) ? S.value = f.filter((O) => x.includes(O.id)) : x ? S.value = [f.find((O) => O.id == x)] : S.value = [];
     }
-    let z = null;
+    let N = null;
     const ee = ve.debounce(async ({ reset: x = !1 } = {}) => {
       if (l.isProcessing)
         return;
       const O = n.value != "<empty string>" && n.value || "";
-      if (!x && O == z)
+      if (!x && O == N)
         return;
-      z = O;
-      const V = { ...r.filters, page_size: 20 };
-      V[r.lookup] = O;
-      let $ = await a({ params: V });
-      const M = S.value ? ve.unionBy($.entities, S.value, (D) => D.id) : $.entities;
-      f.splice(0, f.length, ...M), x || (n.value = O);
+      N = O;
+      const $ = { ...r.filters, page_size: 20 };
+      $[r.lookup] = O;
+      let w = await a({ params: $ });
+      const T = S.value ? ve.unionBy(w.entities, S.value, (z) => z.id) : w.entities;
+      f.splice(0, f.length, ...T), x || (n.value = O);
     }, 500);
     return ae(async () => {
-      await ee(), i.value && await A(i.value);
-    }), W(() => r.filters, Xe(() => ee({ reset: !0 }))), W(n, (x) => {
-      x != "<empty string>" && x != z && ee({ q: x });
-    }), W(i, (x, O) => {
+      await ee(), i.value && await M(i.value);
+    }), G(() => r.filters, Xe(() => ee({ reset: !0 }))), G(n, (x) => {
+      x != "<empty string>" && x != N && ee({ q: x });
+    }), G(i, (x, O) => {
       x != O && q(x);
     }), m({
       /** Selected models ids. */
@@ -398,25 +398,33 @@ const Rt = /* @__PURE__ */ j({
       load: ee,
       /** All fetched items (displayed in the selection list). */
       items: f
-    }), (x, O) => (p(), w(h, null, [
-      r.name ? (p(), w("input", {
+    }), (x, O) => (d(), V(h, null, [
+      r.name ? (d(), V("input", {
         key: 0,
         type: "hidden",
         name: r.name,
         value: i.value
       }, null, 8, qt)) : k("", !0),
-      b(e(ct), C(e(t), {
+      b(e(vt), C(e(t), {
         items: f,
         loading: e(l).isProcessing,
         modelValue: i.value,
-        "onUpdate:modelValue": O[0] || (O[0] = (V) => i.value = V),
+        "onUpdate:modelValue": O[0] || (O[0] = ($) => i.value = $),
         search: n.value,
-        "onUpdate:search": O[1] || (O[1] = (V) => n.value = V)
-      }), Q({ _: 2 }, [
-        L(e(u), (V, $) => ({
-          name: $,
-          fn: o((M) => [
-            v(x.$slots, $, B(P(M)))
+        "onUpdate:search": O[1] || (O[1] = ($) => n.value = $)
+      }), Q({
+        item: o(($) => [
+          v(x.$slots, "item", A(L($)))
+        ]),
+        selection: o(($) => [
+          v(x.$slots, "selection", A(L($)))
+        ]),
+        _: 2
+      }, [
+        B(e(u), ($, w) => ({
+          name: w,
+          fn: o((T) => [
+            v(x.$slots, w, A(L(T)))
           ])
         }))
       ]), 1040, ["items", "loading", "modelValue", "search"])
@@ -443,7 +451,7 @@ const Rt = /* @__PURE__ */ j({
     function i() {
       m.value = Ze(c.src, u.value);
     }
-    return W(() => c.src, i), i(), () => De(m.value, c);
+    return G(() => c.src, i), i(), () => ze(m.value, c);
   }
 }, Gt = /* @__PURE__ */ j({
   __name: "OxField",
@@ -464,7 +472,7 @@ const Rt = /* @__PURE__ */ j({
     "update:modelValue"
   ],
   setup(c, { emit: m }) {
-    const u = ze(() => import("./OxAutocomplete.js")), i = m, n = X(), r = J(), t = c, d = I(() => {
+    const u = De(() => import("./OxAutocomplete.js")), i = m, n = X(), r = J(), t = c, p = I(() => {
       const l = `fields.${t.name}.help`, s = {
         name: t.name,
         label: g(`fields.${t.name}`),
@@ -477,29 +485,29 @@ const Rt = /* @__PURE__ */ j({
       return a != l && (s.hint = a, s["aria-description"] = a), t.required && s.rules.push(et.required), s;
     });
     return (l, s) => v(l.$slots, "default", {
-      props: d.value,
+      props: p.value,
       editor: t.editor
     }, () => [
-      t.type == "select" ? (p(), y(vt, C({ key: 0 }, d.value, {
+      t.type == "select" ? (d(), y(ft, C({ key: 0 }, p.value, {
         modelValue: t.editor.value[t.name],
         "onUpdate:modelValue": s[0] || (s[0] = (a) => t.editor.value[t.name] = a)
-      }), null, 16, ["modelValue"])) : t.type == "textarea" ? (p(), y(ft, C({ key: 1 }, d.value, {
+      }), null, 16, ["modelValue"])) : t.type == "textarea" ? (d(), y(yt, C({ key: 1 }, p.value, {
         modelValue: t.editor.value[t.name],
         "onUpdate:modelValue": s[1] || (s[1] = (a) => t.editor.value[t.name] = a)
-      }), null, 16, ["modelValue"])) : t.type == "checkbox" ? (p(), y(yt, C({ key: 2 }, d.value, {
+      }), null, 16, ["modelValue"])) : t.type == "checkbox" ? (d(), y(bt, C({ key: 2 }, p.value, {
         modelValue: t.editor.value[t.name],
         "onUpdate:modelValue": s[2] || (s[2] = (a) => t.editor.value[t.name] = a)
-      }), null, 16, ["modelValue"])) : t.type == "autocomplete" ? (p(), y(e(u), C({ key: 3 }, d.value, {
+      }), null, 16, ["modelValue"])) : t.type == "autocomplete" ? (d(), y(e(u), C({ key: 3 }, p.value, {
         modelValue: t.editor.value[t.name],
         "onUpdate:modelValue": s[3] || (s[3] = (a) => t.editor.value[t.name] = a)
       }), Q({ _: 2 }, [
-        L(e(r), (a, f) => ({
+        B(e(r), (a, f) => ({
           name: f,
           fn: o((S) => [
-            v(l.$slots, f, B(P(S)))
+            v(l.$slots, f, A(L(S)))
           ])
         }))
-      ]), 1040, ["modelValue"])) : (p(), y(ne, C({ key: 4 }, d.value, {
+      ]), 1040, ["modelValue"])) : (d(), y(ne, C({ key: 4 }, p.value, {
         type: t.type,
         modelValue: t.editor.value[t.name],
         "onUpdate:modelValue": s[4] || (s[4] = (a) => t.editor.value[t.name] = a)
@@ -528,10 +536,10 @@ const Rt = /* @__PURE__ */ j({
     const i = c, n = X(), { list: r, items: t } = tt({
       query: new lt(i.repo)
     });
-    function d(l) {
+    function p(l) {
       r.remove(l), u.value = [...r.ids];
     }
-    return ae(() => u.value.length && r.load({ id: u.value })), W(u, (l) => l.length && at(l, r.ids, (s) => s.length && r.load({ id: s }))), W(() => r.ids, (l) => u.value = [...l]), m({
+    return ae(() => u.value.length && r.load({ id: u.value })), G(u, (l) => l.length && at(l, r.ids, (s) => s.length && r.load({ id: s }))), G(() => r.ids, (l) => u.value = [...l]), m({
       /** The used {@link ModelList} controller. */
       list: r,
       /** The actual list of items. */
@@ -540,13 +548,13 @@ const Rt = /* @__PURE__ */ j({
       list: e(r),
       items: e(t)
     }, () => [
-      b(Z, B(P(e(n))), {
+      b(Z, A(L(e(n))), {
         default: o(() => [
           v(l.$slots, "list", {
             list: e(r),
             items: e(t)
           }, () => [
-            (p(!0), w(h, null, L(e(t), (a) => (p(), y(H, {
+            (d(!0), V(h, null, B(e(t), (a) => (d(), y(H, {
               key: a.id
             }, {
               append: o(() => [
@@ -554,13 +562,13 @@ const Rt = /* @__PURE__ */ j({
                   list: e(r),
                   item: a
                 }),
-                i.editable ? (p(), y(T, {
+                i.editable ? (d(), y(P, {
                   key: 0,
                   type: "button",
                   class: "ml-2",
                   size: "small",
                   color: "error",
-                  onClick: F((f) => d(a.id), ["stop", "prevent"]),
+                  onClick: F((f) => p(a.id), ["stop", "prevent"]),
                   "aria-label": e(g)("actions.remove"),
                   title: e(g)("actions.remove"),
                   icon: "mdi-delete"
@@ -588,8 +596,8 @@ const Rt = /* @__PURE__ */ j({
   },
   setup(c, { expose: m }) {
     const u = U("list"), i = c, n = I(() => {
-      const d = u.filters;
-      return d && Object.entries(d).some(
+      const p = u.filters;
+      return p && Object.entries(p).some(
         ([l, s]) => !l.startsWith("page") && !l.startsWith("ordering") && !!s
       );
     }), r = I(() => n.value ? "mdi-filter-check" : "mdi-filter-outline");
@@ -604,11 +612,11 @@ const Rt = /* @__PURE__ */ j({
       hasFilters: n,
       /** Reset filters function. */
       reset: t
-    }), (d, l) => (p(), w("form", {
+    }), (p, l) => (d(), V("form", {
       onSubmit: l[2] || (l[2] = F((s) => e(u).load(), ["prevent"])),
       class: "ox-list-filters width-full"
     }, [
-      b(bt, {
+      b(gt, {
         dense: "",
         color: "transparent"
       }, {
@@ -617,7 +625,7 @@ const Rt = /* @__PURE__ */ j({
             icon: r.value,
             readonly: ""
           }, null, 8, ["icon"]),
-          i.search && e(u).filters ? (p(), y(ne, {
+          i.search && e(u).filters ? (d(), y(ne, {
             key: 0,
             label: e(g)("filters.search"),
             density: "compact",
@@ -626,18 +634,18 @@ const Rt = /* @__PURE__ */ j({
             "onUpdate:modelValue": l[0] || (l[0] = (s) => e(u).filters[i.search] = s),
             "hide-details": ""
           }, null, 8, ["label", "modelValue"])) : k("", !0),
-          v(d.$slots, "default", {
+          v(p.$slots, "default", {
             list: e(u),
             filters: e(u).filters
           }),
-          b(T, {
+          b(P, {
             onClick: l[1] || (l[1] = F((s) => e(u).load(), ["stop"])),
             class: "ml-2",
             icon: "mdi-check",
-            "aria-label": d.$t("filters.apply"),
+            "aria-label": p.$t("filters.apply"),
             title: e(g)("filters.apply")
           }, null, 8, ["aria-label", "title"]),
-          n.value ? (p(), y(T, {
+          n.value ? (d(), y(P, {
             key: 1,
             onClick: F(t, ["stop"]),
             icon: "mdi-backspace",
@@ -663,19 +671,19 @@ const Rt = /* @__PURE__ */ j({
   ],
   setup(c, { emit: m }) {
     const u = c, i = m, n = X();
-    return (r, t) => (p(), y(H, B(P(e(n))), {
+    return (r, t) => (d(), y(H, A(L(e(n))), {
       append: o(() => [
-        G("div", {
+        W("div", {
           onClick: t[1] || (t[1] = F(() => {
           }, ["stop"]))
         }, [
           v(r.$slots, "actions", { item: c.item }),
-          u.remove ? (p(), y(T, {
+          u.remove ? (d(), y(P, {
             key: 0,
             type: "button",
             class: "ml-2",
             size: "small",
-            onClick: t[0] || (t[0] = F((d) => i("remove", r.$events), ["stop", "prevent"])),
+            onClick: t[0] || (t[0] = F((p) => i("remove", r.$events), ["stop", "prevent"])),
             color: "error",
             "aria-label": e(g)("actions.remove"),
             title: e(g)("actions.remove"),
@@ -684,7 +692,7 @@ const Rt = /* @__PURE__ */ j({
         ])
       ]),
       default: o(() => [
-        b(gt, null, {
+        b(kt, null, {
           default: o(() => [
             v(r.$slots, "default", { item: c.item })
           ]),
@@ -715,38 +723,38 @@ const Rt = /* @__PURE__ */ j({
       delete: n.editable && u.can([n.useModel, "delete"])
     })), t = R([]);
     (s = m.value) != null && s.length || t.value.push(-1);
-    function d() {
+    function p() {
       m.value.push(i.value), i.value = {};
     }
     function l(a) {
       confirm(g("actions.delete.confirm")) && m.value.splice(a, 1);
     }
-    return (a, f) => (p(), y(Z, {
+    return (a, f) => (d(), y(Z, {
       opened: t.value,
       "onUpdate:opened": f[2] || (f[2] = (S) => t.value = S)
     }, {
       default: o(() => {
         var S;
         return [
-          (S = m.value) != null && S.length ? (p(), w(h, { key: 0 }, [
-            r.value.change ? (p(!0), w(h, { key: 0 }, L(m.value, (A, E) => (p(), y(pe, {
+          (S = m.value) != null && S.length ? (d(), V(h, { key: 0 }, [
+            r.value.change ? (d(!0), V(h, { key: 0 }, B(m.value, (M, E) => (d(), y(pe, {
               key: E,
               value: E
             }, {
               activator: o(({ props: q }) => [
-                b(Ve, C({ item: A }, { ref_for: !0 }, q, {
+                b(Ve, C({ item: M }, { ref_for: !0 }, q, {
                   remove: r.value.delete,
-                  onRemove: (z) => l(E)
+                  onRemove: (N) => l(E)
                 }), {
-                  default: o(({ item: z }) => [
+                  default: o(({ item: N }) => [
                     v(a.$slots, "item", {
-                      item: z,
+                      item: N,
                       index: E
                     })
                   ]),
-                  actions: o(({ item: z }) => [
+                  actions: o(({ item: N }) => [
                     v(a.$slots, "item.actions", {
-                      item: z,
+                      item: N,
                       index: E
                     })
                   ]),
@@ -759,7 +767,7 @@ const Rt = /* @__PURE__ */ j({
                 }, {
                   default: o(() => [
                     v(a.$slots, "item.form", {
-                      item: A,
+                      item: M,
                       index: E,
                       editable: r.value.change
                     })
@@ -768,9 +776,9 @@ const Rt = /* @__PURE__ */ j({
                 }, 1032, ["disabled"])
               ]),
               _: 2
-            }, 1032, ["value"]))), 128)) : (p(!0), w(h, { key: 1 }, L(m.value, (A, E) => (p(), y(Ve, C({
+            }, 1032, ["value"]))), 128)) : (d(!0), V(h, { key: 1 }, B(m.value, (M, E) => (d(), y(Ve, C({
               key: E,
-              item: A
+              item: M
             }, { ref_for: !0 }, n, {
               value: E,
               remove: r.value.delete,
@@ -790,15 +798,15 @@ const Rt = /* @__PURE__ */ j({
               ]),
               _: 2
             }, 1040, ["item", "value", "remove", "onRemove"]))), 128))
-          ], 64)) : (p(), y(H, {
+          ], 64)) : (d(), y(H, {
             key: 1,
             title: e(g)("lists.empty")
           }, null, 8, ["title"])),
-          r.value.add ? (p(), w(h, { key: 2 }, [
-            m.value.length ? (p(), y(xe, { key: 0 })) : k("", !0),
+          r.value.add ? (d(), V(h, { key: 2 }, [
+            m.value.length ? (d(), y(xe, { key: 0 })) : k("", !0),
             b(pe, { value: -1 }, {
-              activator: o(({ props: A }) => [
-                b(H, C(A, {
+              activator: o(({ props: M }) => [
+                b(H, C(M, {
                   title: e(g)("actions.add_item"),
                   "prepend-icon": "mdi-plus"
                 }), null, 16, ["title"])
@@ -813,31 +821,31 @@ const Rt = /* @__PURE__ */ j({
                   ]),
                   _: 3
                 }),
-                i.value ? (p(), y(H, { key: 0 }, {
+                i.value ? (d(), y(H, { key: 0 }, {
                   default: o(() => [
-                    Object.values(i.value).length ? (p(), w("div", Qt, [
-                      b(T, {
+                    Object.values(i.value).length ? (d(), V("div", Qt, [
+                      b(P, {
                         size: "small",
                         color: "secondary",
                         "prepend-icon": "mdi-backspace",
-                        onClick: f[0] || (f[0] = (A) => i.value = {}),
+                        onClick: f[0] || (f[0] = (M) => i.value = {}),
                         "aria-label": e(g)("actions.discard")
                       }, {
                         default: o(() => [
-                          _(N(e(g)("actions.discard")), 1)
+                          _(D(e(g)("actions.discard")), 1)
                         ]),
                         _: 1
                       }, 8, ["aria-label"]),
-                      b(T, {
+                      b(P, {
                         size: "small",
                         color: "primary",
                         "prepend-icon": "mdi-plus",
                         class: "ml-2",
-                        onClick: f[1] || (f[1] = (A) => d()),
+                        onClick: f[1] || (f[1] = (M) => p()),
                         "aria-label": e(g)("actions.add")
                       }, {
                         default: o(() => [
-                          _(N(e(g)("actions.add")), 1)
+                          _(D(e(g)("actions.add")), 1)
                         ]),
                         _: 1
                       }, 8, ["aria-label"])
@@ -894,7 +902,7 @@ const Rt = /* @__PURE__ */ j({
     function t(l, s, a) {
       l[a] ? !l[a].includes(s) && l[a].push(s) : l[a] = [s];
     }
-    const d = I(() => {
+    const p = I(() => {
       const l = {};
       if (i.value)
         for (var s of i.value) {
@@ -910,11 +918,11 @@ const Rt = /* @__PURE__ */ j({
         }
       return l;
     });
-    return (l, s) => (p(), y(Ce, null, {
+    return (l, s) => (d(), y(Ce, null, {
       default: o(() => [
-        b(kt, null, {
+        b($t, null, {
           default: o(() => [
-            (p(!0), w(h, null, L(n.headers, (a, f) => (p(), y($t, {
+            (d(!0), V(h, null, B(n.headers, (a, f) => (d(), y(wt, {
               key: a.value
             }, {
               default: o(({ selectedClass: S }) => [
@@ -925,9 +933,9 @@ const Rt = /* @__PURE__ */ j({
                   lines: "two"
                 }, {
                   default: o(() => [
-                    b(wt, null, {
+                    b(Vt, null, {
                       default: o(() => [
-                        _(N(a.title), 1)
+                        _(D(a.title), 1)
                       ]),
                       _: 2
                     }, 1024),
@@ -935,15 +943,15 @@ const Rt = /* @__PURE__ */ j({
                       "bg-color": r(f)
                     }, {
                       default: o(() => [
-                        d.value && d.value[a.value] ? (p(!0), w(h, { key: 0 }, L(d.value[a.value], (A) => v(l.$slots, "item", {
-                          key: A.id,
+                        p.value && p.value[a.value] ? (d(!0), V(h, { key: 0 }, B(p.value[a.value], (M) => v(l.$slots, "item", {
+                          key: M.id,
                           header: a,
-                          item: A
+                          item: M
                         }, () => [
                           b(H, {
-                            title: A[n.itemTitle],
-                            value: n.itemValue && A[n.itemValue],
-                            onClick: (E) => u("click", A)
+                            title: M[n.itemTitle],
+                            value: n.itemValue && M[n.itemValue],
+                            onClick: (E) => u("click", M)
                           }, {
                             append: o(() => [
                               v(l.$slots, "item.action")
@@ -978,22 +986,22 @@ const Rt = /* @__PURE__ */ j({
     const m = U("panel");
     U("repos");
     const u = U("user"), i = X(), n = c;
-    function r(t, d) {
-      m.show({ view: n.view, value: d });
+    function r(t, p) {
+      m.show({ view: n.view, value: p });
     }
-    return (t, d) => n.edit && e(u).can([c.item.constructor, "change"], c.item) ? (p(), y(le, C({ key: 0 }, e(i), {
+    return (t, p) => n.edit && e(u).can([c.item.constructor, "change"], c.item) ? (d(), y(le, C({ key: 0 }, e(i), {
       icon: "mdi-pencil",
       title: e(g)("actions.edit"),
       item: c.item,
       run: r
-    }), null, 16, ["title", "item"])) : n.edit && e(u).can([c.item.constructor, "view"], c.item) ? (p(), y(le, C({ key: 1 }, e(i), {
+    }), null, 16, ["title", "item"])) : n.edit && e(u).can([c.item.constructor, "view"], c.item) ? (d(), y(le, C({ key: 1 }, e(i), {
       icon: "mdi-eye-outline",
       title: e(g)("actions.view"),
       item: c.item,
       run: r
     }), null, 16, ["title", "item"])) : k("", !0);
   }
-}), Pe = /* @__PURE__ */ j({
+}), Te = /* @__PURE__ */ j({
   __name: "OxListTable",
   props: {
     /** ModelList used to display objects */
@@ -1011,23 +1019,23 @@ const Rt = /* @__PURE__ */ j({
     const m = J(), u = Pt(m, "item.", { exclude: ["item.actions", "item.image"] }), i = c, n = I(() => {
       const t = [];
       return (i.image || m["item.image"]) && t.push({ key: "image", title: "" }), t.concat(
-        i.headers.reduce((d, l) => (d.push(
+        i.headers.reduce((p, l) => (p.push(
           typeof l == "string" ? { key: l, title: g(st.field(l)) } : { key: l.key, title: g(l.title) }
-        ), d), [])
+        ), p), [])
       );
     });
     function r(t) {
-      const d = {
+      const p = {
         ...i.list.filters,
         page: t.page,
         page_size: t.itemsPerPage,
         ordering: t.sortBy.map(({ key: l, order: s }) => s == "asc" ? l : `-${l}`)
       };
-      i.list.page_size = t.itemsPerPage, i.list.load({ params: d });
+      i.list.page_size = t.itemsPerPage, i.list.load({ params: p });
     }
-    return (t, d) => {
+    return (t, p) => {
       var l;
-      return p(), y(Vt, {
+      return d(), y(Ot, {
         items: i.items,
         "item-index": "id",
         "items-length": i.list.count || i.items.length,
@@ -1057,7 +1065,7 @@ const Rt = /* @__PURE__ */ j({
           name: "item.image",
           fn: o(({ item: s }) => [
             v(t.$slots, "item.image", { item: s }, () => [
-              s[i.image] ? (p(), y(fe, {
+              s[i.image] ? (d(), y(fe, {
                 key: 0,
                 src: s[i.image],
                 class: "preview",
@@ -1068,10 +1076,10 @@ const Rt = /* @__PURE__ */ j({
           ]),
           key: "0"
         } : void 0,
-        L(e(u), (s, a) => ({
+        B(e(u), (s, a) => ({
           name: a,
           fn: o((f) => [
-            v(t.$slots, a, B(P(f)))
+            v(t.$slots, a, A(L(f)))
           ])
         }))
       ]), 1032, ["items", "items-length", "items-per-page", "hide-default-footer", "loading", "headers", "no-data-text"]);
@@ -1099,8 +1107,8 @@ const Rt = /* @__PURE__ */ j({
       if (!i.headers)
         return [];
       const t = [];
-      for (var d of i.headers)
-        d = typeof d == "string" ? { key: d, title: g("fields." + d) } : { ...d }, d.slot = `item.${d.key}`, t.push(d);
+      for (var p of i.headers)
+        p = typeof p == "string" ? { key: p, title: g("fields." + p) } : { ...p }, p.slot = `item.${p.key}`, t.push(p);
       return t;
     }), r = I(() => {
       var t;
@@ -1110,20 +1118,20 @@ const Rt = /* @__PURE__ */ j({
         i.image
       ]);
     });
-    return ae(() => !i.list.length && i.list.load()), (t, d) => (p(), y(Le, { class: "card-grid" }, {
+    return ae(() => !i.list.length && i.list.load()), (t, p) => (d(), y(Le, { class: "card-grid" }, {
       default: o(() => [
-        (p(!0), w(h, null, L(i.items, (l) => {
+        (d(!0), V(h, null, B(i.items, (l) => {
           var s, a;
-          return p(), y(Ae, {
+          return d(), y(Ae, {
             key: l.id,
             density: "compact",
             title: n.value[0].key && l[n.value[0].key],
             subtitle: ((s = n.value[1]) == null ? void 0 : s.key) && l[n.value[1].key]
           }, Q({
             default: o(() => [
-              G("div", Xt, [
-                e(m)["item.image"] || i.image ? (p(), w("div", Zt, [
-                  b(Ot, {
+              W("div", Xt, [
+                e(m)["item.image"] || i.image ? (d(), V("div", Zt, [
+                  b(ht, {
                     rounded: "0",
                     size: "125"
                   }, {
@@ -1137,19 +1145,19 @@ const Rt = /* @__PURE__ */ j({
                     _: 2
                   }, 1024)
                 ])) : k("", !0),
-                G("div", null, [
-                  !e(m)["item.default"] && (n.value.length > 2 || e(u).length) ? (p(), y(ht, { key: 0 }, {
+                W("div", null, [
+                  !e(m)["item.default"] && (n.value.length > 2 || e(u).length) ? (d(), y(St, { key: 0 }, {
                     default: o(() => [
-                      G("div", null, [
-                        (p(!0), w(h, null, L(n.value, (f) => (p(), w(h, null, [
-                          r.value.has(f.key) ? k("", !0) : (p(), w("div", el, [
-                            b(St, {
+                      W("div", null, [
+                        (d(!0), V(h, null, B(n.value, (f) => (d(), V(h, null, [
+                          r.value.has(f.key) ? k("", !0) : (d(), V("div", el, [
+                            b(xt, {
                               text: f.title + ":",
                               class: "mr-2"
                             }, null, 8, ["text"]),
                             v(t.$slots, f.slot, { item: l }, () => [
-                              e(ve.isEmpty)(l[f.key]) ? k("", !0) : (p(), w(h, { key: 0 }, [
-                                _(N(l[f.key]), 1)
+                              e(ve.isEmpty)(l[f.key]) ? k("", !0) : (d(), V(h, { key: 0 }, [
+                                _(D(l[f.key]), 1)
                               ], 64))
                             ], !0)
                           ]))
@@ -1158,7 +1166,7 @@ const Rt = /* @__PURE__ */ j({
                     ]),
                     _: 2
                   }, 1024)) : k("", !0),
-                  b(xt, null, {
+                  b(Ct, null, {
                     default: o(() => [
                       b(Be, {
                         button: "",
@@ -1204,7 +1212,7 @@ const Rt = /* @__PURE__ */ j({
   for (const [i, n] of m)
     u[i] = n;
   return u;
-}, Te = /* @__PURE__ */ ll(tl, [["__scopeId", "data-v-8c0c8094"]]), re = {
+}, Pe = /* @__PURE__ */ ll(tl, [["__scopeId", "data-v-8c0c8094"]]), re = {
   __name: "OxStateAlert",
   props: {
     /** The state. */
@@ -1216,15 +1224,15 @@ const Rt = /* @__PURE__ */ j({
     /** Alert title on state `none`. */
     noneTitle: { type: String, default: "" },
     /** Alert title on state `error`. */
-    errorTitle: { type: String, default: "Oups..." },
+    errorTitle: { type: String, default: "" },
     /** Alert title on state `processing`. */
-    processingTitle: { type: String, default: "Processing..." }
+    processingTitle: { type: String, default: "" }
   },
   setup(c) {
     const m = J(), u = c;
     let i = R(!1);
-    W(() => u.state.state, (t) => {
-      u.delay && t == Tt.PROCESSING && (i.value = !1, window.setTimeout(() => {
+    G(() => u.state.state, (t) => {
+      u.delay && t == nt.PROCESSING && (i.value = !1, window.setTimeout(() => {
         i.value = !0;
       }, 5e3));
     });
@@ -1232,11 +1240,11 @@ const Rt = /* @__PURE__ */ j({
       var t;
       return ((t = u.state) == null ? void 0 : t.isProcessing) && (!u.delay || i.value);
     }), r = I(() => {
-      var t, d;
-      return (d = (t = u.state) == null ? void 0 : t.data) == null ? void 0 : d.messages;
+      var t, p;
+      return (p = (t = u.state) == null ? void 0 : t.data) == null ? void 0 : p.messages;
     });
-    return (t, d) => (p(), w(h, null, [
-      u.state.isNone && e(m).none ? (p(), y(e(te), {
+    return (t, p) => (d(), V(h, null, [
+      u.state.isNone && e(m).none ? (d(), y(e(te), {
         key: 0,
         type: "info",
         variant: "tonal",
@@ -1248,53 +1256,53 @@ const Rt = /* @__PURE__ */ j({
           v(t.$slots, "none", { state: c.state })
         ]),
         _: 3
-      }, 8, ["state", "title"])) : n.value ? (p(), y(e(te), {
+      }, 8, ["state", "title"])) : n.value ? (d(), y(e(te), {
         key: 1,
         type: "info",
         variant: "tonal",
         class: "mb-3",
         closable: "",
         state: c.state,
-        title: c.processingTitle
+        title: c.processingTitle || e(g)("state.processing.title")
       }, {
         default: o(() => [
           v(t.$slots, "processing", { state: c.state }, () => [
-            d[0] || (d[0] = _(" Data are being sent to server, please be patient. If this message persist you might wan't to retry. ", -1))
+            W("p", null, D(e(g)("state.processing.detail")), 1)
           ])
         ]),
         _: 3
-      }, 8, ["state", "title"])) : u.state.isError ? (p(), y(e(te), {
+      }, 8, ["state", "title"])) : u.state.isError ? (d(), y(e(te), {
         key: 2,
         type: "error",
         variant: "tonal",
         class: "mb-3",
         closable: "",
         state: c.state,
-        title: c.errorTitle
+        title: c.errorTitle || e(g)("state.error.title")
       }, {
         default: o(() => [
           v(t.$slots, "error", { state: c.state }, () => [
-            d[1] || (d[1] = _(" Oups... something wrong happened. ", -1))
+            _(D(c.state.toString() || e(g)("state.error.detail")), 1)
           ]),
           v(t.$slots, "error-detail", { state: c.state })
         ]),
         _: 3
-      }, 8, ["state", "title"])) : u.state.isOk ? (p(), y(e(te), {
+      }, 8, ["state", "title"])) : u.state.isOk ? (d(), y(e(te), {
         key: 3,
         type: "success",
         variant: "tonal",
         class: "mb-3",
         closable: "",
         state: c.state,
-        title: c.okTitle
+        title: c.okTitle || e(g)("state.ok.title")
       }, {
         default: o(() => [
           v(t.$slots, "ok", { state: c.state }, () => [
-            d[2] || (d[2] = G("p", null, "Congrats! Data have been updated.", -1))
+            W("p", null, D(e(g)("state.ok.detail")), 1)
           ]),
-          r.value ? (p(), w(h, { key: 0 }, [
+          r.value ? (d(), V(h, { key: 0 }, [
             b(xe),
-            (p(!0), w(h, null, L(r.value, (l) => (p(), w("p", null, N(l), 1))), 256))
+            (d(!0), V(h, null, B(r.value, (l) => (d(), V("p", null, D(l), 1))), 256))
           ], 64)) : k("", !0),
           v(t.$slots, "ok-detail", { state: c.state })
         ]),
@@ -1335,8 +1343,8 @@ const Rt = /* @__PURE__ */ j({
   ],
   setup(c, { emit: m }) {
     const u = m, i = c;
-    return (n, r) => (p(), w("div", al, [
-      b(T, {
+    return (n, r) => (d(), V("div", al, [
+      b(P, {
         color: "error",
         class: "me-2",
         "prepend-icon": i.resetIcon,
@@ -1345,12 +1353,12 @@ const Rt = /* @__PURE__ */ j({
       }, {
         default: o(() => [
           v(n.$slots, "discard", {}, () => [
-            _(N(i.resetLabel || e(de)("actions.discard")), 1)
+            _(D(i.resetLabel || e(de)("actions.discard")), 1)
           ])
         ]),
         _: 3
       }, 8, ["prepend-icon", "disabled"]),
-      i.state.isSending || i.state.isProcessing ? (p(), y(T, {
+      i.state.isSending || i.state.isProcessing ? (d(), y(P, {
         key: 0,
         color: "primary",
         "prepend-icon": i.processingIcon,
@@ -1358,11 +1366,11 @@ const Rt = /* @__PURE__ */ j({
       }, {
         default: o(() => [
           v(n.$slots, "processing", {}, () => [
-            _(N(i.processingLabel || e(de)("actions.saving")), 1)
+            _(D(i.processingLabel || e(de)("actions.saving")), 1)
           ])
         ]),
         _: 3
-      }, 8, ["prepend-icon"])) : (p(), y(T, {
+      }, 8, ["prepend-icon"])) : (d(), y(P, {
         key: 1,
         color: "primary",
         "prepend-icon": i.validateIcon,
@@ -1371,7 +1379,7 @@ const Rt = /* @__PURE__ */ j({
       }, {
         default: o(() => [
           v(n.$slots, "validate", {}, () => [
-            _(N(i.validateLabel || e(de)("actions.save")), 1)
+            _(D(i.validateLabel || e(de)("actions.save")), 1)
           ])
         ]),
         _: 3
@@ -1391,7 +1399,7 @@ const Rt = /* @__PURE__ */ j({
       username: "",
       password: ""
     }), r = R(!1), t = se(new _t());
-    function d(s = !0) {
+    function p(s = !0) {
       It(n, { username: "", password: "" }), s && t.none();
     }
     async function l() {
@@ -1411,23 +1419,23 @@ const Rt = /* @__PURE__ */ j({
       /** Run login. */
       login: l,
       /** Reset login form. */
-      reset: d,
+      reset: p,
       /** Current state. */
       state: t
-    }), (s, a) => (p(), w(h, null, [
+    }), (s, a) => (d(), V(h, null, [
       b(re, { state: t }, {
         none: o(({ state: f }) => [...a[7] || (a[7] = [
-          G("p", null, "Please enter your credentials in order too proceed...", -1)
+          W("p", null, "Please enter your credentials in order too proceed...", -1)
         ])]),
         "ok-detail": o(({ state: f }) => [
-          i.next ? (p(), w("p", sl, [
+          i.next ? (d(), V("p", sl, [
             a[8] || (a[8] = _("You soon will be redirected to ", -1)),
-            G("i", null, N(i.next), 1)
+            W("i", null, D(i.next), 1)
           ])) : k("", !0)
         ]),
         _: 1
       }, 8, ["state"]),
-      t.isOk ? k("", !0) : (p(), w(h, { key: 0 }, [
+      t.isOk ? k("", !0) : (d(), V(h, { key: 0 }, [
         b(ne, {
           variant: "underlined",
           label: "Enter login",
@@ -1446,18 +1454,18 @@ const Rt = /* @__PURE__ */ j({
           "onClick:append": a[3] || (a[3] = (f) => r.value = !r.value),
           onKeyup: a[4] || (a[4] = be(F((f) => l(), ["stop"]), ["enter"]))
         }, null, 8, ["modelValue", "type", "append-icon"]),
-        G("div", nl, [
+        W("div", nl, [
           v(s.$slots, "bottom", {
             password: n.password,
             username: n.username,
             login: l,
-            reset: d
+            reset: p
           }, () => [
-            n.username && n.password ? (p(), y(ye, {
+            n.username && n.password ? (d(), y(ye, {
               key: 0,
               "validate-label": "Login!",
               onValidate: a[5] || (a[5] = (f) => l()),
-              onReset: a[6] || (a[6] = (f) => d()),
+              onReset: a[6] || (a[6] = (f) => p()),
               state: t
             }, null, 8, ["state"])) : k("", !0)
           ])
@@ -1485,32 +1493,32 @@ const Rt = /* @__PURE__ */ j({
       n.value = !1;
     });
     const r = U("panels"), t = U("panel");
-    return (d, l) => (p(), w(h, null, [
-      u.state ? (p(), y(re, {
+    return (p, l) => (d(), V(h, null, [
+      u.state ? (d(), y(re, {
         key: 0,
         state: u.state,
         delay: ""
       }, null, 8, ["state"])) : k("", !0),
-      e(m).prepend && e(r).panel == e(t).name ? v(d.$slots, "prepend", { key: 1 }) : k("", !0),
+      e(m).prepend && e(r).panel == e(t).name ? v(p.$slots, "prepend", { key: 1 }) : k("", !0),
       b(Ce, { class: "ma-4" }, {
         default: o(() => [
-          (p(), y(ge, {
+          (d(), y(ge, {
             to: "#app-bar-sheet-title",
             disabled: !n.value || e(r).panel != u.name
           }, [
-            u.icon ? (p(), y(K, {
+            u.icon ? (d(), y(K, {
               key: 0,
               icon: u.icon
             }, null, 8, ["icon"])) : k("", !0),
-            _(" " + N(u.title) + " ", 1),
-            v(d.$slots, "append-title")
+            _(" " + D(u.title) + " ", 1),
+            v(p.$slots, "append-title")
           ], 8, ["disabled"])),
-          (p(), y(ge, {
+          (d(), y(ge, {
             to: "#app-bar-right",
             disabled: !n.value || e(r).panel != u.name
           }, [
-            v(d.$slots, "app-bar-right"),
-            u.help ? (p(), y(T, {
+            v(p.$slots, "app-bar-right"),
+            u.help ? (d(), y(P, {
               key: 0,
               class: "ml-3",
               href: u.help,
@@ -1518,20 +1526,20 @@ const Rt = /* @__PURE__ */ j({
               icon: "mdi-information-outline"
             }, null, 8, ["href"])) : k("", !0)
           ], 8, ["disabled"])),
-          v(d.$slots, "top"),
-          v(d.$slots, "default", {}, () => [
-            e(i) ? (p(), y(Ct, {
+          v(p.$slots, "top"),
+          v(p.$slots, "default", {}, () => [
+            e(i) ? (d(), y(At, {
               key: 0,
               modelValue: e(t).view,
               "onUpdate:modelValue": l[0] || (l[0] = (s) => e(t).view = s)
             }, {
               default: o(() => [
-                (p(!0), w(h, null, L(e(i), (s, a) => (p(), y(At, {
+                (d(!0), V(h, null, B(e(i), (s, a) => (d(), y(Lt, {
                   key: s,
                   value: s
                 }, {
                   default: o(() => [
-                    v(d.$slots, a)
+                    v(p.$slots, a)
                   ]),
                   _: 2
                 }, 1032, ["value"]))), 128))
@@ -1539,11 +1547,11 @@ const Rt = /* @__PURE__ */ j({
               _: 3
             }, 8, ["modelValue"])) : k("", !0)
           ]),
-          v(d.$slots, "bottom")
+          v(p.$slots, "bottom")
         ]),
         _: 3
       }),
-      e(m).append && e(r).panel == e(t).name ? v(d.$slots, "append", { key: 2 }) : k("", !0)
+      e(m).append && e(r).panel == e(t).name ? v(p.$slots, "append", { key: 2 }) : k("", !0)
     ], 64));
   }
 }), Ie = /* @__PURE__ */ j({
@@ -1554,10 +1562,10 @@ const Rt = /* @__PURE__ */ j({
   },
   setup(c) {
     const m = c, u = R(null), i = J(), n = Y(i, "tab.", { exclude: ["tab.default"] }), r = Y(i, "window.");
-    return (t, d) => e(n) && Object.keys(e(n)).length ? (p(), w(h, { key: 0 }, [
-      b(Lt, {
+    return (t, p) => e(n) && Object.keys(e(n)).length ? (d(), V(h, { key: 0 }, [
+      b(Mt, {
         modelValue: u.value,
-        "onUpdate:modelValue": d[0] || (d[0] = (l) => u.value = l)
+        "onUpdate:modelValue": p[0] || (p[0] = (l) => u.value = l)
       }, {
         default: o(() => [
           e(i).default ? v(t.$slots, "tab", { key: 0 }, () => [
@@ -1566,7 +1574,7 @@ const Rt = /* @__PURE__ */ j({
               value: "default"
             }, null, 8, ["text"])
           ]) : k("", !0),
-          (p(!0), w(h, null, L(e(n), (l, s) => (p(), y($e, { value: l }, {
+          (d(!0), V(h, null, B(e(n), (l, s) => (d(), y($e, { value: l }, {
             default: o(() => [
               v(t.$slots, s)
             ]),
@@ -1577,10 +1585,10 @@ const Rt = /* @__PURE__ */ j({
       }, 8, ["modelValue"]),
       b(Se, {
         modelValue: u.value,
-        "onUpdate:modelValue": d[1] || (d[1] = (l) => u.value = l)
+        "onUpdate:modelValue": p[1] || (p[1] = (l) => u.value = l)
       }, {
         default: o(() => [
-          e(i).default ? (p(), y(me, {
+          e(i).default ? (d(), y(me, {
             key: 0,
             value: "default"
           }, {
@@ -1589,7 +1597,7 @@ const Rt = /* @__PURE__ */ j({
             ]),
             _: 3
           })) : k("", !0),
-          (p(!0), w(h, null, L(e(r), (l, s) => (p(), y(me, { value: l }, {
+          (d(!0), V(h, null, B(e(r), (l, s) => (d(), y(me, { value: l }, {
             default: o(() => [
               v(t.$slots, s)
             ]),
@@ -1610,39 +1618,39 @@ const Rt = /* @__PURE__ */ j({
     saved: { type: Function }
   },
   setup(c, { expose: m }) {
-    const u = R(null), i = U("user"), n = c, { editor: r, edited: t } = nt({ props: n }), d = I(() => i.can([r.repo.use, "change", n.initial])), l = I(() => ({
+    const u = R(null), i = U("user"), n = c, { editor: r, edited: t } = ot({ props: n }), p = I(() => i.can([r.repo.use, "change", n.initial])), l = I(() => ({
       editor: r,
       edited: t.value,
       form: u.value,
-      editable: d.value,
-      disabled: !d.value,
+      editable: p.value,
+      disabled: !p.value,
       value: r.value,
       model: r.repo.use
     }));
-    return W(() => r.errors && Object.values(r.errors), () => u.value.validate()), m({
+    return G(() => r.errors && Object.values(r.errors), () => u.value.validate()), m({
       /** The {@link ModelEditor} instance. */
       editor: r,
       /** A computed boolean indicating if content has been edited. */
       edited: t,
       /** A computed boolean indicating if content can be edited. */
-      editable: d,
+      editable: p,
       /** Reference to inner `v-form`. */
       form: u
-    }), (s, a) => (p(), w(h, null, [
-      v(s.$slots, "prepend", B(P(l.value))),
+    }), (s, a) => (d(), V(h, null, [
+      v(s.$slots, "prepend", A(L(l.value))),
       b(ce, {
         ref_key: "form",
         ref: u,
         modelValue: e(r).valid,
         "onUpdate:modelValue": a[0] || (a[0] = (f) => e(r).valid = f),
-        disabled: !d.value
+        disabled: !p.value
       }, {
         default: o(() => [
-          v(s.$slots, "default", B(P(l.value)))
+          v(s.$slots, "default", A(L(l.value)))
         ]),
         _: 3
       }, 8, ["modelValue", "disabled"]),
-      v(s.$slots, "append", B(P(l.value)))
+      v(s.$slots, "append", A(L(l.value)))
     ], 64));
   }
 }), il = { key: 0 }, rl = /* @__PURE__ */ j({
@@ -1665,7 +1673,7 @@ const Rt = /* @__PURE__ */ j({
       const { sendFormData: s, hideValidationBtn: a, ...f } = n;
       return f;
     });
-    function d() {
+    function p() {
       r.value.editor.reset(n.initial);
     }
     async function l() {
@@ -1676,7 +1684,7 @@ const Rt = /* @__PURE__ */ j({
       /** Save edited item. */
       save: l,
       /** Reset edited item to initial value */
-      reset: d,
+      reset: p,
       /** {@link ModelEditor} controller */
       get editor() {
         return r.value.editor;
@@ -1695,8 +1703,8 @@ const Rt = /* @__PURE__ */ j({
       }
     }), (s, a) => {
       var f;
-      return p(), w(h, null, [
-        (f = r.value) != null && f.editor ? (p(), y(re, {
+      return d(), V(h, null, [
+        (f = r.value) != null && f.editor ? (d(), y(re, {
           key: 0,
           state: r.value.editor.state
         }, null, 8, ["state"])) : k("", !0),
@@ -1707,15 +1715,15 @@ const Rt = /* @__PURE__ */ j({
               ref: r
             }, t.value), {
               prepend: o((S) => [
-                n.hideValidationBtn ? k("", !0) : (p(), w("div", il, [
+                n.hideValidationBtn ? k("", !0) : (d(), V("div", il, [
                   v(s.$slots, "prepend", C(S, {
                     save: l,
-                    reset: d
+                    reset: p
                   }), () => [
-                    S.editable && S.edited ? (p(), y(ye, {
+                    S.editable && S.edited ? (d(), y(ye, {
                       key: 0,
-                      onValidate: a[0] || (a[0] = (A) => l()),
-                      onReset: a[1] || (a[1] = (A) => d()),
+                      onValidate: a[0] || (a[0] = (M) => l()),
+                      onReset: a[1] || (a[1] = (M) => p()),
                       state: S.editor.state,
                       "validate-disabled": S.editor.valid === !1
                     }, null, 8, ["state", "validate-disabled"])) : k("", !0)
@@ -1725,13 +1733,13 @@ const Rt = /* @__PURE__ */ j({
               default: o((S) => [
                 v(s.$slots, "default", C(S, {
                   save: l,
-                  reset: d
+                  reset: p
                 }))
               ]),
               append: o((S) => [
                 v(s.$slots, "append", C(S, {
                   save: l,
-                  reset: d
+                  reset: p
                 }))
               ]),
               _: 3
@@ -1762,17 +1770,17 @@ const Rt = /* @__PURE__ */ j({
     icon: {}
   },
   setup(c, { expose: m }) {
-    const u = J(), i = Y(u, "views.list."), n = Y(u, "item."), r = Y(u, "views.detail.edit."), t = I(() => !!Object.keys(r).length), d = qe("filters"), l = c, s = U("user"), { panel: a, list: f, items: S, next: A, prev: E } = ot({ props: l }), q = a.panels;
+    const u = J(), i = Y(u, "views.list."), n = Y(u, "item."), r = Y(u, "views.detail.edit."), t = I(() => !!Object.keys(r).length), p = qe("filters"), l = c, s = U("user"), { panel: a, list: f, items: S, next: M, prev: E } = it({ props: l }), q = a.panels;
     I(() => {
-      var V;
-      return s.can([a.model, (V = a.value) != null && V.id ? "change" : "add"]);
+      var $;
+      return s.can([a.model, ($ = a.value) != null && $.id ? "change" : "add"]);
     });
-    const { showFilters: z } = Ke(a), ee = I(() => [
+    const { showFilters: N } = Ke(a), ee = I(() => [
       ...l.headers,
       { key: "actions", title: g("actions") }
     ]);
-    function x(V) {
-      V = new l.repo.use(V), a.show({ view: a.view, value: V }), f.load();
+    function x($) {
+      $ = new l.repo.use($), a.show({ view: a.view, value: $ }), f.load();
     }
     const O = I(() => ({
       panel: a,
@@ -1782,7 +1790,7 @@ const Rt = /* @__PURE__ */ j({
       saved: x,
       value: a.value
     }));
-    return W(() => Object.values(f.filters), () => f.load()), m({
+    return G(() => Object.values(f.filters), () => f.load()), m({
       /** The ModelList being used across all views */
       list: f,
       /** The {@link OxModelPanel} controller */
@@ -1790,10 +1798,10 @@ const Rt = /* @__PURE__ */ j({
       /** The actual list of items */
       items: S,
       /** URL to next page. */
-      next: A,
+      next: M,
       /** URL to prev page. */
       prev: E
-    }), (V, $) => (p(), y(_e, {
+    }), ($, w) => (d(), y(_e, {
       name: l.name,
       title: e(a).title,
       icon: e(a).icon,
@@ -1801,8 +1809,8 @@ const Rt = /* @__PURE__ */ j({
       index: l.index
     }, Q({
       "app-bar-right": o(() => [
-        v(V.$slots, "app-bar-right", B(P(O.value))),
-        e(a).view.startsWith("list.") ? (p(), y(we, {
+        v($.$slots, "app-bar-right", A(L(O.value))),
+        e(a).view.startsWith("list.") ? (d(), y(we, {
           key: 0,
           class: "ml-3",
           color: "secondary",
@@ -1810,15 +1818,15 @@ const Rt = /* @__PURE__ */ j({
           variant: "tonal"
         }, {
           default: o(() => [
-            v(V.$slots, "nav.list", B(P(O.value))),
-            b(T, {
+            v($.$slots, "nav.list", A(L(O.value))),
+            b(P, {
               title: e(g)("actions.list.reload"),
               "aria-label": e(g)("actions.list.reload"),
-              onClick: $[0] || ($[0] = (M) => e(f).load())
+              onClick: w[0] || (w[0] = (T) => e(f).load())
             }, {
               default: o(() => [
                 b(K, null, {
-                  default: o(() => [...$[10] || ($[10] = [
+                  default: o(() => [...w[10] || (w[10] = [
                     _("mdi-reload", -1)
                   ])]),
                   _: 1
@@ -1826,23 +1834,23 @@ const Rt = /* @__PURE__ */ j({
               ]),
               _: 1
             }, 8, ["title", "aria-label"]),
-            d.value ? (p(), y(T, {
+            p.value ? (d(), y(P, {
               key: 0,
-              title: e(z) ? e(g)("filters.hide") : e(g)("filters.show"),
-              "aria-label": e(z) ? e(g)("filters.hide") : e(g)("filters.show"),
-              onClick: $[1] || ($[1] = (M) => z.value = !e(z)),
-              active: e(z)
+              title: e(N) ? e(g)("filters.hide") : e(g)("filters.show"),
+              "aria-label": e(N) ? e(g)("filters.hide") : e(g)("filters.show"),
+              onClick: w[1] || (w[1] = (T) => N.value = !e(N)),
+              active: e(N)
             }, {
               default: o(() => [
                 b(K, {
-                  icon: d.value.icon
+                  icon: p.value.icon
                 }, null, 8, ["icon"])
               ]),
               _: 1
             }, 8, ["title", "aria-label", "active"])) : k("", !0)
           ]),
           _: 3
-        })) : e(a).view.startsWith("detail.") && e(a).value ? (p(), y(we, {
+        })) : e(a).view.startsWith("detail.") && e(a).value ? (d(), y(we, {
           key: 1,
           class: "ml-3",
           color: "secondary",
@@ -1850,12 +1858,12 @@ const Rt = /* @__PURE__ */ j({
           variant: "tonal"
         }, {
           default: o(() => [
-            v(V.$slots, "nav.detail", B(P(O.value))),
-            e(a).view == "detail.edit" && e(a).value ? (p(), y(Mt, { key: 0 }, {
-              activator: o(({ props: M }) => [
-                b(T, C({ "prepend-icon": "mdi-dots-vertical" }, M), {
+            v($.$slots, "nav.detail", A(L(O.value))),
+            e(a).view == "detail.edit" && e(a).value ? (d(), y(Bt, { key: 0 }, {
+              activator: o(({ props: T }) => [
+                b(P, C({ "prepend-icon": "mdi-dots-vertical" }, T), {
                   default: o(() => [
-                    _(N(e(g)("actions")), 1)
+                    _(D(e(g)("actions")), 1)
                   ]),
                   _: 1
                 }, 16)
@@ -1863,7 +1871,7 @@ const Rt = /* @__PURE__ */ j({
               default: o(() => [
                 b(Z, null, {
                   default: o(() => [
-                    v(V.$slots, "item.actions", {
+                    v($.$slots, "item.actions", {
                       item: e(a).value
                     })
                   ]),
@@ -1872,22 +1880,22 @@ const Rt = /* @__PURE__ */ j({
               ]),
               _: 3
             })) : k("", !0),
-            b(T, {
+            b(P, {
               disabled: !e(E),
               title: e(g)("prev"),
               "aria-label": e(g)("prev"),
-              onClick: $[2] || ($[2] = F((M) => e(a).show({ view: e(a).view, value: e(E) }), ["stop"]))
+              onClick: w[2] || (w[2] = F((T) => e(a).show({ view: e(a).view, value: e(E) }), ["stop"]))
             }, {
               default: o(() => [
                 b(K, { icon: "mdi-chevron-left" })
               ]),
               _: 1
             }, 8, ["disabled", "title", "aria-label"]),
-            b(T, {
-              disabled: !e(A),
+            b(P, {
+              disabled: !e(M),
               title: e(g)("next"),
               "aria-label": e(g)("next"),
-              onClick: $[3] || ($[3] = F((M) => e(a).show({ view: e(a).view, value: e(A) }), ["stop"]))
+              onClick: w[3] || (w[3] = F((T) => e(a).show({ view: e(a).view, value: e(M) }), ["stop"]))
             }, {
               default: o(() => [
                 b(K, { icon: "mdi-chevron-right" })
@@ -1897,27 +1905,27 @@ const Rt = /* @__PURE__ */ j({
           ]),
           _: 3
         })) : k("", !0),
-        b(Bt, {
+        b(Tt, {
           class: "ml-3",
           color: "secondary",
           density: "compact",
           variant: "tonal",
           mandatory: "",
           modelValue: e(a).view,
-          "onUpdate:modelValue": $[9] || ($[9] = (M) => e(a).view = M)
+          "onUpdate:modelValue": w[9] || (w[9] = (T) => e(a).view = T)
         }, {
           default: o(() => {
-            var M;
+            var T;
             return [
-              b(T, {
+              b(P, {
                 value: "list.table",
-                onClickCapture: $[4] || ($[4] = F((D) => e(a).show({ view: "list.table" }), ["stop"])),
+                onClickCapture: w[4] || (w[4] = F((z) => e(a).show({ view: "list.table" }), ["stop"])),
                 title: e(g)("panels.nav.table"),
                 "aria-label": e(g)("panels.nav.table")
               }, {
                 default: o(() => [
                   b(K, null, {
-                    default: o(() => [...$[11] || ($[11] = [
+                    default: o(() => [...w[11] || (w[11] = [
                       _("mdi-table", -1)
                     ])]),
                     _: 1
@@ -1925,15 +1933,15 @@ const Rt = /* @__PURE__ */ j({
                 ]),
                 _: 1
               }, 8, ["title", "aria-label"]),
-              b(T, {
+              b(P, {
                 value: "list.cards",
-                onClickCapture: $[5] || ($[5] = F((D) => e(a).show({ view: "list.cards" }), ["stop"])),
+                onClickCapture: w[5] || (w[5] = F((z) => e(a).show({ view: "list.cards" }), ["stop"])),
                 title: e(g)("panels.nav.cards"),
                 "aria-label": e(g)("panels.nav.cards")
               }, {
                 default: o(() => [
                   b(K, null, {
-                    default: o(() => [...$[12] || ($[12] = [
+                    default: o(() => [...w[12] || (w[12] = [
                       _("mdi-view-grid", -1)
                     ])]),
                     _: 1
@@ -1941,16 +1949,16 @@ const Rt = /* @__PURE__ */ j({
                 ]),
                 _: 1
               }, 8, ["title", "aria-label"]),
-              e(u)["views.list.kanban"] ? (p(), y(T, {
+              e(u)["views.list.kanban"] ? (d(), y(P, {
                 key: 0,
                 value: "list.kanban",
-                onClickCapture: $[6] || ($[6] = F((D) => e(a).show({ view: "list.kanban" }), ["stop"])),
+                onClickCapture: w[6] || (w[6] = F((z) => e(a).show({ view: "list.kanban" }), ["stop"])),
                 title: e(g)("panels.nav.kanban"),
                 "aria-label": e(g)("panels.nav.kanban")
               }, {
                 default: o(() => [
                   b(K, null, {
-                    default: o(() => [...$[13] || ($[13] = [
+                    default: o(() => [...w[13] || (w[13] = [
                       _("mdi-view-column", -1)
                     ])]),
                     _: 1
@@ -1958,22 +1966,22 @@ const Rt = /* @__PURE__ */ j({
                 ]),
                 _: 1
               }, 8, ["title", "aria-label"])) : k("", !0),
-              t.value ? (p(), y(T, {
+              t.value ? (d(), y(P, {
                 key: 1,
                 value: "detail.edit",
-                onClickCapture: $[7] || ($[7] = F((D) => e(a).show({ view: "detail.edit", value: e(a).value }), ["stop"])),
-                disabled: !((M = e(a).value) != null && M.id) && e(a).view != "detail.edit",
+                onClickCapture: w[7] || (w[7] = F((z) => e(a).show({ view: "detail.edit", value: e(a).value }), ["stop"])),
+                disabled: !((T = e(a).value) != null && T.id) && e(a).view != "detail.edit",
                 title: e(g)("panels.nav.edit"),
                 "aria-label": e(g)("panels.nav.edit")
               }, {
                 default: o(() => [
-                  e(s).can([e(a).model, "change"]) ? (p(), y(K, { key: 0 }, {
-                    default: o(() => [...$[14] || ($[14] = [
+                  e(s).can([e(a).model, "change"]) ? (d(), y(K, { key: 0 }, {
+                    default: o(() => [...w[14] || (w[14] = [
                       _("mdi-pencil", -1)
                     ])]),
                     _: 1
-                  })) : (p(), y(K, { key: 1 }, {
-                    default: o(() => [...$[15] || ($[15] = [
+                  })) : (d(), y(K, { key: 1 }, {
+                    default: o(() => [...w[15] || (w[15] = [
                       _("mdi-eye", -1)
                     ])]),
                     _: 1
@@ -1981,16 +1989,16 @@ const Rt = /* @__PURE__ */ j({
                 ]),
                 _: 1
               }, 8, ["disabled", "title", "aria-label"])) : k("", !0),
-              t.value && e(s).can([e(a).model, "add"]) ? (p(), y(T, {
+              t.value && e(s).can([e(a).model, "add"]) ? (d(), y(P, {
                 key: 2,
                 value: "detail.add",
-                onClickCapture: $[8] || ($[8] = F((D) => e(a).create(), ["stop"])),
+                onClickCapture: w[8] || (w[8] = F((z) => e(a).create(), ["stop"])),
                 title: e(g)("panels.nav.add"),
                 "aria-label": e(g)("panels.nav.add")
               }, {
                 default: o(() => [
                   b(K, null, {
-                    default: o(() => [...$[16] || ($[16] = [
+                    default: o(() => [...w[16] || (w[16] = [
                       _("mdi-plus-box", -1)
                     ])]),
                     _: 1
@@ -1998,33 +2006,33 @@ const Rt = /* @__PURE__ */ j({
                 ]),
                 _: 1
               }, 8, ["title", "aria-label"])) : k("", !0),
-              v(V.$slots, "nav.views", B(P(O.value)))
+              v($.$slots, "nav.views", A(L(O.value)))
             ];
           }),
           _: 3
         }, 8, ["modelValue"]),
-        v(V.$slots, "app-bar-end", B(P(O.value)))
+        v($.$slots, "app-bar-end", A(L(O.value)))
       ]),
       top: o(() => [
-        l.warning ? (p(), y(te, {
+        l.warning ? (d(), y(te, {
           key: 0,
           type: "warning",
           variant: "tonal",
           text: l.warning
         }, null, 8, ["text"])) : k("", !0),
-        v(V.$slots, "top"),
+        v($.$slots, "top"),
         We(b(Me, {
           ref_key: "filters",
-          ref: d,
+          ref: p,
           search: l.search,
           "teleport-to": "#panel-list-actions"
         }, {
-          default: o((M) => [
-            v(V.$slots, "list.filters", B(P(M)))
+          default: o((T) => [
+            v($.$slots, "list.filters", A(L(T)))
           ]),
           _: 3
         }, 8, ["search"]), [
-          [Ge, e(a).view.startsWith("list.") && e(z)]
+          [Ge, e(a).view.startsWith("list.") && e(N)]
         ])
       ]),
       _: 2
@@ -2032,37 +2040,37 @@ const Rt = /* @__PURE__ */ j({
       e(u)["append-title"] ? {
         name: "append-title",
         fn: o(() => [
-          v(V.$slots, "append-title", B(P(O.value)))
+          v($.$slots, "append-title", A(L(O.value)))
         ]),
         key: "0"
       } : void 0,
       e(u).prepend ? {
         name: "prepend",
         fn: o(() => [
-          v(V.$slots, "prepend", B(P(O.value)))
+          v($.$slots, "prepend", A(L(O.value)))
         ]),
         key: "1"
       } : void 0,
       e(u).append ? {
         name: "append",
         fn: o(() => [
-          v(V.$slots, "append", B(P(O.value)))
+          v($.$slots, "append", A(L(O.value)))
         ]),
         key: "2"
       } : void 0,
       e(u)["views.list.table"] ? void 0 : {
         name: "views.list.table",
         fn: o(() => [
-          b(Pe, {
+          b(Te, {
             list: e(f),
             items: e(S),
             headers: ee.value,
             edit: t.value
           }, Q({ _: 2 }, [
-            L(e(n), (M, D) => ({
-              name: D,
+            B(e(n), (T, z) => ({
+              name: z,
               fn: o((ue) => [
-                v(V.$slots, D, B(P(ue)))
+                v($.$slots, z, A(L(ue)))
               ])
             }))
           ]), 1032, ["list", "items", "headers", "edit"])
@@ -2072,26 +2080,26 @@ const Rt = /* @__PURE__ */ j({
       e(u)["views.list.cards"] ? void 0 : {
         name: "views.list.cards",
         fn: o(() => [
-          b(Te, {
+          b(Pe, {
             list: e(f),
             items: e(S),
             edit: t.value,
             headers: l.headers
           }, Q({ _: 2 }, [
-            L(e(n), (M, D) => ({
-              name: D,
+            B(e(n), (T, z) => ({
+              name: z,
               fn: o((ue) => [
-                v(V.$slots, D, B(P(ue)))
+                v($.$slots, z, A(L(ue)))
               ])
             }))
           ]), 1032, ["list", "items", "edit", "headers"])
         ]),
         key: "4"
       },
-      L(e(i), (M, D) => ({
-        name: D,
+      B(e(i), (T, z) => ({
+        name: z,
         fn: o(() => [
-          v(V.$slots, D, B(P(O.value)))
+          v($.$slots, z, A(L(O.value)))
         ])
       })),
       t.value ? {
@@ -2100,10 +2108,10 @@ const Rt = /* @__PURE__ */ j({
           b(Ie, {
             title: e(g)(`models.${e(a).model.entity}`)
           }, Q({ _: 2 }, [
-            L(e(r), (M, D) => ({
-              name: M,
+            B(e(r), (T, z) => ({
+              name: T,
               fn: o(() => [
-                v(V.$slots, D, B(P(O.value)))
+                v($.$slots, z, A(L(O.value)))
               ])
             }))
           ]), 1032, ["title"])
@@ -2122,10 +2130,10 @@ const Rt = /* @__PURE__ */ j({
   OxComponent: Wt,
   OxField: Gt,
   OxFormList: Ht,
-  OxListCard: Te,
+  OxListCard: Pe,
   OxListFilters: Me,
   OxListKanban: Yt,
-  OxListTable: Pe,
+  OxListTable: Te,
   OxLogin: ol,
   OxModelEdit: rl,
   OxModelEditor: Ee,
@@ -2150,10 +2158,10 @@ export {
   Wt as OxComponent,
   Gt as OxField,
   Ht as OxFormList,
-  Te as OxListCard,
+  Pe as OxListCard,
   Me as OxListFilters,
   Yt as OxListKanban,
-  Pe as OxListTable,
+  Te as OxListTable,
   ol as OxLogin,
   rl as OxModelEdit,
   Ee as OxModelEditor,
