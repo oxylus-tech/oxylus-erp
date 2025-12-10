@@ -16,7 +16,7 @@
             <ox-field :editor="editor" name="is_subscription" type="checkbox"
                 v-if="!editor.value.group && !editor.value.organisation"/>
 
-            <v-expansion-panels v-if="attrs.initial.id" multiple :modelValue="['contacts']">
+            <v-expansion-panels v-if="attrs.initial?.id" multiple :modelValue="['contacts']">
                 <v-expansion-panel :title="t('models.contact', 2)" value="contacts" >
                     <template #text>
                         <ox-contact-model-list v-model="editor.value.contacts" />

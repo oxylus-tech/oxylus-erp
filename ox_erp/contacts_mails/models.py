@@ -40,20 +40,31 @@ class ContactMail(BaseMail):
     def _get_recipients_from_list(self, contact_list, recipients):
         for contact in contact_list.contacts.all():
             if contact.email not in recipients:
-                recipients[contact.email] = self._get_recipient_context(contact)
+                recipients[contact.email] = self._get_recipient_context(contact, contact_list)
 
-    def _get_recipient_context(self, contact, **context):
+    def _get_recipient_context(self, contact, contact_list=None, **context):
         """Return email context for the provided contact"""
+        if contact_list and contact_list.is_subscription:
+            context.update(
+                {
+                    "subscription": {
+                        "url": self._get_subscription_url(contact, contact_list),
+                        "name": contact_list.name,
+                    }
+                }
+            )
+
         return {
             **context,
+            "email": contact.email,
+            "name": contact.full_name,
             "contact": {
                 **context.get("contact", {}),
                 "email": contact.email,
                 "name": contact.full_name,
-                "preferences_url": self._get_preferences_url(contact),
             },
         }
 
-    def _get_preferences_url(self, contact):
+    def _get_subscription_url(self, contact):
         """Provide unsubscription url."""
         return ""
