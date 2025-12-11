@@ -3,6 +3,7 @@ from rest_framework import serializers
 
 from ox.core.serializers import ModelSerializer, RelatedField
 
+from ox_erp.locations.models import Country
 from . import models
 
 
@@ -17,7 +18,7 @@ __all__ = (
 
 
 class AddressSerializer(ModelSerializer):
-    country = RelatedField(queryset=models.Country.objects.all())
+    country = RelatedField(queryset=Country.objects.all())
 
     class Meta:
         model = models.Address
@@ -43,11 +44,16 @@ class BankAccountSerializer(ModelSerializer):
 
 
 class OrganisationTypeSerializer(ModelSerializer):
-    country = RelatedField(queryset=models.Country.objects.all())
+    country = RelatedField(queryset=Country.objects.all())
 
     class Meta:
         model = models.OrganisationType
         fields = "__all__"
+
+
+class SubscriptionSerializer(ModelSerializer):
+    class Meta:
+        model = models.Subscription
 
 
 class ContactListSerializer(ModelSerializer):
@@ -75,7 +81,7 @@ class BaseContactSerializer(ModelSerializer):
 
 
 class OrganisationSerializer(BaseContactSerializer):
-    country = RelatedField(queryset=models.Country.objects.all(), required=False)
+    country = RelatedField(queryset=Country.objects.all(), required=False)
     type = RelatedField(queryset=models.OrganisationType.objects.all(), required=False)
     contact_list = RelatedField(read_only=True)
 

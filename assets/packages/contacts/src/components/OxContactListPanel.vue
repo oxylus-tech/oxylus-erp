@@ -10,7 +10,7 @@
 
         <template #item.contact_count="{item}">
             {{ t('fields.contact_count.value', item.contact_count, {count: item.contact_count}) }}
-            <v-chip v-if="item.is_subscription">{{ t('fields.is_subscription') }}</v-chip>
+            <v-chip v-if="item.is_subscription" density="compact" color="info">{{ t('fields.is_subscription') }}</v-chip>
         </template>
 
         <template #views.detail.edit.default="{value, saved}">
