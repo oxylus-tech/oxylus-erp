@@ -1,14 +1,11 @@
-from functools import cached_property
-
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import User
 
-from ox.core.models import Model, InheritanceQuerySet
+from ox.core.models import Model, QuerySet
 from ox_erp.locations.models import Country
-from ox.utils.models import LongNamed, Described, Colored
+from ox.utils.models import Named, LongNamed, OnlyDescribed, Colored, SaveHookQuerySet
 
-from .contact_list import ContactList, Subscription
 
 __all__ = (
     "ContactQuerySet",
@@ -19,29 +16,23 @@ __all__ = (
 )
 
 
-class ContactQuerySet(InheritanceQuerySet):
+class ContactQuerySet(SaveHookQuerySet, QuerySet):
     """Queryset for a Contact."""
 
     def with_infos(self):
         return self.prefetch_related("address_set", "phone_set", "email_set")
 
 
-class Contact(Model):
+class Contact(Named, Model):
     email = models.EmailField(_("Email"), unique=True, blank=True, null=True)
     """ When linked to user, this is User's email. """
-    contact_lists = models.ManyToManyField(
-        ContactList, blank=True, verbose_name=_("Lists"), related_name="contacts", through=Subscription
-    )
 
     objects = ContactQuerySet.as_manager()
 
-    @cached_property
-    def full_name(self) -> str:
+    def on_save(self, *args, **kwargs):
+        # Name is always set to person's full name
         if person := getattr(self, "person", None):
-            return person.full_name
-        elif org := getattr(self, "organisation", None):
-            return org.name
-        return ""
+            self.name = person.full_name
 
     class Meta:
         verbose_name = _("Contact")
@@ -61,7 +52,7 @@ class OrganisationType(LongNamed, Model):
         verbose_name_plural = _("Company Forms")
 
 
-class Organisation(Described, Colored, Contact):
+class Organisation(OnlyDescribed, Colored, Contact):
     short_name = models.CharField(_("Short Name"), max_length=32, null=True, blank=True)
     reference = models.CharField(_("Reference Number"), max_length=32, default="", blank=True)
     vat = models.CharField(_("VAT"), max_length=32, blank=True, null=True)
@@ -97,7 +88,9 @@ class Person(Contact):
 
     @property
     def full_name(self):
-        return f"{self.last_name} {self.first_name}"
+        if self.last_name or self.first_name:
+            return f"{self.last_name} {self.first_name}".strip()
+        return self.name
 
     def __str__(self):
         return self.full_name

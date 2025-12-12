@@ -9,7 +9,7 @@ export class ContactMail extends BaseMail {
     static meta = new models.Meta({
         app: 'ox_contacts_mails',
         model: 'contactmail',
-        url: 'ox/contacts-mails/contactmail/',
+        url: 'ox/contacts-mails/mail/',
         title: 'subject'
     })
 
@@ -21,6 +21,31 @@ export class ContactMail extends BaseMail {
 
             $recipients: this.belongsTo(Contact, 'recipients'),
             $recipient_lists: this.belongsTo(ContactList, 'recipient_lists')
+        }
+    }
+}
+
+
+/** Subscription as provided to contact */
+export class ContactSubscription extends models.Model {
+    static entity = "contactSubscriptions"
+    static meta = new models.Meta({
+        app: 'ox_contacts_mails',
+        model: 'subscription',
+        url: 'ox/contacts-mails/subscription/',
+        title: 'name'
+    })
+
+    static Status = Subscription.Status
+
+    static fields() {
+        return {
+            id: this.attr(null),
+            name: this.string(""),
+            description: this.string(""),
+            contact: this.string(""),
+            contact_email: this.string(""),
+            status: this.number(0),
         }
     }
 }

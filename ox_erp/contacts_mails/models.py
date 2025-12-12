@@ -3,6 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 from ox.apps.mails.models import BaseMail
 from ox_erp.contacts.models import ContactList, Contact
+from .tokens import ContactSubscriptionToken
 
 
 __all__ = ("ContactMail",)
@@ -48,7 +49,7 @@ class ContactMail(BaseMail):
             context.update(
                 {
                     "subscription": {
-                        "url": self._get_subscription_url(contact, contact_list),
+                        "url": self.get_subscription_url(contact, contact_list),
                         "name": contact_list.name,
                     }
                 }
@@ -65,6 +66,6 @@ class ContactMail(BaseMail):
             },
         }
 
-    def _get_subscription_url(self, contact):
+    def get_subscription_url(self, contact, contact_list):
         """Provide unsubscription url."""
-        return ""
+        return ContactSubscriptionToken(contact=contact.uuid).encode()

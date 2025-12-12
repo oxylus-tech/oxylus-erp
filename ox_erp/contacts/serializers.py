@@ -51,11 +51,6 @@ class OrganisationTypeSerializer(ModelSerializer):
         fields = "__all__"
 
 
-class SubscriptionSerializer(ModelSerializer):
-    class Meta:
-        model = models.Subscription
-
-
 class ContactListSerializer(ModelSerializer):
     organisation = RelatedField(queryset=models.Organisation.objects.all(), required=False, allow_null=True)
     contacts = RelatedField(queryset=models.Contact.objects.all(), many=True, required=False)
@@ -134,3 +129,12 @@ class ContactSerializer(ModelSerializer):
             return person.full_name
         else:
             return obj.organisation.name
+
+
+class SubscriptionSerializer(ModelSerializer):
+    contact_list = RelatedField(queryset=models.ContactList.objects.all())
+    contact = RelatedField(queryset=models.Contact.objects.all())
+
+    class Meta:
+        model = models.Subscription
+        fields = ("contact_list", "contact", "status")

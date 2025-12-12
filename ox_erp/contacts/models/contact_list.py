@@ -4,6 +4,7 @@ from django.contrib.auth.models import Group
 
 from ox.core.models import Model
 from ox.utils.models import Described, Colored, SaveHook, Timestamped
+from .contact import Contact
 
 
 __all__ = (
@@ -11,6 +12,26 @@ __all__ = (
     "SubscriptionStatus",
     "Subscription",
 )
+
+
+class SubscriptionStatus(models.IntegerChoices):
+    """Status of a contact subscription."""
+
+    INVITED = 0x01, _("Invitation Send")
+    SUBSCRIBED = 0x02, _("Subscribed")
+    UNSUBSCRIBED = 0x03, _("Unsubscribed")
+
+
+class Subscription(Timestamped, Model):
+    """A contact subscription to a ContactList."""
+
+    contact_list = models.ForeignKey("ox_contacts.contactlist", models.CASCADE, verbose_name=_("Contacts"))
+    contact = models.ForeignKey(Contact, models.CASCADE, verbose_name=_("Contact"))
+    status = models.IntegerField(_("Status"), choices=SubscriptionStatus.choices, default=SubscriptionStatus.SUBSCRIBED)
+
+    class Meta:
+        verbose_name = _("Subscription")
+        verbose_name_plural = _("Subscriptions")
 
 
 class ContactList(Described, Colored, SaveHook, Model):
@@ -42,6 +63,14 @@ class ContactList(Described, Colored, SaveHook, Model):
             "unsubscribe from the list among other things."
         ),
     )
+    contacts = models.ManyToManyField(
+        Contact,
+        blank=True,
+        verbose_name=_("Contacts"),
+        related_name="contact_lists",
+        through=Subscription,
+        through_fields=("contact_list", "contact"),
+    )
 
     class Meta:
         verbose_name = _("Contact List")
@@ -58,20 +87,3 @@ class ContactList(Described, Colored, SaveHook, Model):
         elif self.organisation:
             self.name = self.organisation.name
             self.color = self.organisation.color
-
-
-class SubscriptionStatus(models.IntegerChoices):
-    """Status of a contact subscription."""
-
-    NONE = 0x00, _("None")
-    INVITED = 0x01, _("Invitation Send")
-    SUBSCRIBED = 0x02, _("Subscribed")
-    UNSUBSCRIBED = 0x03, _("Unsubscribed")
-
-
-class Subscription(Timestamped, Model):
-    """A contact subscription to a ContactList."""
-
-    contactlist = models.ForeignKey(ContactList, models.CASCADE, verbose_name=_("Contact List"))
-    contact = models.ForeignKey("ox_contacts.contact", models.CASCADE, verbose_name=_("Contact"))
-    status = models.IntegerField(_("Status"), choices=SubscriptionStatus.choices, default=SubscriptionStatus.SUBSCRIBED)

@@ -31,6 +31,36 @@ export class ContactList extends models.Model {
 }
 
 
+/** Contact-List Subscription */
+export class Subscription extends models.Model {
+    static entity = "subscriptions"
+    static meta = new models.Meta({
+        app: 'ox_contacts',
+        model: 'subscription',
+        url: 'ox/contacts/subscription/',
+        title: 'id'
+    })
+
+    static Status = models.Enum("status", {
+        INVITED: 1,
+        SUBSCRIBED: 2,
+        UNSUBSCRIBED: 3,
+    })
+
+    static fields() {
+        return {
+            id: this.attr(null),
+            contact_list: this.string(""),
+            contact: this.string(""),
+            status: this.number(0),
+
+            $contact_list: this.belongsTo(ContactList, 'contact_list'),
+            $contact: this.belongsTo(models.Contact, 'contact')
+        }
+    }
+}
+
+
 /**
  * Base model for contacts.
  */

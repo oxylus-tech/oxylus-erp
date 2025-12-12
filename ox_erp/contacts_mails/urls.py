@@ -6,7 +6,8 @@ from . import panels, views
 
 
 router = DefaultRouter()
-router.register("contactmail", views.ContactMailViewSet)
+router.register("mail", views.ContactMailViewSet)
+router.register("subscription", views.ContactSubscriptionViewSet)
 
 api_urls = router.urls
 

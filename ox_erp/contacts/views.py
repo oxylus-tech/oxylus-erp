@@ -6,6 +6,9 @@ from . import models, serializers
 
 
 __all__ = (
+    "ContactListViewSet",
+    "SubscriptionViewSet",
+    "ContactViewSet",
     "OrganisationTypeViewSet",
     "OrganisationViewSet",
     "PersonViewSet",
@@ -25,13 +28,16 @@ class ContactListViewSet(ModelViewSet):
     ordering_fields = ["name", "contact_count", "is_subscription"]
 
 
-class OrganisationTypeViewSet(ModelViewSet):
-    queryset = models.OrganisationType.objects.all().order_by("name")
-    serializer_class = serializers.OrganisationTypeSerializer
-    permission_classes = [DjangoModelPermissionsOrAnonReadOnly]
-
-    filterset_fields = {**ModelViewSet.filterset_fields, "country__uuid": ["in", "exact"]}
-    search_fields = ["name", "abbreviation", "code"]
+class SubscriptionViewSet(ModelViewSet):
+    queryset = models.Subscription.objects.all().order_by("-updated")
+    serializer_class = serializers.SubscriptionSerializer
+    filterset_fields = {
+        **ModelViewSet.filterset_fields,
+        "contact__uuid": ["in", "exact"],
+        "contact_lists__uuid": ["in", "exact"],
+    }
+    search_fields = ["contact__name", "contactlist__name"]
+    ordering_fields = ["contact__name", "contactlist__name", "created", "updated"]
 
 
 class ContactViewSet(ModelViewSet):
@@ -48,6 +54,15 @@ class ContactViewSet(ModelViewSet):
     }
     search_fields = ["email", "organisation__name", "person__last_name", "person__first_name"]
     ordering_fields = ["email"]
+
+
+class OrganisationTypeViewSet(ModelViewSet):
+    queryset = models.OrganisationType.objects.all().order_by("name")
+    serializer_class = serializers.OrganisationTypeSerializer
+    permission_classes = [DjangoModelPermissionsOrAnonReadOnly]
+
+    filterset_fields = {**ModelViewSet.filterset_fields, "country__uuid": ["in", "exact"]}
+    search_fields = ["name", "abbreviation", "code"]
 
 
 class OrganisationViewSet(ModelViewSet):
