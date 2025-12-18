@@ -3,10 +3,14 @@
         <template #default="{editor, editable, disabled}">
             <v-container>
                 <v-row>
-                    <ox-field :editor="editor" name="first_name" @update:modelValue="updateName(editor.value)"/>
-                    <ox-field :editor="editor" name="last_name" @update:modelValue="updateName(editor.value)" />
+                    <v-col>
+                        <ox-field :editor="editor" name="first_name" @update:modelValue="updateName(editor, 'first_name', $event)"/>
+                    </v-col>
+                    <v-col>
+                        <ox-field :editor="editor" name="last_name" @update:modelValue="updateName(editor, 'last_name', $event)" />
+                    </v-col>
                 </v-row>
-                <ox-field :editor="editor" name="name"/>
+                <ox-field :editor="editor" name="name" :disabled="true" />
                 <ox-field :editor="editor" name="email" type="email"
                     :rules="[rules.email]"
                     :disabled="disabled || editor.value.user"/>
@@ -41,7 +45,11 @@ const repos = useContactModels()
 const attrs = useAttrs()
 const organisations = computed(() => repos.organisations.all())
 
-function updateName(value) {
-    value["name"] = `${value["first_name"]} ${value["last_name"]}`.trim()
+function updateName(editor, field, value) {
+    const val = editor.value
+    if(field == 'first_name')
+        editor.value["name"] = `${val["last_name"]} ${value}`.trim()
+    else
+        editor.value["name"] = `${value} ${val["first_name"]}`.trim()
 }
 </script>

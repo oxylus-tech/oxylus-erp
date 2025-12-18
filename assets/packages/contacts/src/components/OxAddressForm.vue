@@ -2,7 +2,7 @@
     <v-container>
         <v-row>
             <v-col>
-                <ox-kind-input v-model="props.item.kind" />
+                <ox-kind-input v-model="props.item.kind" required />
             </v-col>
         </v-row>
         <v-row>

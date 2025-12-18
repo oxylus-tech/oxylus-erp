@@ -43,6 +43,9 @@ python-stdnum = "^2.0"
 
 oxylus = { path = "../oxylus" }
 django-caps = "*"
+pydantic = "^2.12.5"
+jwt = "^1.4.0"
+beautifulsoup4 = "^4.14.3"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "*"

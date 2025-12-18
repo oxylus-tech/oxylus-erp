@@ -102,9 +102,6 @@ export class Person extends BaseContact {
         }
     }
 
-    first_name: string
-    last_name: string
-
     get full_name() {
         return `${this.last_name} ${this.first_name}`
     }

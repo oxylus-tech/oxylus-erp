@@ -4,7 +4,7 @@
             <v-phone-input v-model="props.item.number" :label="t('fields.phone')"/>
         </v-col>
         <v-col cols="4">
-            <ox-kind-input v-model="props.item.kind" />
+            <ox-kind-input v-model="props.item.kind" required />
         </v-col>
     </v-row>
 </template>

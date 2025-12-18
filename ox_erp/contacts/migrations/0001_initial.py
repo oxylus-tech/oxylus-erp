@@ -11,7 +11,7 @@ from ox_erp.contacts import utils
 
 def forward_sync(apps, schema_editor):
     utils.sync_user_contacts(apps, schema_editor.connection.alias)
-    utils.ContactListSynchronizer().sync()
+    utils.ContactListSynchronizer(apps=apps).sync()
 
 
 def backward_sync(apps, schema_editor):

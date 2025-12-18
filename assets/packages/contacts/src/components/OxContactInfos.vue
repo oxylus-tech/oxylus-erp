@@ -1,5 +1,5 @@
 <template>
-    <v-expansion-panel :title="t('fields.email', 2)" value="emails"
+    <v-expansion-panel :title="t('models.email', 2)" value="emails"
             v-if="user.can('ox_contacts.view_email')">
         <template #text>
             <ox-email-form-list v-model="value.emails"
@@ -7,7 +7,7 @@
                 :editable="props.editable"/>
         </template>
     </v-expansion-panel>
-    <v-expansion-panel :title="t('fields.phone', 2)" value="phones"
+    <v-expansion-panel :title="t('models.phone', 2)" value="phones"
             v-if="user.can('ox_contacts.view_phone')">
         <template #text>
             <ox-phone-form-list v-model="value.phones"
@@ -15,7 +15,7 @@
                 :editable="props.editable"/>
         </template>
     </v-expansion-panel>
-    <v-expansion-panel :title="t('fields.address', 2)"
+    <v-expansion-panel :title="t('models.address', 2)"
             v-if="user.can('ox_contacts.view_address')">
         <template #text>
             <ox-address-form-list v-model="value.addresses"

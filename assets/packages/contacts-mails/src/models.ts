@@ -1,6 +1,6 @@
 import { models, t } from "@oxylus/ox"
 import { BaseMail } from "@oxylus/mails/models"
-import { Contact, ContactList } from '@oxylus/contacts/models'
+import { Contact, ContactList, Subscription } from '@oxylus/contacts/models'
 
 
 /** Contact Mail */

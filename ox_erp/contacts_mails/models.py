@@ -68,4 +68,5 @@ class ContactMail(BaseMail):
 
     def get_subscription_url(self, contact, contact_list):
         """Provide unsubscription url."""
+        # TODO HERE: reverse + full website url
         return ContactSubscriptionToken(contact=contact.uuid).encode()

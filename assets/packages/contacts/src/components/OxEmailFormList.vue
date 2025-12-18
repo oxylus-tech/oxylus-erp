@@ -10,10 +10,8 @@
             <v-btn size="small" :href="`mailto:${item.email}`" icon="mdi-mail" color="primary"/>
         </template>
         <template #item.form="{item,index}">
-            <v-list-item>
-                <!-- FIXME -->
-                <ox-email-form :item="item"/>
-            </v-list-item>
+            <!-- FIXME -->
+            <ox-email-form :item="item"/>
         </template>
     </ox-form-list>
 </template>
