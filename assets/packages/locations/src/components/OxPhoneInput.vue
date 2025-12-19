@@ -1,13 +1,35 @@
 <template>
-    <v-phone-input v-model="props.item.number" :label="t('fields.phone')"/>
+    <v-text-field v-model="value">
+        <template #prepend-inner>
+            {{ country?.flag }}
+        </template>
+    </v-text-field>
 </template>
 <script setup lang="ts">
-import {defineProps} from 'vue'
-// import 'flag-icons/css/flag-icons.min.css';
-import 'v-phone-input/dist/v-phone-input.css';
-import { VPhoneInput } from 'v-phone-input';
+import {defineModel, useAttrs, ref, watch} from 'vue'
 
-import {t} from '@oxylus/ox'
+import {t, useQuery} from '@oxylus/ox'
+import {useCountries} from '../composables'
 
-const props = defineProps({ item: Object })
+const value = defineModel()
+const attrs = useAttrs()
+const repos = useCountries()
+const {fetch, state} = useQuery(repos.countries, repos, {save: false})
+
+const countries = ref([])
+const country = ref(null)
+
+watch(value, async (value) => {
+    if(value.startsWith('+'))
+        value = value.substring(1)
+    else if(value.startsWith('00'))
+        value = value.substring(2)
+
+    const resp = await fetch({params: {"phone_prefixes__prefix__startswith": value}})
+    countries.value = resp.entities
+    country.value = resp.entities[0]
+})
+
+
+
 </script>

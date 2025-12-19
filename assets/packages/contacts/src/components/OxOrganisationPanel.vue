@@ -23,7 +23,7 @@
 
         <template #item.email="{item}" v-if="!slots['item.email']">
             <v-btn :href="`mailto:${item.email}`" size='x-small'
-                prepend-icon="mdi-mail" color="secondary">
+                prepend-icon="mdi-mail" color="secondary mr-1">
                 {{ item.email }}
             </v-btn>
             <template v-for="email of item.emails">

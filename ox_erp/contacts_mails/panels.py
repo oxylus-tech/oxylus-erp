@@ -1,5 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
+from ox.core.panels import registry
 import ox_erp.contacts.panels  # noqa: F401
 from ox.core.panels import Panel, Panels
 
@@ -20,4 +21,4 @@ panels = Panels(
     ],
 )
 
-# registry["contacts"].append(panels)
+registry["contacts"].append(panels)

@@ -21,9 +21,6 @@
                 </template>
             </ox-field>
 
-            <ox-field :editor="editor" name="phone"
-                prepend-icon="mdi-phone" />
-
             <ox-field :editor="editor" name="currency">
                 <template #default="{props}">
                     <ox-currency-input v-bind="props"

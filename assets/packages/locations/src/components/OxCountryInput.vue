@@ -8,12 +8,9 @@
             <span class="mr-2">{{ item.raw.flag }}</span>
             {{ item.raw.name }}
         </template>
-        <template #item="{ props, item }">
-            <v-list-item v-bind="props">
-                <template #prepend>
-                    <span class="mr-2">{{ item.raw.flag }} </span>
-                </template>
-            </v-list-item>
+
+        <template #item.prepend="{ item }">
+            <span class="mr-2">{{ item.raw.flag }} </span>
         </template>
 
         <template v-for="_, slot in slots" #[slot]="bind">

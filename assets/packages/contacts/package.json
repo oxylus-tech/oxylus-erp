@@ -25,7 +25,6 @@
     "@oxylus/locations": "workspace:*",
     "flag-icons": "^7.3.2",
     "pinia-orm": "^1.10.2",
-    "vuetify": "^3.8.3",
-    "v-phone-input": "^4.4.2"
+    "vuetify": "^3.8.3"
   }
 }

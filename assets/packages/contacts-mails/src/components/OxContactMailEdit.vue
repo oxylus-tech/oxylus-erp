@@ -1,5 +1,5 @@
 <template>
-    <ox-mail-edit v-bind="attrs" :repo="repos.contactMails" :variables="variables">
+    <ox-mail-edit v-bind="attrs" :repo="repos.contactMails">
         <template #recipients="{editor}">
             <v-card :subtitle="t('fields.recipients')"
                     class="mb-3">
@@ -30,9 +30,4 @@ import { useContactMailModels } from '../composables'
 
 const repos = useContactMailModels()
 const attrs = useAttrs()
-
-const variables = [
-    {name: "contact.name", label: "Contact Name", description: "Name of the contact"},
-    {name: "contact.email", label: "Contact Email", description: "Email of the contact"},
-]
 </script>

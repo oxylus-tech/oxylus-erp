@@ -49,6 +49,6 @@ const props = withDefaults(defineProps<IModelPanelProps>(), {
     name: 'countries',
     relations: ['$currency'],
     fetchRelations: false,
-    headers: ['name', 'code', 'code_3', 'phone', 'currency'],
+    headers: ['name', 'code', 'code_3', 'currency'],
 })
 </script>

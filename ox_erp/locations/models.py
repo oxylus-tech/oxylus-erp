@@ -1,14 +1,11 @@
 from datetime import date
-from typing import Any
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 from ox.core.models import Model
 from ox.utils.models import Named
 
-import pycountry
 import phonenumbers
-from phonenumbers.phonenumberutil import country_code_for_region
 
 
 __all__ = ("Country",)
@@ -33,14 +30,13 @@ class Country(Model):
     code = models.CharField(_("Code"), max_length=2, db_index=True)
     code_3 = models.CharField(_("Code 3"), max_length=3, db_index=True)
     continent = models.PositiveSmallIntegerField(_("Continent"), choices=Continent)
-    phone = models.PositiveIntegerField(_("Phone prefix"))
 
-    # no money in Antarctica
+    # null: no money in Antarctica
     currency = models.ForeignKey(
         "ox_locations.currency", models.SET_NULL, blank=True, null=True, verbose_name=_("Currency")
     )
 
-    iban_sample = models.CharField(_("Sample IBAN"), max_length=42, null=True, blank=True)
+    iban_sample = models.CharField(_("IBAN Sample"), max_length=42, null=True, blank=True)
     iban_length = models.PositiveSmallIntegerField(_("IBAN length"), null=True, blank=True)
 
     @property
@@ -59,38 +55,6 @@ class Country(Model):
 
     def __str__(self):
         return f"{self.flag} {self.name}"
-
-    @classmethod
-    def init_them_all(cls):
-        """Initialize all countries, updating existing ones."""
-        countries = cls.objects.all()
-        kws = cls.get_them_all_kwargs()
-
-        updated = []
-        keys = None
-        for country in countries:
-            if kw := kws.pop(country.code, None):
-                country.__dict__.update(kw)
-                updated.append(country)
-                if not keys:
-                    keys = kw.keys()
-
-        updated and cls.objects.bulk_update(updated, keys)
-        if kws:
-            cls.objects.bulk_create(Country(**kw) for kw in kws.values())
-
-    @classmethod
-    def get_them_all_kwargs(cls) -> list[dict[str, Any]]:
-        """Return a list of init args for all countries"""
-        return {
-            country.alpha_2: {
-                "code": country.alpha_2,
-                "code_3": country.alpha_3,
-                "name": country.name,
-                "phone": country_code_for_region(country.alpha_2),
-            }
-            for country in pycountry.countries
-        }
 
     def validate_vat(self, value: str, exc: bool = False) -> bool:
         """Return wether provided value is a valid vat."""
@@ -111,6 +75,20 @@ class Country(Model):
             phone = phonenumbers.parse(value)
             return phone.country_code == self.code
         return True
+
+
+class PhonePrefix(Model):
+    country = models.ForeignKey(Country, models.CASCADE, related_name="phone_prefixes")
+    prefix = models.CharField(
+        _("Prefix"),
+        max_length=10,
+        db_index=True,
+        help_text=_('Contains international and optional area code, without "+" or "00".'),
+    )
+
+    class Meta:
+        verbose_name = _("Phone Prefix")
+        verbose_name_plural = _("Phone Prefixes")
 
 
 class Currency(Named, Model):

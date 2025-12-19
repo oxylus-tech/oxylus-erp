@@ -9,12 +9,8 @@
             {{ item.raw.name }}
             <span class="ml-2">{{ item.raw.abbreviation }}</span>
         </template>
-        <template #item="{ props: itemProps, item }">
-            <v-list-item v-bind="itemProps">
-                <template #append>
-                    <span class="ml-2">{{ item.raw.abbreviation }} </span>
-                </template>
-            </v-list-item>
+        <template #item.append="{ item }">
+            <span class="ml-2">{{ item.raw.abbreviation }} </span>
         </template>
 
         <template v-for="_, slot in slots" #[slot]="bind">

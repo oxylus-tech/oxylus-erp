@@ -23,7 +23,7 @@ import {defineModel, useAttrs} from 'vue'
 import { t } from '@oxylus/ox'
 import {OxFormList} from '@oxylus/ox/components'
 
-import { ContactInfo } from '../models'
+import { ContactInfo, Email } from '../models'
 import OxEmailForm from './OxEmailForm.vue'
 
 const items = defineModel()

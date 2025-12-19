@@ -14,4 +14,5 @@ class CountryFilterSet(filters.FilterSet):
         fields = {
             "continent": ["exact"],
             "name": ["icontains", "exact"],
+            "phone_prefixes__prefix": ["exact", "startswith"],
         }

@@ -41,7 +41,6 @@ export class Country extends models.Model {
             name: this.string(""),
             code: this.string(""),
             code_3: this.string(""),
-            phone: this.number(null),
             continent: this.number(1),
             currency_code: this.string(""),
             currency: this.string(""),
@@ -52,8 +51,6 @@ export class Country extends models.Model {
             $currency: this.belongsTo(Currency, 'currency')
         }
     }
-
-    code: string
 
     static Continent = models.Enum('continent', {
         AFRICA: 1,

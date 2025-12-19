@@ -22,3 +22,11 @@ class CountrySerializer(ModelSerializer):
     class Meta:
         model = models.Country
         fields = "__all__"
+
+
+class PhonePrefixSerializer(ModelSerializer):
+    country = CountrySerializer()
+
+    class Meta:
+        model = models.PhonePrefix
+        fields = ["prefix", "country"]

@@ -7,6 +7,7 @@ from . import panels, views
 
 router = DefaultRouter()
 router.register("country", views.CountryViewSet)
+router.register("phoneprefix", views.PhonePrefixViewSet)
 router.register("currency", views.CurrencyViewSet)
 
 api_urls = router.urls
