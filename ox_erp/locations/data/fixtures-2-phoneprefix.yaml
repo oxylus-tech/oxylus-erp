@@ -1,0 +1,4116 @@
+- model: ox_locations.phoneprefix
+  pk: 1777
+  fields:
+    uuid: 414b011e-5181-4d70-bc93-ae373a8a19cd
+    country: 1
+    prefix: '297'
+- model: ox_locations.phoneprefix
+  pk: 1778
+  fields:
+    uuid: 6fe8acca-5be3-49f4-ae47-68da79810992
+    country: 2
+    prefix: '93'
+- model: ox_locations.phoneprefix
+  pk: 1779
+  fields:
+    uuid: 87e16a16-00e9-4f2e-a81d-a3ce2d862637
+    country: 3
+    prefix: '244'
+- model: ox_locations.phoneprefix
+  pk: 1780
+  fields:
+    uuid: 71d0cd61-951c-4ea8-b15a-2da1baec2cb8
+    country: 4
+    prefix: '1264'
+- model: ox_locations.phoneprefix
+  pk: 1781
+  fields:
+    uuid: c8276b2f-ff7a-4e6e-ad6b-2eac7b3e2e19
+    country: 5
+    prefix: '35818'
+- model: ox_locations.phoneprefix
+  pk: 1782
+  fields:
+    uuid: fdd760bf-1ae2-43c9-80ae-48690f2f436f
+    country: 6
+    prefix: '355'
+- model: ox_locations.phoneprefix
+  pk: 1783
+  fields:
+    uuid: 5f2c49eb-707c-41f5-8af5-b2fe486d9506
+    country: 7
+    prefix: '376'
+- model: ox_locations.phoneprefix
+  pk: 1784
+  fields:
+    uuid: 508e2cb7-9a0b-4e5c-8b24-083782d727c1
+    country: 8
+    prefix: '971'
+- model: ox_locations.phoneprefix
+  pk: 1785
+  fields:
+    uuid: fc932993-abbf-457e-85ad-a926d31dac34
+    country: 9
+    prefix: '54'
+- model: ox_locations.phoneprefix
+  pk: 1786
+  fields:
+    uuid: 8f9ad03e-79ba-4b57-a4c8-b56203bedfc9
+    country: 10
+    prefix: '374'
+- model: ox_locations.phoneprefix
+  pk: 1787
+  fields:
+    uuid: fb42a0a0-a9d7-4cc7-9453-3b7c9dc52b56
+    country: 11
+    prefix: '1684'
+- model: ox_locations.phoneprefix
+  pk: 1788
+  fields:
+    uuid: ee244cfc-5981-49b8-8302-702679571395
+    country: 14
+    prefix: '1268'
+- model: ox_locations.phoneprefix
+  pk: 1789
+  fields:
+    uuid: 095ed817-8901-4f28-8ac0-6b0ba716ac9e
+    country: 15
+    prefix: '61'
+- model: ox_locations.phoneprefix
+  pk: 1790
+  fields:
+    uuid: 3b4e274d-1b35-41dd-83d3-4901fc6f5ca3
+    country: 16
+    prefix: '43'
+- model: ox_locations.phoneprefix
+  pk: 1791
+  fields:
+    uuid: d9fc888d-68ae-443c-a49d-fafb394841e3
+    country: 17
+    prefix: '994'
+- model: ox_locations.phoneprefix
+  pk: 1792
+  fields:
+    uuid: e11772ed-b89b-439c-a232-35ca40ca1700
+    country: 18
+    prefix: '257'
+- model: ox_locations.phoneprefix
+  pk: 1793
+  fields:
+    uuid: 9cdfdb38-13ee-4205-ae52-c6c6f7919b18
+    country: 19
+    prefix: '32'
+- model: ox_locations.phoneprefix
+  pk: 1794
+  fields:
+    uuid: 03894eb1-86da-43bc-adc3-95345a0389f4
+    country: 20
+    prefix: '229'
+- model: ox_locations.phoneprefix
+  pk: 1795
+  fields:
+    uuid: 02284c75-117c-40e3-8066-c5b974537ebc
+    country: 21
+    prefix: '5997'
+- model: ox_locations.phoneprefix
+  pk: 1796
+  fields:
+    uuid: 87ad05a5-0296-4552-987b-9a6431120f3b
+    country: 21
+    prefix: '5994'
+- model: ox_locations.phoneprefix
+  pk: 1797
+  fields:
+    uuid: e469d678-47c5-424a-9365-852d02a56b8f
+    country: 21
+    prefix: '5993'
+- model: ox_locations.phoneprefix
+  pk: 1798
+  fields:
+    uuid: e2712b57-b98b-4d45-8ce8-73dec482770e
+    country: 22
+    prefix: '226'
+- model: ox_locations.phoneprefix
+  pk: 1799
+  fields:
+    uuid: f1b66b1f-f163-4d5b-9002-e03f97ecb3e0
+    country: 23
+    prefix: '880'
+- model: ox_locations.phoneprefix
+  pk: 1800
+  fields:
+    uuid: dab7aa9d-dcd3-4a34-81c7-9d9c2708b548
+    country: 24
+    prefix: '359'
+- model: ox_locations.phoneprefix
+  pk: 1801
+  fields:
+    uuid: d15d38c8-ff0b-4bdb-8944-bc48e3f875f6
+    country: 25
+    prefix: '973'
+- model: ox_locations.phoneprefix
+  pk: 1802
+  fields:
+    uuid: 0f1fd99f-4703-4c41-b528-75eca08f832b
+    country: 26
+    prefix: '1242'
+- model: ox_locations.phoneprefix
+  pk: 1803
+  fields:
+    uuid: 3f03f2a0-5533-41d0-9382-1975f1abaed0
+    country: 27
+    prefix: '387'
+- model: ox_locations.phoneprefix
+  pk: 1804
+  fields:
+    uuid: f1c4fb9f-c967-46e1-bdc3-c8cfe49e9eb9
+    country: 28
+    prefix: '590'
+- model: ox_locations.phoneprefix
+  pk: 1805
+  fields:
+    uuid: aeb1e3b3-0827-47b2-a1ed-588b192b7486
+    country: 29
+    prefix: '375'
+- model: ox_locations.phoneprefix
+  pk: 1806
+  fields:
+    uuid: 3b8d6878-db1d-4903-a395-0c9ff35b2885
+    country: 30
+    prefix: '501'
+- model: ox_locations.phoneprefix
+  pk: 1807
+  fields:
+    uuid: 9554715d-8e61-4691-9a6f-5b19ba3d000a
+    country: 31
+    prefix: '1441'
+- model: ox_locations.phoneprefix
+  pk: 1808
+  fields:
+    uuid: dd402771-a939-48f3-839a-371a516ed41a
+    country: 32
+    prefix: '591'
+- model: ox_locations.phoneprefix
+  pk: 1809
+  fields:
+    uuid: ec52dc89-4c3f-47e8-ba77-27f175733b69
+    country: 33
+    prefix: '55'
+- model: ox_locations.phoneprefix
+  pk: 1810
+  fields:
+    uuid: cd51dbcd-2954-4b70-851b-be4aa50cfaea
+    country: 34
+    prefix: '1246'
+- model: ox_locations.phoneprefix
+  pk: 1811
+  fields:
+    uuid: c03fa896-fe7a-477a-a972-c96cb069009d
+    country: 35
+    prefix: '673'
+- model: ox_locations.phoneprefix
+  pk: 1812
+  fields:
+    uuid: b4e3d7f3-5c6b-4c78-a991-4f2dbcd5074c
+    country: 36
+    prefix: '975'
+- model: ox_locations.phoneprefix
+  pk: 1813
+  fields:
+    uuid: 1fd0782a-b00a-4069-bc85-63776935eba5
+    country: 38
+    prefix: '267'
+- model: ox_locations.phoneprefix
+  pk: 1814
+  fields:
+    uuid: 8985eb61-9f3d-411d-b105-7969d30caada
+    country: 39
+    prefix: '236'
+- model: ox_locations.phoneprefix
+  pk: 1815
+  fields:
+    uuid: fc3feecf-db4f-4a00-92b2-2c017c654882
+    country: 40
+    prefix: '1368'
+- model: ox_locations.phoneprefix
+  pk: 1816
+  fields:
+    uuid: 93ddab4d-9ced-40ae-add7-5ddf4cfc02e1
+    country: 40
+    prefix: '1403'
+- model: ox_locations.phoneprefix
+  pk: 1817
+  fields:
+    uuid: 7390caf1-36e9-4d15-aa93-1bcc35c1aa34
+    country: 40
+    prefix: '1568'
+- model: ox_locations.phoneprefix
+  pk: 1818
+  fields:
+    uuid: ea85df65-b26c-4ebf-81cc-339095fd7f9b
+    country: 40
+    prefix: '1587'
+- model: ox_locations.phoneprefix
+  pk: 1819
+  fields:
+    uuid: b0e71b25-044f-4dba-bec5-afd4b94dea8a
+    country: 40
+    prefix: '1780'
+- model: ox_locations.phoneprefix
+  pk: 1820
+  fields:
+    uuid: 82d6ba78-6075-4872-a4c7-9a0d9816bb9e
+    country: 40
+    prefix: '1825'
+- model: ox_locations.phoneprefix
+  pk: 1821
+  fields:
+    uuid: 41f4d30a-3ca8-484a-bcd4-a6e237d8fae9
+    country: 40
+    prefix: '1236'
+- model: ox_locations.phoneprefix
+  pk: 1822
+  fields:
+    uuid: dd459dd4-d356-40e9-8f13-ccdb84064c7e
+    country: 40
+    prefix: '1250'
+- model: ox_locations.phoneprefix
+  pk: 1823
+  fields:
+    uuid: f726459e-c761-42ef-8241-688cbd8df021
+    country: 40
+    prefix: '1257'
+- model: ox_locations.phoneprefix
+  pk: 1824
+  fields:
+    uuid: e3e2ed9d-4b92-45ef-9f25-eac2eb216bcc
+    country: 40
+    prefix: '1604'
+- model: ox_locations.phoneprefix
+  pk: 1825
+  fields:
+    uuid: 20c117d1-7617-44c4-8cd1-bcf4031e84b0
+    country: 40
+    prefix: '1672'
+- model: ox_locations.phoneprefix
+  pk: 1826
+  fields:
+    uuid: 72469b56-e90b-4276-8a01-571b5da91076
+    country: 40
+    prefix: '1778'
+- model: ox_locations.phoneprefix
+  pk: 1827
+  fields:
+    uuid: 4fd66332-d315-4af6-bd48-ccff72a61c7b
+    country: 40
+    prefix: '1204'
+- model: ox_locations.phoneprefix
+  pk: 1828
+  fields:
+    uuid: 4d40b10d-3136-481f-9bbb-fb3c3f7a3cec
+    country: 40
+    prefix: '1431'
+- model: ox_locations.phoneprefix
+  pk: 1829
+  fields:
+    uuid: f4e5f03b-e04e-4802-b58f-b3704f5ea7ef
+    country: 40
+    prefix: '1584'
+- model: ox_locations.phoneprefix
+  pk: 1830
+  fields:
+    uuid: d8e4fbe8-4a15-4b2d-bbe0-faaed308c150
+    country: 40
+    prefix: '1428'
+- model: ox_locations.phoneprefix
+  pk: 1831
+  fields:
+    uuid: 8a0163ac-a44d-45e6-ae96-dd38567446ca
+    country: 40
+    prefix: '1506'
+- model: ox_locations.phoneprefix
+  pk: 1832
+  fields:
+    uuid: 1baddf80-8732-4ad1-996a-60d9ece1f9ba
+    country: 40
+    prefix: '1709'
+- model: ox_locations.phoneprefix
+  pk: 1833
+  fields:
+    uuid: 81eede5d-12e8-4c48-98e4-13e84da39263
+    country: 40
+    prefix: '1879'
+- model: ox_locations.phoneprefix
+  pk: 1834
+  fields:
+    uuid: 42e9855e-d013-494b-baa9-0319191a40fc
+    country: 40
+    prefix: '1851'
+- model: ox_locations.phoneprefix
+  pk: 1835
+  fields:
+    uuid: 83b7c6e8-3aa8-4e78-a734-af439d020c26
+    country: 40
+    prefix: '1902'
+- model: ox_locations.phoneprefix
+  pk: 1836
+  fields:
+    uuid: 6b4431c8-a1a9-4f14-b0d5-88220071be6b
+    country: 40
+    prefix: '1226'
+- model: ox_locations.phoneprefix
+  pk: 1837
+  fields:
+    uuid: d8780a38-acfe-46ce-93cc-b2b5b79c67d4
+    country: 40
+    prefix: '1249'
+- model: ox_locations.phoneprefix
+  pk: 1838
+  fields:
+    uuid: c9d87677-0956-4c00-94af-e4790fe14fd9
+    country: 40
+    prefix: '1289'
+- model: ox_locations.phoneprefix
+  pk: 1839
+  fields:
+    uuid: 20ca0071-841d-404e-ae59-65bffc5b9d18
+    country: 40
+    prefix: '1343'
+- model: ox_locations.phoneprefix
+  pk: 1840
+  fields:
+    uuid: 471d2cc3-1220-464a-92ea-2f4c4ce1a282
+    country: 40
+    prefix: '1365'
+- model: ox_locations.phoneprefix
+  pk: 1841
+  fields:
+    uuid: f141cfcc-6f08-4a32-982f-3bf046f368db
+    country: 40
+    prefix: '1382'
+- model: ox_locations.phoneprefix
+  pk: 1842
+  fields:
+    uuid: 15ba88bd-0623-4e0f-b39e-211855651155
+    country: 40
+    prefix: '1387'
+- model: ox_locations.phoneprefix
+  pk: 1843
+  fields:
+    uuid: ce29bbc1-e852-4a64-980f-8a375d016f44
+    country: 40
+    prefix: '1416'
+- model: ox_locations.phoneprefix
+  pk: 1844
+  fields:
+    uuid: 679f0650-99d7-41e0-8739-e3359bad0f36
+    country: 40
+    prefix: '1437'
+- model: ox_locations.phoneprefix
+  pk: 1845
+  fields:
+    uuid: 42571a1a-5878-4146-b9af-5d1dfbfb3fea
+    country: 40
+    prefix: '1460'
+- model: ox_locations.phoneprefix
+  pk: 1846
+  fields:
+    uuid: 0c21744b-9967-41a0-8592-5f387734daa7
+    country: 40
+    prefix: '1519'
+- model: ox_locations.phoneprefix
+  pk: 1847
+  fields:
+    uuid: 94d404cb-064f-4e0f-a18a-d63f780a3159
+    country: 40
+    prefix: '1537'
+- model: ox_locations.phoneprefix
+  pk: 1848
+  fields:
+    uuid: f19811b9-1ee1-4a23-bffc-8f94096f320b
+    country: 40
+    prefix: '1548'
+- model: ox_locations.phoneprefix
+  pk: 1849
+  fields:
+    uuid: 7ecbb6f6-fba9-47bf-9ea5-07e6e4b3b632
+    country: 40
+    prefix: '1613'
+- model: ox_locations.phoneprefix
+  pk: 1850
+  fields:
+    uuid: 666402d3-bf2e-4d55-8834-e4b84a4dedf3
+    country: 40
+    prefix: '1647'
+- model: ox_locations.phoneprefix
+  pk: 1851
+  fields:
+    uuid: 945733e8-8b7d-4131-8bed-35eed9f80aad
+    country: 40
+    prefix: '1683'
+- model: ox_locations.phoneprefix
+  pk: 1852
+  fields:
+    uuid: 4dd5407d-f292-41ba-a3d7-f99bda4ec65d
+    country: 40
+    prefix: '1705'
+- model: ox_locations.phoneprefix
+  pk: 1853
+  fields:
+    uuid: 34ce45ec-362f-4b2f-8e6d-5871097593ce
+    country: 40
+    prefix: '1742'
+- model: ox_locations.phoneprefix
+  pk: 1854
+  fields:
+    uuid: 30efd68d-6d08-4bb8-ad5d-4d9ad9f7dc02
+    country: 40
+    prefix: '1753'
+- model: ox_locations.phoneprefix
+  pk: 1855
+  fields:
+    uuid: f21cd5ea-574d-40ae-872d-bafcb767aaf2
+    country: 40
+    prefix: '1807'
+- model: ox_locations.phoneprefix
+  pk: 1856
+  fields:
+    uuid: 5adc286b-78c8-49cd-b83a-2f4122601d0e
+    country: 40
+    prefix: '1905'
+- model: ox_locations.phoneprefix
+  pk: 1857
+  fields:
+    uuid: e5a42b59-cc52-4f8e-8c0d-b75941410081
+    country: 40
+    prefix: '1942'
+- model: ox_locations.phoneprefix
+  pk: 1858
+  fields:
+    uuid: 05e43dbe-67ec-4785-b0d9-436015c970c4
+    country: 40
+    prefix: '1782'
+- model: ox_locations.phoneprefix
+  pk: 1859
+  fields:
+    uuid: ca041414-a577-4548-83c4-7a2a0b0fe17f
+    country: 40
+    prefix: '1902'
+- model: ox_locations.phoneprefix
+  pk: 1860
+  fields:
+    uuid: ef260dcd-b388-48e3-9075-d70a10cfda7e
+    country: 40
+    prefix: '1263'
+- model: ox_locations.phoneprefix
+  pk: 1861
+  fields:
+    uuid: 76da5336-6eac-412f-9e5d-f9153f8abd5b
+    country: 40
+    prefix: '1354'
+- model: ox_locations.phoneprefix
+  pk: 1862
+  fields:
+    uuid: 88f99941-9b08-4753-857c-ce94c44eeb60
+    country: 40
+    prefix: '1367'
+- model: ox_locations.phoneprefix
+  pk: 1863
+  fields:
+    uuid: 62f46012-d8b8-4c0e-8e1e-8c16a49ad850
+    country: 40
+    prefix: '1418'
+- model: ox_locations.phoneprefix
+  pk: 1864
+  fields:
+    uuid: 0a044def-5fe7-438d-8a27-b4fb55d1c821
+    country: 40
+    prefix: '1438'
+- model: ox_locations.phoneprefix
+  pk: 1865
+  fields:
+    uuid: 16f9c61a-dcd1-45ba-b568-00c008bd7892
+    country: 40
+    prefix: '1450'
+- model: ox_locations.phoneprefix
+  pk: 1866
+  fields:
+    uuid: 5614c87a-2240-494e-8544-40ef7ade165c
+    country: 40
+    prefix: '1468'
+- model: ox_locations.phoneprefix
+  pk: 1867
+  fields:
+    uuid: 4d64383b-80c1-456d-9806-94e4d8cfae50
+    country: 40
+    prefix: '1514'
+- model: ox_locations.phoneprefix
+  pk: 1868
+  fields:
+    uuid: 558bf31c-ef3d-4ebb-b658-7904d4388638
+    country: 40
+    prefix: '1579'
+- model: ox_locations.phoneprefix
+  pk: 1869
+  fields:
+    uuid: b0cd0950-53ab-4ca7-9348-6c791df3ba81
+    country: 40
+    prefix: '1581'
+- model: ox_locations.phoneprefix
+  pk: 1870
+  fields:
+    uuid: a993f761-6404-401e-ab58-85852b1d8282
+    country: 40
+    prefix: '1819'
+- model: ox_locations.phoneprefix
+  pk: 1871
+  fields:
+    uuid: 2636d3b4-15fa-4c3f-a6a4-980348a24a5e
+    country: 40
+    prefix: '1873'
+- model: ox_locations.phoneprefix
+  pk: 1872
+  fields:
+    uuid: a6fe6aef-10ee-42b5-9193-011734a1dd3f
+    country: 40
+    prefix: '1306'
+- model: ox_locations.phoneprefix
+  pk: 1873
+  fields:
+    uuid: d3778db7-cf19-4394-a461-6693e312c628
+    country: 40
+    prefix: '1474'
+- model: ox_locations.phoneprefix
+  pk: 1874
+  fields:
+    uuid: cb501bf1-3e7b-4edf-91a7-da77083e3ad5
+    country: 40
+    prefix: '1639'
+- model: ox_locations.phoneprefix
+  pk: 1875
+  fields:
+    uuid: c8aa224a-a94f-43e9-8c59-44e6246d50aa
+    country: 40
+    prefix: '1867'
+- model: ox_locations.phoneprefix
+  pk: 1876
+  fields:
+    uuid: 5529613a-d4d6-4c15-bc2b-173ebffffd80
+    country: 40
+    prefix: '1600'
+- model: ox_locations.phoneprefix
+  pk: 1877
+  fields:
+    uuid: 4175b00a-3ee2-4952-a3fb-d1915c65b82e
+    country: 40
+    prefix: '1622'
+- model: ox_locations.phoneprefix
+  pk: 1878
+  fields:
+    uuid: 5e724f49-7e54-446e-8008-5fcdacbdc35d
+    country: 40
+    prefix: '1633'
+- model: ox_locations.phoneprefix
+  pk: 1879
+  fields:
+    uuid: bdc96c50-1368-43ea-b6e9-33fe5c29dacd
+    country: 40
+    prefix: '1644'
+- model: ox_locations.phoneprefix
+  pk: 1880
+  fields:
+    uuid: 7caf5aa6-4e6f-4da7-91d6-d21e9a6305e4
+    country: 40
+    prefix: '1655'
+- model: ox_locations.phoneprefix
+  pk: 1881
+  fields:
+    uuid: 919ab5d0-8b45-4ada-b497-4b4cd1d43719
+    country: 40
+    prefix: '1677'
+- model: ox_locations.phoneprefix
+  pk: 1882
+  fields:
+    uuid: ebe60908-d825-4679-ad4f-700185e23b4f
+    country: 40
+    prefix: '1688'
+- model: ox_locations.phoneprefix
+  pk: 1883
+  fields:
+    uuid: c15e357e-4bb9-480e-8393-024ff523ba6b
+    country: 41
+    prefix: '6189162'
+- model: ox_locations.phoneprefix
+  pk: 1884
+  fields:
+    uuid: 36dbf024-5996-469c-bc07-d3a87c926486
+    country: 42
+    prefix: '41'
+- model: ox_locations.phoneprefix
+  pk: 1885
+  fields:
+    uuid: 7b2f1be0-67ea-4f18-8754-167faaea913a
+    country: 43
+    prefix: '56'
+- model: ox_locations.phoneprefix
+  pk: 1886
+  fields:
+    uuid: 591df0b0-867a-4673-8ae6-f8edc8a8aa39
+    country: 44
+    prefix: '86'
+- model: ox_locations.phoneprefix
+  pk: 1887
+  fields:
+    uuid: 5e28ad3e-0e2b-4b43-b83d-fede094bc762
+    country: 45
+    prefix: '225'
+- model: ox_locations.phoneprefix
+  pk: 1888
+  fields:
+    uuid: 350353e9-5e06-4000-bff2-2ba3de8e2dc9
+    country: 46
+    prefix: '237'
+- model: ox_locations.phoneprefix
+  pk: 1889
+  fields:
+    uuid: 4af0ab31-aec9-47b0-80fc-414d7b27947f
+    country: 47
+    prefix: '243'
+- model: ox_locations.phoneprefix
+  pk: 1890
+  fields:
+    uuid: 46421841-057b-4b7f-b934-96fd8512f385
+    country: 48
+    prefix: '242'
+- model: ox_locations.phoneprefix
+  pk: 1891
+  fields:
+    uuid: 3515431a-ea80-48b1-b8c2-37c3652650fd
+    country: 49
+    prefix: '682'
+- model: ox_locations.phoneprefix
+  pk: 1892
+  fields:
+    uuid: cf866306-7a20-4c0a-92e2-67b8249b10ea
+    country: 50
+    prefix: '57'
+- model: ox_locations.phoneprefix
+  pk: 1893
+  fields:
+    uuid: 905aaf17-43b8-476b-810b-e37cbbb2fd85
+    country: 51
+    prefix: '269'
+- model: ox_locations.phoneprefix
+  pk: 1894
+  fields:
+    uuid: c932392a-e59f-4c31-9abb-88eada2313d5
+    country: 52
+    prefix: '238'
+- model: ox_locations.phoneprefix
+  pk: 1895
+  fields:
+    uuid: 9ef175c3-bca7-499c-a02b-fb2cc8da317c
+    country: 53
+    prefix: '506'
+- model: ox_locations.phoneprefix
+  pk: 1896
+  fields:
+    uuid: a5e7b001-5e33-4bba-a59e-d4cc1ccdaa4d
+    country: 54
+    prefix: '53'
+- model: ox_locations.phoneprefix
+  pk: 1897
+  fields:
+    uuid: 392685c1-a63f-4f9b-bae3-bea68e0890ea
+    country: 55
+    prefix: '5999'
+- model: ox_locations.phoneprefix
+  pk: 1898
+  fields:
+    uuid: bea8151d-7bd4-4011-b21e-0ab1f51352d2
+    country: 56
+    prefix: '6189164'
+- model: ox_locations.phoneprefix
+  pk: 1899
+  fields:
+    uuid: b34058b7-a52d-479b-ad39-0735f4a2ad30
+    country: 57
+    prefix: '1345'
+- model: ox_locations.phoneprefix
+  pk: 1900
+  fields:
+    uuid: 30f731d9-21d6-474c-8d3c-74d02313eaa9
+    country: 58
+    prefix: '357'
+- model: ox_locations.phoneprefix
+  pk: 1901
+  fields:
+    uuid: d24fd408-aae3-4e9c-acd9-e90649bd407c
+    country: 59
+    prefix: '420'
+- model: ox_locations.phoneprefix
+  pk: 1902
+  fields:
+    uuid: b7931d0d-986d-44a1-bb62-1d5e89e3d241
+    country: 60
+    prefix: '49'
+- model: ox_locations.phoneprefix
+  pk: 1903
+  fields:
+    uuid: 006a579c-ab1e-4d58-b44c-0b6dfff04976
+    country: 61
+    prefix: '253'
+- model: ox_locations.phoneprefix
+  pk: 1904
+  fields:
+    uuid: ea5edbaa-4fe1-4fbd-979f-07bf825215c6
+    country: 62
+    prefix: '1767'
+- model: ox_locations.phoneprefix
+  pk: 1905
+  fields:
+    uuid: bf9f796a-9759-4aef-a0aa-b2430bbec108
+    country: 63
+    prefix: '45'
+- model: ox_locations.phoneprefix
+  pk: 1906
+  fields:
+    uuid: e8a3765d-0b40-45c7-9a11-b3c2370101b1
+    country: 64
+    prefix: '1809'
+- model: ox_locations.phoneprefix
+  pk: 1907
+  fields:
+    uuid: 7910661c-c80b-4e76-9a98-0ebcb6829108
+    country: 64
+    prefix: '1829'
+- model: ox_locations.phoneprefix
+  pk: 1908
+  fields:
+    uuid: 3829cbca-fc58-43cc-bc80-095201a53071
+    country: 64
+    prefix: '1849'
+- model: ox_locations.phoneprefix
+  pk: 1909
+  fields:
+    uuid: d57c122c-a14f-41eb-ae77-bb5a19cb660f
+    country: 65
+    prefix: '213'
+- model: ox_locations.phoneprefix
+  pk: 1910
+  fields:
+    uuid: 508da730-90c2-45d3-9d6a-bd673add8466
+    country: 66
+    prefix: '593'
+- model: ox_locations.phoneprefix
+  pk: 1911
+  fields:
+    uuid: 65014019-af95-41cc-9e47-6ccf075f3e46
+    country: 67
+    prefix: '20'
+- model: ox_locations.phoneprefix
+  pk: 1912
+  fields:
+    uuid: 3b5b07d2-3949-425e-9230-6593eb953ff6
+    country: 68
+    prefix: '291'
+- model: ox_locations.phoneprefix
+  pk: 1913
+  fields:
+    uuid: 63dd587a-4682-4a5d-88e1-fc6b8b2dc1fb
+    country: 69
+    prefix: '212'
+- model: ox_locations.phoneprefix
+  pk: 1914
+  fields:
+    uuid: b8667f1f-eb63-48e0-b8a5-9ce22d60e285
+    country: 70
+    prefix: '34'
+- model: ox_locations.phoneprefix
+  pk: 1915
+  fields:
+    uuid: abe9cb6a-0762-4c36-94bf-39a1cc386c96
+    country: 71
+    prefix: '372'
+- model: ox_locations.phoneprefix
+  pk: 1916
+  fields:
+    uuid: 56402bb9-22d0-4836-b990-cdcfb304bab7
+    country: 72
+    prefix: '251'
+- model: ox_locations.phoneprefix
+  pk: 1917
+  fields:
+    uuid: c79e2fb3-8fef-4c0e-900c-97ec34f1170d
+    country: 73
+    prefix: '358'
+- model: ox_locations.phoneprefix
+  pk: 1918
+  fields:
+    uuid: b2016f72-6f10-4483-8c2e-3771ac75e084
+    country: 74
+    prefix: '679'
+- model: ox_locations.phoneprefix
+  pk: 1919
+  fields:
+    uuid: 379b4364-ca0f-4f7d-b66c-f176ec95941d
+    country: 75
+    prefix: '500'
+- model: ox_locations.phoneprefix
+  pk: 1920
+  fields:
+    uuid: 1b0801f2-8d8a-43cd-bc35-3721d4a09ff2
+    country: 76
+    prefix: '33'
+- model: ox_locations.phoneprefix
+  pk: 1921
+  fields:
+    uuid: 918d24cf-a3b9-41d1-b313-b9f380ac0a7a
+    country: 77
+    prefix: '298'
+- model: ox_locations.phoneprefix
+  pk: 1922
+  fields:
+    uuid: 1a892491-dba0-48b0-9a8d-586606939b8e
+    country: 78
+    prefix: '691'
+- model: ox_locations.phoneprefix
+  pk: 1923
+  fields:
+    uuid: e1320363-181c-4245-85bf-c4568c380ee1
+    country: 79
+    prefix: '241'
+- model: ox_locations.phoneprefix
+  pk: 1924
+  fields:
+    uuid: 5f927713-5bb7-44f0-b2e7-b3b225047600
+    country: 80
+    prefix: '44'
+- model: ox_locations.phoneprefix
+  pk: 1925
+  fields:
+    uuid: 6148ba90-4292-4e85-8797-d36e511f7ca3
+    country: 81
+    prefix: '995'
+- model: ox_locations.phoneprefix
+  pk: 1926
+  fields:
+    uuid: 46ec6654-330c-47d5-97d2-945ebc6b52c8
+    country: 82
+    prefix: '441481'
+- model: ox_locations.phoneprefix
+  pk: 1927
+  fields:
+    uuid: 50dd1d90-1ba3-4908-a7ce-3343a0262b0a
+    country: 83
+    prefix: '233'
+- model: ox_locations.phoneprefix
+  pk: 1928
+  fields:
+    uuid: 82c3ec75-53f2-434e-9948-97e09ad4dca5
+    country: 84
+    prefix: '350'
+- model: ox_locations.phoneprefix
+  pk: 1929
+  fields:
+    uuid: d81f3344-5096-4928-8489-e7a82f22fead
+    country: 85
+    prefix: '224'
+- model: ox_locations.phoneprefix
+  pk: 1930
+  fields:
+    uuid: 2636abc7-4a34-4adb-9aba-b1e95f8b2d77
+    country: 86
+    prefix: '590'
+- model: ox_locations.phoneprefix
+  pk: 1931
+  fields:
+    uuid: 190f43a6-6b54-46cb-9ea4-920aab166e3a
+    country: 87
+    prefix: '220'
+- model: ox_locations.phoneprefix
+  pk: 1932
+  fields:
+    uuid: 7540159c-5f35-4c9d-bee6-1d3668b3d236
+    country: 88
+    prefix: '245'
+- model: ox_locations.phoneprefix
+  pk: 1933
+  fields:
+    uuid: 35c28ca0-b628-43db-9558-2393e25f26e8
+    country: 89
+    prefix: '240'
+- model: ox_locations.phoneprefix
+  pk: 1934
+  fields:
+    uuid: 3d0f99ef-ee6a-4088-9dde-0cb379b467d4
+    country: 90
+    prefix: '30'
+- model: ox_locations.phoneprefix
+  pk: 1935
+  fields:
+    uuid: a1831127-583b-407d-b229-64dddebd304e
+    country: 91
+    prefix: '1473'
+- model: ox_locations.phoneprefix
+  pk: 1936
+  fields:
+    uuid: 1b9b89fb-c109-4359-ad4b-daaaa19dca03
+    country: 92
+    prefix: '299'
+- model: ox_locations.phoneprefix
+  pk: 1937
+  fields:
+    uuid: 14ece1e0-5b08-4fbd-97f7-55493d1e7900
+    country: 93
+    prefix: '502'
+- model: ox_locations.phoneprefix
+  pk: 1938
+  fields:
+    uuid: c47cdd90-33de-44e4-82ed-333d24797e23
+    country: 94
+    prefix: '594'
+- model: ox_locations.phoneprefix
+  pk: 1939
+  fields:
+    uuid: c03e9815-08c2-46bc-9fc7-3ae08ec61a35
+    country: 95
+    prefix: '1671'
+- model: ox_locations.phoneprefix
+  pk: 1940
+  fields:
+    uuid: 105edf14-ebe8-4701-8d88-a9f0fd4d77a4
+    country: 96
+    prefix: '592'
+- model: ox_locations.phoneprefix
+  pk: 1941
+  fields:
+    uuid: be96a778-d5c5-446b-8fa6-ed14c4b411a5
+    country: 97
+    prefix: '852'
+- model: ox_locations.phoneprefix
+  pk: 1942
+  fields:
+    uuid: 28dc1425-4f59-459b-a7ae-a6bd159bb178
+    country: 99
+    prefix: '504'
+- model: ox_locations.phoneprefix
+  pk: 1943
+  fields:
+    uuid: 44a1ed42-702f-41cf-9566-91ee5733b97a
+    country: 100
+    prefix: '385'
+- model: ox_locations.phoneprefix
+  pk: 1944
+  fields:
+    uuid: 2509fc19-d7c7-4651-a2d8-e6746f0ebacf
+    country: 101
+    prefix: '509'
+- model: ox_locations.phoneprefix
+  pk: 1945
+  fields:
+    uuid: e15a0d5e-db9a-44e4-bef3-6421a1bfc263
+    country: 102
+    prefix: '36'
+- model: ox_locations.phoneprefix
+  pk: 1946
+  fields:
+    uuid: 07270725-4658-40f3-9258-363973c3a525
+    country: 103
+    prefix: '62'
+- model: ox_locations.phoneprefix
+  pk: 1947
+  fields:
+    uuid: 6e2bf261-208d-4d2c-bb45-58b7293b1f26
+    country: 104
+    prefix: '441624'
+- model: ox_locations.phoneprefix
+  pk: 1948
+  fields:
+    uuid: c3a65c0f-e0c6-435f-8760-e26e87153485
+    country: 105
+    prefix: '91'
+- model: ox_locations.phoneprefix
+  pk: 1949
+  fields:
+    uuid: 9b88c5fc-29db-4533-935a-906d13d35e4d
+    country: 106
+    prefix: '246'
+- model: ox_locations.phoneprefix
+  pk: 1950
+  fields:
+    uuid: df89fe0c-227d-471b-a8b7-416d0ad72b3d
+    country: 107
+    prefix: '353'
+- model: ox_locations.phoneprefix
+  pk: 1951
+  fields:
+    uuid: 6cff80d2-93f9-4b33-a42c-eaf9d2d72668
+    country: 108
+    prefix: '98'
+- model: ox_locations.phoneprefix
+  pk: 1952
+  fields:
+    uuid: 79af8c17-ef44-427f-9d86-921481893008
+    country: 109
+    prefix: '964'
+- model: ox_locations.phoneprefix
+  pk: 1953
+  fields:
+    uuid: 5ca95099-d4bf-429b-90f9-81175ec4bbe6
+    country: 110
+    prefix: '354'
+- model: ox_locations.phoneprefix
+  pk: 1954
+  fields:
+    uuid: 86451211-f6d2-4f79-adeb-d992909cd541
+    country: 111
+    prefix: '972'
+- model: ox_locations.phoneprefix
+  pk: 1955
+  fields:
+    uuid: 39d525a6-6570-4d33-9728-71e2b6ac8a40
+    country: 112
+    prefix: '39'
+- model: ox_locations.phoneprefix
+  pk: 1956
+  fields:
+    uuid: 3d386b65-6f96-4701-a587-c5097c7f2aa2
+    country: 113
+    prefix: '1658'
+- model: ox_locations.phoneprefix
+  pk: 1957
+  fields:
+    uuid: 9ae309c1-ffbf-4243-9f0b-5518315a6214
+    country: 113
+    prefix: '1876'
+- model: ox_locations.phoneprefix
+  pk: 1958
+  fields:
+    uuid: 805bba22-bd35-4b34-9a24-048f96b8a151
+    country: 114
+    prefix: '441534'
+- model: ox_locations.phoneprefix
+  pk: 1959
+  fields:
+    uuid: b3621264-160a-4ed0-9825-7d24adbaec36
+    country: 115
+    prefix: '962'
+- model: ox_locations.phoneprefix
+  pk: 1960
+  fields:
+    uuid: bbad1eea-5e9e-4b38-b605-9fa8ff9fc1ae
+    country: 116
+    prefix: '81'
+- model: ox_locations.phoneprefix
+  pk: 1961
+  fields:
+    uuid: 5ca876cd-c264-475a-adb1-dd0b6aae19f4
+    country: 117
+    prefix: '77'
+- model: ox_locations.phoneprefix
+  pk: 1962
+  fields:
+    uuid: 3ef75a37-a4d8-41d7-ad39-c480738c6f7b
+    country: 118
+    prefix: '254'
+- model: ox_locations.phoneprefix
+  pk: 1963
+  fields:
+    uuid: 01130e18-38f9-4cb9-b988-095e3a6fefc5
+    country: 119
+    prefix: '996'
+- model: ox_locations.phoneprefix
+  pk: 1964
+  fields:
+    uuid: 937a1fd0-d867-4d33-9966-4f37fb808be4
+    country: 120
+    prefix: '855'
+- model: ox_locations.phoneprefix
+  pk: 1965
+  fields:
+    uuid: 6e1da83b-7d8c-4497-bde8-bcd1aa775edb
+    country: 121
+    prefix: '686'
+- model: ox_locations.phoneprefix
+  pk: 1966
+  fields:
+    uuid: 438b52f7-5420-4639-a61a-01228d45a22d
+    country: 122
+    prefix: '1869'
+- model: ox_locations.phoneprefix
+  pk: 1967
+  fields:
+    uuid: 2c828047-f541-45fb-9ffc-1ac0e59dc0c9
+    country: 123
+    prefix: '82'
+- model: ox_locations.phoneprefix
+  pk: 1968
+  fields:
+    uuid: bca1f032-019c-4529-9964-49d23507d0b7
+    country: 124
+    prefix: '965'
+- model: ox_locations.phoneprefix
+  pk: 1969
+  fields:
+    uuid: 48e63e59-e0a7-4b81-a986-93091d17893f
+    country: 125
+    prefix: '856'
+- model: ox_locations.phoneprefix
+  pk: 1970
+  fields:
+    uuid: 31bb0eb1-ca26-437f-8f0e-bc3d3fc46b28
+    country: 126
+    prefix: '961'
+- model: ox_locations.phoneprefix
+  pk: 1971
+  fields:
+    uuid: 95739e2c-d38c-4e49-ba65-cbee04a81487
+    country: 127
+    prefix: '231'
+- model: ox_locations.phoneprefix
+  pk: 1972
+  fields:
+    uuid: 189b4a1d-2b86-4b05-bfb0-4745263324fe
+    country: 128
+    prefix: '218'
+- model: ox_locations.phoneprefix
+  pk: 1973
+  fields:
+    uuid: c54c3aa6-dd99-49a6-85f6-7a6ee31b23a0
+    country: 129
+    prefix: '1758'
+- model: ox_locations.phoneprefix
+  pk: 1974
+  fields:
+    uuid: 97c446da-72eb-48df-8104-ff6fb4f2c0ae
+    country: 130
+    prefix: '423'
+- model: ox_locations.phoneprefix
+  pk: 1975
+  fields:
+    uuid: 62f73d9e-4121-4eed-b3d8-57812f706c13
+    country: 131
+    prefix: '94'
+- model: ox_locations.phoneprefix
+  pk: 1976
+  fields:
+    uuid: e6fb5535-b0f8-4efa-9521-e77953de0d78
+    country: 132
+    prefix: '266'
+- model: ox_locations.phoneprefix
+  pk: 1977
+  fields:
+    uuid: 4cee000c-81a0-4e4f-9193-cb9aa15bae56
+    country: 133
+    prefix: '370'
+- model: ox_locations.phoneprefix
+  pk: 1978
+  fields:
+    uuid: d03d77d4-a832-434d-a4f7-604bc588976c
+    country: 134
+    prefix: '352'
+- model: ox_locations.phoneprefix
+  pk: 1979
+  fields:
+    uuid: 70974cc6-32ad-4dbc-be79-2f47b86a3721
+    country: 135
+    prefix: '371'
+- model: ox_locations.phoneprefix
+  pk: 1980
+  fields:
+    uuid: d2d878ca-e6b0-4e02-bfe6-7b6c42bb6f9e
+    country: 136
+    prefix: '853'
+- model: ox_locations.phoneprefix
+  pk: 1981
+  fields:
+    uuid: 937edb7a-1d33-43f4-b2c3-f39481fcfa43
+    country: 137
+    prefix: '590'
+- model: ox_locations.phoneprefix
+  pk: 1982
+  fields:
+    uuid: effeb62d-eb42-4cf6-aa95-7f408aa503b0
+    country: 138
+    prefix: '212'
+- model: ox_locations.phoneprefix
+  pk: 1983
+  fields:
+    uuid: 083ef394-06c5-4ce3-bb33-8a0cff33a81d
+    country: 139
+    prefix: '377'
+- model: ox_locations.phoneprefix
+  pk: 1984
+  fields:
+    uuid: b59b3e55-0e6e-48f7-bc18-687e26121fda
+    country: 140
+    prefix: '373'
+- model: ox_locations.phoneprefix
+  pk: 1985
+  fields:
+    uuid: cd0c419f-1351-46e1-842f-6ac142e12887
+    country: 141
+    prefix: '261'
+- model: ox_locations.phoneprefix
+  pk: 1986
+  fields:
+    uuid: 2c9ab33d-cef3-4cf4-b568-82d9bab0d981
+    country: 142
+    prefix: '960'
+- model: ox_locations.phoneprefix
+  pk: 1987
+  fields:
+    uuid: 0086c8e6-ecb5-4abd-a0cd-6a8873b3d298
+    country: 143
+    prefix: '52'
+- model: ox_locations.phoneprefix
+  pk: 1988
+  fields:
+    uuid: 15dd25ef-442e-41c4-9e9b-1630d9213b8d
+    country: 144
+    prefix: '692'
+- model: ox_locations.phoneprefix
+  pk: 1989
+  fields:
+    uuid: a4f3724a-0470-44f5-92a4-82456f587505
+    country: 145
+    prefix: '389'
+- model: ox_locations.phoneprefix
+  pk: 1990
+  fields:
+    uuid: 7f2ceda3-b290-432f-82c4-b605db10dbda
+    country: 146
+    prefix: '223'
+- model: ox_locations.phoneprefix
+  pk: 1991
+  fields:
+    uuid: 3be706f2-8c04-43e0-b02f-7fd08c5b05ae
+    country: 147
+    prefix: '356'
+- model: ox_locations.phoneprefix
+  pk: 1992
+  fields:
+    uuid: 4eb63199-a9a0-46b5-9169-ea8573a65e15
+    country: 148
+    prefix: '95'
+- model: ox_locations.phoneprefix
+  pk: 1993
+  fields:
+    uuid: 0824e49c-e758-44cd-87b6-885762ec603d
+    country: 149
+    prefix: '382'
+- model: ox_locations.phoneprefix
+  pk: 1994
+  fields:
+    uuid: 27c82857-89bb-4a00-bfa2-ce2451dcdf6c
+    country: 150
+    prefix: '976'
+- model: ox_locations.phoneprefix
+  pk: 1995
+  fields:
+    uuid: 57a3bbfd-49f1-4c39-ac9e-10aae001d192
+    country: 151
+    prefix: '1670'
+- model: ox_locations.phoneprefix
+  pk: 1996
+  fields:
+    uuid: 51c68032-b812-4a2e-9679-57a46821827c
+    country: 152
+    prefix: '258'
+- model: ox_locations.phoneprefix
+  pk: 1997
+  fields:
+    uuid: 0ab9409e-981d-450b-a763-591982bb9e22
+    country: 153
+    prefix: '222'
+- model: ox_locations.phoneprefix
+  pk: 1998
+  fields:
+    uuid: 99a016ba-055e-4e1c-bd57-bd2e7c20ef57
+    country: 154
+    prefix: '1664'
+- model: ox_locations.phoneprefix
+  pk: 1999
+  fields:
+    uuid: 9c2553e6-6455-47df-9117-94890fe463e0
+    country: 155
+    prefix: '596'
+- model: ox_locations.phoneprefix
+  pk: 2000
+  fields:
+    uuid: b7be2fd0-107b-430b-a8ab-283678e1d32b
+    country: 156
+    prefix: '230'
+- model: ox_locations.phoneprefix
+  pk: 2001
+  fields:
+    uuid: 4436f454-048e-4bee-b6b9-f528658bd5fc
+    country: 157
+    prefix: '265'
+- model: ox_locations.phoneprefix
+  pk: 2002
+  fields:
+    uuid: 4a42773b-f416-4065-8132-9674d35ac4e8
+    country: 158
+    prefix: '60'
+- model: ox_locations.phoneprefix
+  pk: 2003
+  fields:
+    uuid: 5b3dfe6b-0cce-44a7-a2c3-e4eb2e675f25
+    country: 159
+    prefix: '262'
+- model: ox_locations.phoneprefix
+  pk: 2004
+  fields:
+    uuid: e4b5a6aa-9a8c-4633-9705-7a039181a820
+    country: 160
+    prefix: '264'
+- model: ox_locations.phoneprefix
+  pk: 2005
+  fields:
+    uuid: 960d589f-95b9-46a5-a904-d84fb413f854
+    country: 161
+    prefix: '687'
+- model: ox_locations.phoneprefix
+  pk: 2006
+  fields:
+    uuid: 9504770f-06e7-4e37-b12d-5db0f6786107
+    country: 162
+    prefix: '227'
+- model: ox_locations.phoneprefix
+  pk: 2007
+  fields:
+    uuid: f5b7fd7d-892b-4275-84bc-66afd62cf087
+    country: 163
+    prefix: '672'
+- model: ox_locations.phoneprefix
+  pk: 2008
+  fields:
+    uuid: 9153c77d-33a0-4648-a971-53c9e2b693e3
+    country: 164
+    prefix: '234'
+- model: ox_locations.phoneprefix
+  pk: 2009
+  fields:
+    uuid: a711ace5-78ae-4ebb-b1b2-ba0ef7d565ea
+    country: 165
+    prefix: '505'
+- model: ox_locations.phoneprefix
+  pk: 2010
+  fields:
+    uuid: 21a73585-daee-46e3-a297-b40a283ac59e
+    country: 166
+    prefix: '683'
+- model: ox_locations.phoneprefix
+  pk: 2011
+  fields:
+    uuid: 33967e4b-30ce-4699-aa6b-5f84f5c3e159
+    country: 167
+    prefix: '31'
+- model: ox_locations.phoneprefix
+  pk: 2012
+  fields:
+    uuid: 6a33034b-aefe-480c-b0be-0eae74e39887
+    country: 168
+    prefix: '47'
+- model: ox_locations.phoneprefix
+  pk: 2013
+  fields:
+    uuid: 0ae89726-a63e-4953-b4bb-250a2dc52975
+    country: 169
+    prefix: '977'
+- model: ox_locations.phoneprefix
+  pk: 2014
+  fields:
+    uuid: f3cc8f14-b88b-484a-81aa-4877a4f36da0
+    country: 170
+    prefix: '674'
+- model: ox_locations.phoneprefix
+  pk: 2015
+  fields:
+    uuid: 4a52ae3d-2800-4cad-ab82-5631d9da0d79
+    country: 171
+    prefix: '64'
+- model: ox_locations.phoneprefix
+  pk: 2016
+  fields:
+    uuid: 25ab1a1f-e86b-4fa5-bd89-2c46adc40f48
+    country: 172
+    prefix: '968'
+- model: ox_locations.phoneprefix
+  pk: 2017
+  fields:
+    uuid: 4d1fb49c-9cec-4a93-9a34-9a874a592fdf
+    country: 173
+    prefix: '92'
+- model: ox_locations.phoneprefix
+  pk: 2018
+  fields:
+    uuid: 5e2c3363-0190-460c-b6da-fe1c2e6917bf
+    country: 174
+    prefix: '507'
+- model: ox_locations.phoneprefix
+  pk: 2019
+  fields:
+    uuid: e74eaf27-76a7-40ce-93a0-75d196a746e7
+    country: 176
+    prefix: '51'
+- model: ox_locations.phoneprefix
+  pk: 2020
+  fields:
+    uuid: 9a75298f-9e5c-4f03-b999-2611d998f594
+    country: 177
+    prefix: '63'
+- model: ox_locations.phoneprefix
+  pk: 2021
+  fields:
+    uuid: f48e1a92-3aea-41e4-b806-6c04e093f2e7
+    country: 178
+    prefix: '680'
+- model: ox_locations.phoneprefix
+  pk: 2022
+  fields:
+    uuid: 7f485928-5d6d-47a8-a81e-fb114f7d4977
+    country: 179
+    prefix: '675'
+- model: ox_locations.phoneprefix
+  pk: 2023
+  fields:
+    uuid: 6070d626-9cb9-4b9d-85b9-e66338a987c9
+    country: 180
+    prefix: '48'
+- model: ox_locations.phoneprefix
+  pk: 2024
+  fields:
+    uuid: 34798786-b2b5-4c18-a40e-1672b54f4af5
+    country: 181
+    prefix: '1787'
+- model: ox_locations.phoneprefix
+  pk: 2025
+  fields:
+    uuid: 79d397df-f70e-42bd-9565-764b8a42a992
+    country: 181
+    prefix: '1939'
+- model: ox_locations.phoneprefix
+  pk: 2026
+  fields:
+    uuid: 89223a57-c1e4-4599-9b15-23297e921b0a
+    country: 182
+    prefix: '850'
+- model: ox_locations.phoneprefix
+  pk: 2027
+  fields:
+    uuid: de742938-2154-4995-a6fa-b7dce09c270d
+    country: 183
+    prefix: '351'
+- model: ox_locations.phoneprefix
+  pk: 2028
+  fields:
+    uuid: b5ea3c65-2dc3-4126-af45-1af1f6f4c7f5
+    country: 184
+    prefix: '595'
+- model: ox_locations.phoneprefix
+  pk: 2029
+  fields:
+    uuid: 67de2704-4c60-4296-a3c1-afae7889b78d
+    country: 185
+    prefix: '970'
+- model: ox_locations.phoneprefix
+  pk: 2030
+  fields:
+    uuid: 8f51ce2b-8811-429f-8b86-9545e5a17d90
+    country: 186
+    prefix: '689'
+- model: ox_locations.phoneprefix
+  pk: 2031
+  fields:
+    uuid: d21495f1-61ed-43a1-b430-672eb66cdd11
+    country: 187
+    prefix: '974'
+- model: ox_locations.phoneprefix
+  pk: 2032
+  fields:
+    uuid: b3bf2ea9-97b4-4dc3-9242-2dc954a495b0
+    country: 188
+    prefix: '262'
+- model: ox_locations.phoneprefix
+  pk: 2033
+  fields:
+    uuid: 3b8c35ff-8d3d-4991-b4e3-574dce10a914
+    country: 189
+    prefix: '40'
+- model: ox_locations.phoneprefix
+  pk: 2034
+  fields:
+    uuid: 14a23eee-bcb9-4959-ae65-53bbdf2a375e
+    country: 190
+    prefix: '79'
+- model: ox_locations.phoneprefix
+  pk: 2035
+  fields:
+    uuid: e8ed0531-7855-4c0a-98cd-b2d72a89a48c
+    country: 191
+    prefix: '250'
+- model: ox_locations.phoneprefix
+  pk: 2036
+  fields:
+    uuid: 370adf61-23a1-4550-b305-0478a32a4655
+    country: 192
+    prefix: '966'
+- model: ox_locations.phoneprefix
+  pk: 2037
+  fields:
+    uuid: 830f3f25-d0e2-4992-a9a9-7687f9236c19
+    country: 193
+    prefix: '249'
+- model: ox_locations.phoneprefix
+  pk: 2038
+  fields:
+    uuid: 6a8474cd-dad1-4889-8334-a9faaa05379f
+    country: 194
+    prefix: '221'
+- model: ox_locations.phoneprefix
+  pk: 2039
+  fields:
+    uuid: b67458f8-5f74-464c-86d4-c744029ae775
+    country: 195
+    prefix: '65'
+- model: ox_locations.phoneprefix
+  pk: 2040
+  fields:
+    uuid: e54f4579-281b-4881-9f5b-7fcde616bd86
+    country: 197
+    prefix: '290'
+- model: ox_locations.phoneprefix
+  pk: 2041
+  fields:
+    uuid: 9c341fd2-4484-4f4e-993e-ed60d8997d29
+    country: 198
+    prefix: '47'
+- model: ox_locations.phoneprefix
+  pk: 2042
+  fields:
+    uuid: 96dc9202-b016-4852-992d-4093a4ec24f3
+    country: 199
+    prefix: '677'
+- model: ox_locations.phoneprefix
+  pk: 2043
+  fields:
+    uuid: b4296d61-5616-41b5-8e2e-4988ee6c6c6a
+    country: 200
+    prefix: '232'
+- model: ox_locations.phoneprefix
+  pk: 2044
+  fields:
+    uuid: 6fcd1ea3-8aba-4729-83b1-8fd607587c81
+    country: 201
+    prefix: '503'
+- model: ox_locations.phoneprefix
+  pk: 2045
+  fields:
+    uuid: 6d7c909e-edc8-4e67-bc1b-b88142efa464
+    country: 202
+    prefix: '378'
+- model: ox_locations.phoneprefix
+  pk: 2046
+  fields:
+    uuid: 5951ca57-1ba0-42ac-8213-f06c4c0cb875
+    country: 203
+    prefix: '252'
+- model: ox_locations.phoneprefix
+  pk: 2047
+  fields:
+    uuid: 6fd6eb8f-d7e5-40fd-9c47-701e722c82c8
+    country: 204
+    prefix: '508'
+- model: ox_locations.phoneprefix
+  pk: 2048
+  fields:
+    uuid: e7c9dd9f-d0be-46e9-b835-3923ad3a95eb
+    country: 205
+    prefix: '381'
+- model: ox_locations.phoneprefix
+  pk: 2049
+  fields:
+    uuid: 246d849b-bfd8-4a28-8430-a3df121c066d
+    country: 206
+    prefix: '211'
+- model: ox_locations.phoneprefix
+  pk: 2050
+  fields:
+    uuid: 361d9167-8fd7-417f-90cb-36059bcfb472
+    country: 207
+    prefix: '239'
+- model: ox_locations.phoneprefix
+  pk: 2051
+  fields:
+    uuid: 5fc487fb-6450-4650-97c1-a90d7c4a5fe3
+    country: 208
+    prefix: '597'
+- model: ox_locations.phoneprefix
+  pk: 2052
+  fields:
+    uuid: 2bb55c6f-aecc-44bd-83a3-476ee01bc5d5
+    country: 209
+    prefix: '421'
+- model: ox_locations.phoneprefix
+  pk: 2053
+  fields:
+    uuid: 5812eb85-7865-4728-8175-cbd063e31aa2
+    country: 210
+    prefix: '386'
+- model: ox_locations.phoneprefix
+  pk: 2054
+  fields:
+    uuid: 89eba818-5d08-4d9e-8322-7fb023000fe5
+    country: 211
+    prefix: '46'
+- model: ox_locations.phoneprefix
+  pk: 2055
+  fields:
+    uuid: cb252d66-add6-4ca3-9e17-75378b09b361
+    country: 212
+    prefix: '268'
+- model: ox_locations.phoneprefix
+  pk: 2056
+  fields:
+    uuid: 27e73a31-6ea7-44ce-a969-6dbed9815daf
+    country: 213
+    prefix: '1721'
+- model: ox_locations.phoneprefix
+  pk: 2057
+  fields:
+    uuid: 2dc8b093-983d-4ba8-bfc7-659d7d30c5a5
+    country: 214
+    prefix: '248'
+- model: ox_locations.phoneprefix
+  pk: 2058
+  fields:
+    uuid: f2f9aeda-bad5-43d8-95ad-e7ec3246fd79
+    country: 215
+    prefix: '963'
+- model: ox_locations.phoneprefix
+  pk: 2059
+  fields:
+    uuid: 17e602b3-c3d7-4bbb-a852-237fc9cc2523
+    country: 216
+    prefix: '1649'
+- model: ox_locations.phoneprefix
+  pk: 2060
+  fields:
+    uuid: 9420a9a1-57e6-423b-b6f7-b03365f584af
+    country: 217
+    prefix: '235'
+- model: ox_locations.phoneprefix
+  pk: 2061
+  fields:
+    uuid: 8dedeb52-b2e7-43cb-92ea-d07b42c75f0a
+    country: 218
+    prefix: '228'
+- model: ox_locations.phoneprefix
+  pk: 2062
+  fields:
+    uuid: 51a3b1aa-5717-4f77-8eaa-3128312d47e4
+    country: 219
+    prefix: '66'
+- model: ox_locations.phoneprefix
+  pk: 2063
+  fields:
+    uuid: 1cd4e10b-10d4-40ba-ba53-c0cd06c796c7
+    country: 220
+    prefix: '992'
+- model: ox_locations.phoneprefix
+  pk: 2064
+  fields:
+    uuid: 351e006e-d3a7-4700-bdef-293dcc23f79a
+    country: 221
+    prefix: '690'
+- model: ox_locations.phoneprefix
+  pk: 2065
+  fields:
+    uuid: f286d68f-f09f-4baa-8509-4f46f1a3c1f5
+    country: 222
+    prefix: '993'
+- model: ox_locations.phoneprefix
+  pk: 2066
+  fields:
+    uuid: 203571eb-5901-4c9e-b498-9266701898b7
+    country: 223
+    prefix: '670'
+- model: ox_locations.phoneprefix
+  pk: 2067
+  fields:
+    uuid: abfb9071-8ef2-4a31-836e-97c56100feac
+    country: 224
+    prefix: '676'
+- model: ox_locations.phoneprefix
+  pk: 2068
+  fields:
+    uuid: d1c77459-f3d8-4372-a002-33320a9b93bd
+    country: 225
+    prefix: '1868'
+- model: ox_locations.phoneprefix
+  pk: 2069
+  fields:
+    uuid: 466e75ec-dd14-46ea-a416-128e826dfc08
+    country: 226
+    prefix: '216'
+- model: ox_locations.phoneprefix
+  pk: 2070
+  fields:
+    uuid: b2641e7a-31be-4348-a394-fbcc1cc63354
+    country: 227
+    prefix: '90'
+- model: ox_locations.phoneprefix
+  pk: 2071
+  fields:
+    uuid: 8e9ac8b5-7dff-4bd7-b694-b1e859059d74
+    country: 228
+    prefix: '688'
+- model: ox_locations.phoneprefix
+  pk: 2072
+  fields:
+    uuid: ec8780b2-cfd5-47bb-8a48-01de90a9d418
+    country: 229
+    prefix: '886'
+- model: ox_locations.phoneprefix
+  pk: 2073
+  fields:
+    uuid: 82c305bd-d9a3-40b6-9df8-2d0841bd98a7
+    country: 230
+    prefix: '255'
+- model: ox_locations.phoneprefix
+  pk: 2074
+  fields:
+    uuid: d1983e43-247d-41c0-962d-187bdd073b50
+    country: 231
+    prefix: '256'
+- model: ox_locations.phoneprefix
+  pk: 2075
+  fields:
+    uuid: e9325509-422e-4ee5-b194-e788b6107332
+    country: 232
+    prefix: '380'
+- model: ox_locations.phoneprefix
+  pk: 2076
+  fields:
+    uuid: 606163f3-3d80-4aa3-b937-4754ca0738ec
+    country: 234
+    prefix: '598'
+- model: ox_locations.phoneprefix
+  pk: 2077
+  fields:
+    uuid: 9f358c40-b31f-47ec-bef7-e1565eef94f1
+    country: 235
+    prefix: '1205'
+- model: ox_locations.phoneprefix
+  pk: 2078
+  fields:
+    uuid: 46161b9c-9de9-4be1-9864-7803a0346490
+    country: 235
+    prefix: '1251'
+- model: ox_locations.phoneprefix
+  pk: 2079
+  fields:
+    uuid: df7b5b87-ec60-4a68-8d5d-4f14f8c51daa
+    country: 235
+    prefix: '1256'
+- model: ox_locations.phoneprefix
+  pk: 2080
+  fields:
+    uuid: a8f54eff-874c-4b0a-8506-5563761bd32b
+    country: 235
+    prefix: '1334'
+- model: ox_locations.phoneprefix
+  pk: 2081
+  fields:
+    uuid: 876667e1-0531-4b2e-be84-adf9e9e4bc21
+    country: 235
+    prefix: '1483'
+- model: ox_locations.phoneprefix
+  pk: 2082
+  fields:
+    uuid: 30efda67-bda5-4c22-b6d2-bff211c8698c
+    country: 235
+    prefix: '1659'
+- model: ox_locations.phoneprefix
+  pk: 2083
+  fields:
+    uuid: 84b97564-a5d4-4038-b335-3e5252cda32f
+    country: 235
+    prefix: '1938'
+- model: ox_locations.phoneprefix
+  pk: 2084
+  fields:
+    uuid: b4e4b61f-de99-4d91-87a2-38264446bfa9
+    country: 235
+    prefix: '1907'
+- model: ox_locations.phoneprefix
+  pk: 2085
+  fields:
+    uuid: c093b887-87f8-4e51-acac-9dbe381ef9a5
+    country: 235
+    prefix: '1480'
+- model: ox_locations.phoneprefix
+  pk: 2086
+  fields:
+    uuid: a720c661-799a-4d2c-9d70-1398386894ac
+    country: 235
+    prefix: '1520'
+- model: ox_locations.phoneprefix
+  pk: 2087
+  fields:
+    uuid: 7e5cb9c2-ab69-4713-96fc-b6d940d207e0
+    country: 235
+    prefix: '1602'
+- model: ox_locations.phoneprefix
+  pk: 2088
+  fields:
+    uuid: 1e5145b8-b9c6-487c-9de7-29e14555f94d
+    country: 235
+    prefix: '1623'
+- model: ox_locations.phoneprefix
+  pk: 2089
+  fields:
+    uuid: d4d7d05b-6d68-4611-b1fb-d1ae115bc8d8
+    country: 235
+    prefix: '1928'
+- model: ox_locations.phoneprefix
+  pk: 2090
+  fields:
+    uuid: b9a3ff59-99f7-43b2-beac-1ce1984730df
+    country: 235
+    prefix: '1327'
+- model: ox_locations.phoneprefix
+  pk: 2091
+  fields:
+    uuid: 98e989c3-761d-44e8-a0c2-d7300323379d
+    country: 235
+    prefix: '1479'
+- model: ox_locations.phoneprefix
+  pk: 2092
+  fields:
+    uuid: fba7a34e-ba7d-4936-a8af-369632f4f0ec
+    country: 235
+    prefix: '1501'
+- model: ox_locations.phoneprefix
+  pk: 2093
+  fields:
+    uuid: 7e890aae-6e16-4f94-a572-ff81eacd3769
+    country: 235
+    prefix: '1870'
+- model: ox_locations.phoneprefix
+  pk: 2094
+  fields:
+    uuid: 41c262a2-2923-4b2e-b0de-c9f35953dc73
+    country: 235
+    prefix: '1209'
+- model: ox_locations.phoneprefix
+  pk: 2095
+  fields:
+    uuid: 685b57e3-597b-4f11-8ebf-95076be2e818
+    country: 235
+    prefix: '1213'
+- model: ox_locations.phoneprefix
+  pk: 2096
+  fields:
+    uuid: 8b63ecd6-2b67-4254-b0d4-deca590d013c
+    country: 235
+    prefix: '1279'
+- model: ox_locations.phoneprefix
+  pk: 2097
+  fields:
+    uuid: 9a1958df-d47d-4790-9873-58b2bb25a34c
+    country: 235
+    prefix: '1310'
+- model: ox_locations.phoneprefix
+  pk: 2098
+  fields:
+    uuid: 6fb8cc4f-9b6a-4eac-ba93-c85470cc36f8
+    country: 235
+    prefix: '1323'
+- model: ox_locations.phoneprefix
+  pk: 2099
+  fields:
+    uuid: a52c83a3-f9cc-48c6-97cf-2def6ba51063
+    country: 235
+    prefix: '1341'
+- model: ox_locations.phoneprefix
+  pk: 2100
+  fields:
+    uuid: 6d39acbe-2b8c-4ec2-856c-9e5e2c059004
+    country: 235
+    prefix: '1350'
+- model: ox_locations.phoneprefix
+  pk: 2101
+  fields:
+    uuid: 79dbc66b-aeeb-4a82-a56c-34ae917e6351
+    country: 235
+    prefix: '1357'
+- model: ox_locations.phoneprefix
+  pk: 2102
+  fields:
+    uuid: 2566950d-0833-46ab-a4a1-ec9b21caa832
+    country: 235
+    prefix: '1369'
+- model: ox_locations.phoneprefix
+  pk: 2103
+  fields:
+    uuid: b8eafa55-2cb6-4bd3-832f-8c0b3ead3bd6
+    country: 235
+    prefix: '1408'
+- model: ox_locations.phoneprefix
+  pk: 2104
+  fields:
+    uuid: bfaede88-8ebe-4983-89cb-0feb59329945
+    country: 235
+    prefix: '1415'
+- model: ox_locations.phoneprefix
+  pk: 2105
+  fields:
+    uuid: 2118e703-87bd-45b3-8940-ecd63dc3531c
+    country: 235
+    prefix: '1424'
+- model: ox_locations.phoneprefix
+  pk: 2106
+  fields:
+    uuid: c4219edc-8697-4d7f-b7ab-7892fc45febd
+    country: 235
+    prefix: '1442'
+- model: ox_locations.phoneprefix
+  pk: 2107
+  fields:
+    uuid: fc0492d0-da96-4af8-bacc-e1a238edf11e
+    country: 235
+    prefix: '1510'
+- model: ox_locations.phoneprefix
+  pk: 2108
+  fields:
+    uuid: 87b15047-88fa-43f7-abc1-2daee97197f2
+    country: 235
+    prefix: '1530'
+- model: ox_locations.phoneprefix
+  pk: 2109
+  fields:
+    uuid: 66b0463d-e961-41e9-a9c2-c640cc95b94f
+    country: 235
+    prefix: '1559'
+- model: ox_locations.phoneprefix
+  pk: 2110
+  fields:
+    uuid: 3af56b47-9da3-4c16-9778-113d024d949c
+    country: 235
+    prefix: '1562'
+- model: ox_locations.phoneprefix
+  pk: 2111
+  fields:
+    uuid: 43ae7a02-1fe4-47c6-8a21-41ea5711df31
+    country: 235
+    prefix: '1619'
+- model: ox_locations.phoneprefix
+  pk: 2112
+  fields:
+    uuid: 9eccc3b9-53de-4989-8ac3-dada1cadd435
+    country: 235
+    prefix: '1626'
+- model: ox_locations.phoneprefix
+  pk: 2113
+  fields:
+    uuid: fb096f84-ead2-4b47-bec9-4b547c5259c6
+    country: 235
+    prefix: '1628'
+- model: ox_locations.phoneprefix
+  pk: 2114
+  fields:
+    uuid: 689cf532-14d3-4f64-a6c5-408680595ffa
+    country: 235
+    prefix: '1650'
+- model: ox_locations.phoneprefix
+  pk: 2115
+  fields:
+    uuid: 14d1e7ec-81ae-495c-8e99-e0404ca06a90
+    country: 235
+    prefix: '1657'
+- model: ox_locations.phoneprefix
+  pk: 2116
+  fields:
+    uuid: b67caf39-3eb0-4dce-b770-5875fe022eeb
+    country: 235
+    prefix: '1661'
+- model: ox_locations.phoneprefix
+  pk: 2117
+  fields:
+    uuid: 8619e631-94e8-4ae6-b4e4-9a4f852ac265
+    country: 235
+    prefix: '1669'
+- model: ox_locations.phoneprefix
+  pk: 2118
+  fields:
+    uuid: c5adc31c-dcc9-443d-bf47-d060397d77a6
+    country: 235
+    prefix: '1707'
+- model: ox_locations.phoneprefix
+  pk: 2119
+  fields:
+    uuid: 131adc1e-df5a-489d-ad27-e719f0ffc923
+    country: 235
+    prefix: '1714'
+- model: ox_locations.phoneprefix
+  pk: 2120
+  fields:
+    uuid: df87117f-2a4e-4a3c-a2ae-1740b75a4783
+    country: 235
+    prefix: '1738'
+- model: ox_locations.phoneprefix
+  pk: 2121
+  fields:
+    uuid: 729f4561-1d73-49aa-928d-ce2d08201341
+    country: 235
+    prefix: '1747'
+- model: ox_locations.phoneprefix
+  pk: 2122
+  fields:
+    uuid: 41c31574-c97a-4bff-80eb-736d1461999b
+    country: 235
+    prefix: '1760'
+- model: ox_locations.phoneprefix
+  pk: 2123
+  fields:
+    uuid: c9c13201-3049-4934-adb9-e63ea6f54dcf
+    country: 235
+    prefix: '1805'
+- model: ox_locations.phoneprefix
+  pk: 2124
+  fields:
+    uuid: d6dc8cd7-9114-419d-9615-44268bcca14e
+    country: 235
+    prefix: '1818'
+- model: ox_locations.phoneprefix
+  pk: 2125
+  fields:
+    uuid: 67edacff-3518-4d41-9be0-45764c68fb4d
+    country: 235
+    prefix: '1820'
+- model: ox_locations.phoneprefix
+  pk: 2126
+  fields:
+    uuid: 9fc453aa-e80f-4146-8db8-d6da2b94bd77
+    country: 235
+    prefix: '1831'
+- model: ox_locations.phoneprefix
+  pk: 2127
+  fields:
+    uuid: 56fc8deb-5bec-478c-81e0-f880d8993c9f
+    country: 235
+    prefix: '1837'
+- model: ox_locations.phoneprefix
+  pk: 2128
+  fields:
+    uuid: 42d09d51-f2bf-426b-bd17-a28b425bf93e
+    country: 235
+    prefix: '1840'
+- model: ox_locations.phoneprefix
+  pk: 2129
+  fields:
+    uuid: 9ab39654-ed1c-4712-b91f-2682f8ebc12b
+    country: 235
+    prefix: '1858'
+- model: ox_locations.phoneprefix
+  pk: 2130
+  fields:
+    uuid: c76e1124-5bb7-4c57-a528-4e3f2ad7054b
+    country: 235
+    prefix: '1909'
+- model: ox_locations.phoneprefix
+  pk: 2131
+  fields:
+    uuid: 6b6de4a2-f168-4e05-a36d-5d3304ac1c6b
+    country: 235
+    prefix: '1916'
+- model: ox_locations.phoneprefix
+  pk: 2132
+  fields:
+    uuid: 0cabcd62-995c-45b1-a429-bf1b05f4bc24
+    country: 235
+    prefix: '1925'
+- model: ox_locations.phoneprefix
+  pk: 2133
+  fields:
+    uuid: 5f7dfa37-f174-4e8d-930c-29fd8680aa40
+    country: 235
+    prefix: '1949'
+- model: ox_locations.phoneprefix
+  pk: 2134
+  fields:
+    uuid: 743afda5-8a17-403c-ad98-98f0c0ba9019
+    country: 235
+    prefix: '1951'
+- model: ox_locations.phoneprefix
+  pk: 2135
+  fields:
+    uuid: c9d42d94-c251-4adc-b0b9-4cff7bf68349
+    country: 235
+    prefix: '1303'
+- model: ox_locations.phoneprefix
+  pk: 2136
+  fields:
+    uuid: 7a03f7ab-7645-4f9d-8056-5498c1be5636
+    country: 235
+    prefix: '1719'
+- model: ox_locations.phoneprefix
+  pk: 2137
+  fields:
+    uuid: aa03a81f-3eff-417d-8ab1-76232bb56964
+    country: 235
+    prefix: '1720'
+- model: ox_locations.phoneprefix
+  pk: 2138
+  fields:
+    uuid: 71f8ca7b-2209-418f-bed7-ae77fd3eaa7d
+    country: 235
+    prefix: '1748'
+- model: ox_locations.phoneprefix
+  pk: 2139
+  fields:
+    uuid: 164da881-6579-4eaf-8c4e-fcebf7c748d4
+    country: 235
+    prefix: '1970'
+- model: ox_locations.phoneprefix
+  pk: 2140
+  fields:
+    uuid: b41d31e1-a4a8-4d27-ad80-34f23b60fc4b
+    country: 235
+    prefix: '1983'
+- model: ox_locations.phoneprefix
+  pk: 2141
+  fields:
+    uuid: ef7d07c5-e935-40bb-a807-40faae6d9811
+    country: 235
+    prefix: '1203'
+- model: ox_locations.phoneprefix
+  pk: 2142
+  fields:
+    uuid: 76aae964-f7d1-40b6-bc50-cbc5ea89caa9
+    country: 235
+    prefix: '1475'
+- model: ox_locations.phoneprefix
+  pk: 2143
+  fields:
+    uuid: dabc0db2-e091-48a3-9ec3-3740771bae9e
+    country: 235
+    prefix: '1860'
+- model: ox_locations.phoneprefix
+  pk: 2144
+  fields:
+    uuid: 214d73a1-65be-4380-b0eb-ce088bc0627e
+    country: 235
+    prefix: '1959'
+- model: ox_locations.phoneprefix
+  pk: 2145
+  fields:
+    uuid: 86098ee0-7760-4895-b4af-f6e8fe861e2c
+    country: 235
+    prefix: '1302'
+- model: ox_locations.phoneprefix
+  pk: 2146
+  fields:
+    uuid: ed25912c-8653-41d7-ad26-a018a67dc9e4
+    country: 235
+    prefix: '1202'
+- model: ox_locations.phoneprefix
+  pk: 2147
+  fields:
+    uuid: ac92701a-3751-4916-81e1-fa29f17bbd16
+    country: 235
+    prefix: '1771'
+- model: ox_locations.phoneprefix
+  pk: 2148
+  fields:
+    uuid: 8069db56-726a-4107-9347-de0b89ddbdbb
+    country: 235
+    prefix: '1239'
+- model: ox_locations.phoneprefix
+  pk: 2149
+  fields:
+    uuid: a073c06b-81ca-4b69-9384-a8f5254b08b4
+    country: 235
+    prefix: '1305'
+- model: ox_locations.phoneprefix
+  pk: 2150
+  fields:
+    uuid: 50665402-47d0-45e7-9db1-f0a45d3d506b
+    country: 235
+    prefix: '1321'
+- model: ox_locations.phoneprefix
+  pk: 2151
+  fields:
+    uuid: ffbffee6-071c-4c37-a73b-86c9bdd4030f
+    country: 235
+    prefix: '1324'
+- model: ox_locations.phoneprefix
+  pk: 2152
+  fields:
+    uuid: 81251242-f4cc-4d60-8eca-6778ca4e4dfe
+    country: 235
+    prefix: '1352'
+- model: ox_locations.phoneprefix
+  pk: 2153
+  fields:
+    uuid: e14555d7-0167-4e0d-87ef-f7e1948661cf
+    country: 235
+    prefix: '1386'
+- model: ox_locations.phoneprefix
+  pk: 2154
+  fields:
+    uuid: 5d60ee82-c1a3-427d-8120-69359c319443
+    country: 235
+    prefix: '1407'
+- model: ox_locations.phoneprefix
+  pk: 2155
+  fields:
+    uuid: a13f91dc-c63d-48f9-a987-7001edce6d46
+    country: 235
+    prefix: '1448'
+- model: ox_locations.phoneprefix
+  pk: 2156
+  fields:
+    uuid: 7d266329-8299-4540-a0eb-3308123b358c
+    country: 235
+    prefix: '1561'
+- model: ox_locations.phoneprefix
+  pk: 2157
+  fields:
+    uuid: 0b6d1544-df90-41f6-bf93-3ee226880692
+    country: 235
+    prefix: '1645'
+- model: ox_locations.phoneprefix
+  pk: 2158
+  fields:
+    uuid: a0f5b8bd-5f3c-467e-8c78-357e07c1c233
+    country: 235
+    prefix: '1656'
+- model: ox_locations.phoneprefix
+  pk: 2159
+  fields:
+    uuid: 0cf66c45-959c-46f4-af01-9717b10ba0c1
+    country: 235
+    prefix: '1689'
+- model: ox_locations.phoneprefix
+  pk: 2160
+  fields:
+    uuid: b9a8918e-8836-485a-85da-80a152fe32a3
+    country: 235
+    prefix: '1727'
+- model: ox_locations.phoneprefix
+  pk: 2161
+  fields:
+    uuid: c13b8425-6b26-48f4-a7e5-743b967895b3
+    country: 235
+    prefix: '1728'
+- model: ox_locations.phoneprefix
+  pk: 2162
+  fields:
+    uuid: 8ed5e873-934e-4b2b-a65a-b076a1f05060
+    country: 235
+    prefix: '1754'
+- model: ox_locations.phoneprefix
+  pk: 2163
+  fields:
+    uuid: 4a797551-785e-4c9c-bd89-20169a675433
+    country: 235
+    prefix: '1772'
+- model: ox_locations.phoneprefix
+  pk: 2164
+  fields:
+    uuid: 37289820-0a32-49e5-98aa-b2af77f4236a
+    country: 235
+    prefix: '1786'
+- model: ox_locations.phoneprefix
+  pk: 2165
+  fields:
+    uuid: a6c304a9-eff1-48b6-8c38-3879c554ab0c
+    country: 235
+    prefix: '1813'
+- model: ox_locations.phoneprefix
+  pk: 2166
+  fields:
+    uuid: e4ab325c-0965-4e92-9507-e9f89f43edaa
+    country: 235
+    prefix: '1850'
+- model: ox_locations.phoneprefix
+  pk: 2167
+  fields:
+    uuid: c8e5526e-419b-4b7d-9d01-c2853eccd036
+    country: 235
+    prefix: '1863'
+- model: ox_locations.phoneprefix
+  pk: 2168
+  fields:
+    uuid: 8897dfde-4957-4008-bf33-90391a5770c9
+    country: 235
+    prefix: '1904'
+- model: ox_locations.phoneprefix
+  pk: 2169
+  fields:
+    uuid: 4aec1520-8bba-46ea-af86-a029a1271aad
+    country: 235
+    prefix: '1941'
+- model: ox_locations.phoneprefix
+  pk: 2170
+  fields:
+    uuid: 88ed02c2-84bc-4c16-bc00-da4e84fe61c2
+    country: 235
+    prefix: '1954'
+- model: ox_locations.phoneprefix
+  pk: 2171
+  fields:
+    uuid: e845c9ed-4af5-4e66-9747-b2293b382a80
+    country: 235
+    prefix: '1229'
+- model: ox_locations.phoneprefix
+  pk: 2172
+  fields:
+    uuid: d5ce0e3a-46e1-405f-bc90-0f847550f618
+    country: 235
+    prefix: '1404'
+- model: ox_locations.phoneprefix
+  pk: 2173
+  fields:
+    uuid: 29b62085-d258-4194-be74-b2bbe7705f03
+    country: 235
+    prefix: '1470'
+- model: ox_locations.phoneprefix
+  pk: 2174
+  fields:
+    uuid: f2ff56ef-a3e6-4b45-a516-9077fca33b1e
+    country: 235
+    prefix: '1478'
+- model: ox_locations.phoneprefix
+  pk: 2175
+  fields:
+    uuid: c40b6e61-cf80-4774-90f1-e72c2daa9ecd
+    country: 235
+    prefix: '1678'
+- model: ox_locations.phoneprefix
+  pk: 2176
+  fields:
+    uuid: 87429ada-97e5-432b-b596-ebcd79625d3a
+    country: 235
+    prefix: '1706'
+- model: ox_locations.phoneprefix
+  pk: 2177
+  fields:
+    uuid: aee8524a-b2df-46a2-9620-ed9188f75097
+    country: 235
+    prefix: '1762'
+- model: ox_locations.phoneprefix
+  pk: 2178
+  fields:
+    uuid: e9ae1860-058d-46e3-8dcd-8b0fddb95685
+    country: 235
+    prefix: '1770'
+- model: ox_locations.phoneprefix
+  pk: 2179
+  fields:
+    uuid: 17796830-c58b-494c-b38a-69509c2e9467
+    country: 235
+    prefix: '1912'
+- model: ox_locations.phoneprefix
+  pk: 2180
+  fields:
+    uuid: 67a3bc9d-5d89-4339-a302-1c7c7633a1e8
+    country: 235
+    prefix: '1943'
+- model: ox_locations.phoneprefix
+  pk: 2181
+  fields:
+    uuid: 89805173-91bf-41c9-afc6-3026fdbb6088
+    country: 235
+    prefix: '1808'
+- model: ox_locations.phoneprefix
+  pk: 2182
+  fields:
+    uuid: 38bce66e-05cb-47d5-b9e4-e47aac9734e2
+    country: 235
+    prefix: '1208'
+- model: ox_locations.phoneprefix
+  pk: 2183
+  fields:
+    uuid: fb1d3ae0-d7a1-4e42-b324-ab038e793a33
+    country: 235
+    prefix: '1986'
+- model: ox_locations.phoneprefix
+  pk: 2184
+  fields:
+    uuid: 4ee40644-9803-47bb-8ae1-ca86c944841b
+    country: 235
+    prefix: '1217'
+- model: ox_locations.phoneprefix
+  pk: 2185
+  fields:
+    uuid: 32f1791e-f1db-4733-93a2-61eba57ec6ba
+    country: 235
+    prefix: '1224'
+- model: ox_locations.phoneprefix
+  pk: 2186
+  fields:
+    uuid: 65270723-6b08-40d3-adf7-3fdb53f1707b
+    country: 235
+    prefix: '1309'
+- model: ox_locations.phoneprefix
+  pk: 2187
+  fields:
+    uuid: 148ac13f-4f31-446e-bba8-3937b8f4b760
+    country: 235
+    prefix: '1312'
+- model: ox_locations.phoneprefix
+  pk: 2188
+  fields:
+    uuid: 72d1ec2a-052a-45d7-bedb-e04adff18adf
+    country: 235
+    prefix: '1331'
+- model: ox_locations.phoneprefix
+  pk: 2189
+  fields:
+    uuid: 1d502a37-507d-4281-93b1-cfe0c6d5a8d9
+    country: 235
+    prefix: '1447'
+- model: ox_locations.phoneprefix
+  pk: 2190
+  fields:
+    uuid: a00d3aa7-9f04-434c-bfa6-bacea5f209f2
+    country: 235
+    prefix: '1464'
+- model: ox_locations.phoneprefix
+  pk: 2191
+  fields:
+    uuid: ee8b3519-7656-4f03-a6a0-a85d9e686026
+    country: 235
+    prefix: '1618'
+- model: ox_locations.phoneprefix
+  pk: 2192
+  fields:
+    uuid: 138bc501-e8d0-4bc3-adfe-fbda992bf77e
+    country: 235
+    prefix: '1630'
+- model: ox_locations.phoneprefix
+  pk: 2193
+  fields:
+    uuid: e1ee4220-c72c-4d03-97ad-319e2abd64a3
+    country: 235
+    prefix: '1708'
+- model: ox_locations.phoneprefix
+  pk: 2194
+  fields:
+    uuid: 7d639aae-08d6-4bf4-a3ff-ad3e5fd933e1
+    country: 235
+    prefix: '1730'
+- model: ox_locations.phoneprefix
+  pk: 2195
+  fields:
+    uuid: 5272acb7-0dd6-47c0-81a3-1be146897852
+    country: 235
+    prefix: '1773'
+- model: ox_locations.phoneprefix
+  pk: 2196
+  fields:
+    uuid: ba8da235-8bae-4659-8e09-098c706ad270
+    country: 235
+    prefix: '1779'
+- model: ox_locations.phoneprefix
+  pk: 2197
+  fields:
+    uuid: 44aaaaf5-f344-42d0-a3c2-c2ab27795b36
+    country: 235
+    prefix: '1815'
+- model: ox_locations.phoneprefix
+  pk: 2198
+  fields:
+    uuid: 42990177-c2dc-4170-9701-461774f6b17f
+    country: 235
+    prefix: '1847'
+- model: ox_locations.phoneprefix
+  pk: 2199
+  fields:
+    uuid: b05907ae-96dc-4c27-b89e-a263eb71b661
+    country: 235
+    prefix: '1861'
+- model: ox_locations.phoneprefix
+  pk: 2200
+  fields:
+    uuid: d3137db3-82f1-40a9-9792-9f6bbed17cb7
+    country: 235
+    prefix: '1872'
+- model: ox_locations.phoneprefix
+  pk: 2201
+  fields:
+    uuid: f7904fbe-c702-4be6-93ca-401c99f9542a
+    country: 235
+    prefix: '1219'
+- model: ox_locations.phoneprefix
+  pk: 2202
+  fields:
+    uuid: be7cf521-2566-4803-8726-055e705f186a
+    country: 235
+    prefix: '1260'
+- model: ox_locations.phoneprefix
+  pk: 2203
+  fields:
+    uuid: f1b82b75-2342-46e0-b556-9608764c0f7a
+    country: 235
+    prefix: '1317'
+- model: ox_locations.phoneprefix
+  pk: 2204
+  fields:
+    uuid: 64569185-8081-465d-96c5-6170b70da780
+    country: 235
+    prefix: '1463'
+- model: ox_locations.phoneprefix
+  pk: 2205
+  fields:
+    uuid: 15f783d3-640a-453b-bc94-868186e55429
+    country: 235
+    prefix: '1574'
+- model: ox_locations.phoneprefix
+  pk: 2206
+  fields:
+    uuid: 64f6f6fb-8add-4455-8000-6cee9734ba06
+    country: 235
+    prefix: '1765'
+- model: ox_locations.phoneprefix
+  pk: 2207
+  fields:
+    uuid: 4a6ac3d8-91db-4276-a886-22d4ad249751
+    country: 235
+    prefix: '1812'
+- model: ox_locations.phoneprefix
+  pk: 2208
+  fields:
+    uuid: 55a170a6-8a29-483a-b5a5-9dadc285d620
+    country: 235
+    prefix: '1930'
+- model: ox_locations.phoneprefix
+  pk: 2209
+  fields:
+    uuid: 5447d0d8-eadb-4634-98c4-369921eb42ae
+    country: 235
+    prefix: '1319'
+- model: ox_locations.phoneprefix
+  pk: 2210
+  fields:
+    uuid: 2762372f-526f-49c3-8275-a0d2383a70c9
+    country: 235
+    prefix: '1515'
+- model: ox_locations.phoneprefix
+  pk: 2211
+  fields:
+    uuid: 1c2a6379-f941-45f7-ab37-f65e4aa23108
+    country: 235
+    prefix: '1563'
+- model: ox_locations.phoneprefix
+  pk: 2212
+  fields:
+    uuid: 4e044eda-1dd2-458b-954b-1cd9b6d90fa2
+    country: 235
+    prefix: '1641'
+- model: ox_locations.phoneprefix
+  pk: 2213
+  fields:
+    uuid: 52425652-19da-4596-bf8a-b6d450478889
+    country: 235
+    prefix: '1712'
+- model: ox_locations.phoneprefix
+  pk: 2214
+  fields:
+    uuid: 5d4627a4-6df6-4e3d-9d21-bab984b66921
+    country: 235
+    prefix: '1316'
+- model: ox_locations.phoneprefix
+  pk: 2215
+  fields:
+    uuid: 8fa8762c-1373-4dfe-9d52-3ccae0453901
+    country: 235
+    prefix: '1620'
+- model: ox_locations.phoneprefix
+  pk: 2216
+  fields:
+    uuid: ffe8347c-39d5-41e2-b5e2-4ea9ac447b94
+    country: 235
+    prefix: '1785'
+- model: ox_locations.phoneprefix
+  pk: 2217
+  fields:
+    uuid: 3da2a6ba-f877-40d0-96b3-d46e8ee28fa1
+    country: 235
+    prefix: '1913'
+- model: ox_locations.phoneprefix
+  pk: 2218
+  fields:
+    uuid: 9e9c3a9c-16ca-477b-93cc-bc94a73cc3d2
+    country: 235
+    prefix: '1270'
+- model: ox_locations.phoneprefix
+  pk: 2219
+  fields:
+    uuid: 2290c04e-aff2-4d01-b932-bf863d263ab8
+    country: 235
+    prefix: '1364'
+- model: ox_locations.phoneprefix
+  pk: 2220
+  fields:
+    uuid: ffc04d4e-c8a7-4f63-8925-79f1a6d8089d
+    country: 235
+    prefix: '1502'
+- model: ox_locations.phoneprefix
+  pk: 2221
+  fields:
+    uuid: 7666d6f8-5658-4d11-a975-7ea1dfbdd776
+    country: 235
+    prefix: '1606'
+- model: ox_locations.phoneprefix
+  pk: 2222
+  fields:
+    uuid: 2d36ca23-8f71-44b8-84ef-ea211b9724ce
+    country: 235
+    prefix: '1859'
+- model: ox_locations.phoneprefix
+  pk: 2223
+  fields:
+    uuid: 2377ea4a-2dae-4d4a-ba72-0fa688ab4372
+    country: 235
+    prefix: '1225'
+- model: ox_locations.phoneprefix
+  pk: 2224
+  fields:
+    uuid: 940de207-4b5f-46e4-b5a4-a9a790a9b938
+    country: 235
+    prefix: '1318'
+- model: ox_locations.phoneprefix
+  pk: 2225
+  fields:
+    uuid: 37bd4f7f-4b24-4d36-b820-947b23795726
+    country: 235
+    prefix: '1337'
+- model: ox_locations.phoneprefix
+  pk: 2226
+  fields:
+    uuid: cbab9c33-22c3-4b2a-8909-983aebe8cd85
+    country: 235
+    prefix: '1457'
+- model: ox_locations.phoneprefix
+  pk: 2227
+  fields:
+    uuid: 0bd60362-58b9-4066-9d5b-e1ede80966db
+    country: 235
+    prefix: '1504'
+- model: ox_locations.phoneprefix
+  pk: 2228
+  fields:
+    uuid: 1af62e49-686c-4cca-99ba-8b843ec997a7
+    country: 235
+    prefix: '1985'
+- model: ox_locations.phoneprefix
+  pk: 2229
+  fields:
+    uuid: 90ab3279-ba77-48c8-afa9-bff0949319be
+    country: 235
+    prefix: '1207'
+- model: ox_locations.phoneprefix
+  pk: 2230
+  fields:
+    uuid: d190b33f-4805-4937-b201-dfd17a921980
+    country: 235
+    prefix: '1227'
+- model: ox_locations.phoneprefix
+  pk: 2231
+  fields:
+    uuid: d11bd3d0-4e8b-40f3-9691-07b95a7f6abe
+    country: 235
+    prefix: '1240'
+- model: ox_locations.phoneprefix
+  pk: 2232
+  fields:
+    uuid: b18c7ba1-5896-4153-9c5a-6319fb769696
+    country: 235
+    prefix: '1301'
+- model: ox_locations.phoneprefix
+  pk: 2233
+  fields:
+    uuid: f6f63392-1154-42ad-a8e1-6b4c96141ea9
+    country: 235
+    prefix: '1410'
+- model: ox_locations.phoneprefix
+  pk: 2234
+  fields:
+    uuid: 0cd3899a-c691-4d6f-acc7-80520813f114
+    country: 235
+    prefix: '1443'
+- model: ox_locations.phoneprefix
+  pk: 2235
+  fields:
+    uuid: 20927852-35bb-4a69-bfdf-c865a00aa288
+    country: 235
+    prefix: '1667'
+- model: ox_locations.phoneprefix
+  pk: 2236
+  fields:
+    uuid: d18b1869-6bef-4c98-8a46-0e32f35d25a3
+    country: 235
+    prefix: '1339'
+- model: ox_locations.phoneprefix
+  pk: 2237
+  fields:
+    uuid: a0fda722-9d72-45e3-9f12-5f8d7c07d27b
+    country: 235
+    prefix: '1351'
+- model: ox_locations.phoneprefix
+  pk: 2238
+  fields:
+    uuid: 22b1a308-9101-451f-a732-a94c2a61ccd6
+    country: 235
+    prefix: '1413'
+- model: ox_locations.phoneprefix
+  pk: 2239
+  fields:
+    uuid: 8ccc158d-26fc-44a5-ad17-86fbbaed10d7
+    country: 235
+    prefix: '1508'
+- model: ox_locations.phoneprefix
+  pk: 2240
+  fields:
+    uuid: a148d24a-d7d2-4fc0-9d88-d0acbc9737f9
+    country: 235
+    prefix: '1617'
+- model: ox_locations.phoneprefix
+  pk: 2241
+  fields:
+    uuid: 13f6fe6a-cd30-41c6-8ca2-9955cd2e6ffc
+    country: 235
+    prefix: '1774'
+- model: ox_locations.phoneprefix
+  pk: 2242
+  fields:
+    uuid: 6e389208-5a7e-4ab3-8f1a-d5acd2a229f9
+    country: 235
+    prefix: '1781'
+- model: ox_locations.phoneprefix
+  pk: 2243
+  fields:
+    uuid: 740df890-c874-4785-a5f5-ab64e0396a5c
+    country: 235
+    prefix: '1857'
+- model: ox_locations.phoneprefix
+  pk: 2244
+  fields:
+    uuid: 8601dc66-77ea-4f10-a4e9-8b344416bc3c
+    country: 235
+    prefix: '1978'
+- model: ox_locations.phoneprefix
+  pk: 2245
+  fields:
+    uuid: 9ff08d4d-1afd-43f7-b129-cc2c450552e7
+    country: 235
+    prefix: '1231'
+- model: ox_locations.phoneprefix
+  pk: 2246
+  fields:
+    uuid: f05136ee-4952-4393-b38c-1cf38003f126
+    country: 235
+    prefix: '1248'
+- model: ox_locations.phoneprefix
+  pk: 2247
+  fields:
+    uuid: 51abdbed-b201-492d-9a58-f5e6ff4b861e
+    country: 235
+    prefix: '1269'
+- model: ox_locations.phoneprefix
+  pk: 2248
+  fields:
+    uuid: a860984b-d329-4f8a-b089-19107ed28110
+    country: 235
+    prefix: '1313'
+- model: ox_locations.phoneprefix
+  pk: 2249
+  fields:
+    uuid: 4273f0e4-16b3-42c8-bd20-ee745a625f30
+    country: 235
+    prefix: '1517'
+- model: ox_locations.phoneprefix
+  pk: 2250
+  fields:
+    uuid: d7fee27f-48e9-4132-bc77-d9aa42686ca9
+    country: 235
+    prefix: '1586'
+- model: ox_locations.phoneprefix
+  pk: 2251
+  fields:
+    uuid: 1447b6bf-b544-4dd5-8273-f0f6b58baba7
+    country: 235
+    prefix: '1616'
+- model: ox_locations.phoneprefix
+  pk: 2252
+  fields:
+    uuid: e6b5edc2-eb68-4430-87d2-004e3ab17aca
+    country: 235
+    prefix: '1679'
+- model: ox_locations.phoneprefix
+  pk: 2253
+  fields:
+    uuid: 0b1699ce-737a-4b8e-a439-706f487b041b
+    country: 235
+    prefix: '1734'
+- model: ox_locations.phoneprefix
+  pk: 2254
+  fields:
+    uuid: d08ff8a8-9e65-4e11-9cbf-f305b24ed8d9
+    country: 235
+    prefix: '1810'
+- model: ox_locations.phoneprefix
+  pk: 2255
+  fields:
+    uuid: 42c4e2b6-33e0-4abb-993d-e26804780efc
+    country: 235
+    prefix: '1906'
+- model: ox_locations.phoneprefix
+  pk: 2256
+  fields:
+    uuid: ec87e718-fddd-4efd-8c2d-0443fade165c
+    country: 235
+    prefix: '1947'
+- model: ox_locations.phoneprefix
+  pk: 2257
+  fields:
+    uuid: a55fe586-e606-4544-b0ed-bcb56fbca9fb
+    country: 235
+    prefix: '1989'
+- model: ox_locations.phoneprefix
+  pk: 2258
+  fields:
+    uuid: 3b45878c-b707-437a-9970-cb5787010364
+    country: 235
+    prefix: '1218'
+- model: ox_locations.phoneprefix
+  pk: 2259
+  fields:
+    uuid: 67de496e-db7f-41d7-8f3d-c0a3bd32e98d
+    country: 235
+    prefix: '1320'
+- model: ox_locations.phoneprefix
+  pk: 2260
+  fields:
+    uuid: a5e8e361-8857-4585-9fc8-ced730e75dea
+    country: 235
+    prefix: '1507'
+- model: ox_locations.phoneprefix
+  pk: 2261
+  fields:
+    uuid: 233a87ff-419a-4a94-b94f-7c503792b6eb
+    country: 235
+    prefix: '1612'
+- model: ox_locations.phoneprefix
+  pk: 2262
+  fields:
+    uuid: be06237b-8130-4cb1-aa65-9ba336ac8f92
+    country: 235
+    prefix: '1651'
+- model: ox_locations.phoneprefix
+  pk: 2263
+  fields:
+    uuid: 608f316f-8277-4f09-b4d9-772c6673c737
+    country: 235
+    prefix: '1763'
+- model: ox_locations.phoneprefix
+  pk: 2264
+  fields:
+    uuid: 540a6438-3dfc-460d-ad53-ffd04d79751e
+    country: 235
+    prefix: '1924'
+- model: ox_locations.phoneprefix
+  pk: 2265
+  fields:
+    uuid: cbc1853d-fbf3-4d89-a3e2-d3cdfc325228
+    country: 235
+    prefix: '1952'
+- model: ox_locations.phoneprefix
+  pk: 2266
+  fields:
+    uuid: 650b2aa9-38d9-4b89-a190-0c6fed87678b
+    country: 235
+    prefix: '1228'
+- model: ox_locations.phoneprefix
+  pk: 2267
+  fields:
+    uuid: 91d4944e-5fde-4fb7-99c9-170d8ede9c6e
+    country: 235
+    prefix: '1471'
+- model: ox_locations.phoneprefix
+  pk: 2268
+  fields:
+    uuid: 842dcf8e-cdcb-4235-b3ad-516244cf5e8e
+    country: 235
+    prefix: '1601'
+- model: ox_locations.phoneprefix
+  pk: 2269
+  fields:
+    uuid: 0dc0d922-1929-49dd-b060-be87066adbff
+    country: 235
+    prefix: '1662'
+- model: ox_locations.phoneprefix
+  pk: 2270
+  fields:
+    uuid: 1f93aa9a-991e-4f2c-b5d0-47d5b00c40c5
+    country: 235
+    prefix: '1769'
+- model: ox_locations.phoneprefix
+  pk: 2271
+  fields:
+    uuid: 420a933b-dc5c-4166-b690-570eee2b3995
+    country: 235
+    prefix: '1235'
+- model: ox_locations.phoneprefix
+  pk: 2272
+  fields:
+    uuid: e0c82a32-4bbc-4dc2-9d41-5d99497c18f3
+    country: 235
+    prefix: '1314'
+- model: ox_locations.phoneprefix
+  pk: 2273
+  fields:
+    uuid: 94287919-9c66-45a3-8234-824c33b0de4d
+    country: 235
+    prefix: '1417'
+- model: ox_locations.phoneprefix
+  pk: 2274
+  fields:
+    uuid: 4b0fe45b-f83f-42fe-8f4b-1ced1f294793
+    country: 235
+    prefix: '1557'
+- model: ox_locations.phoneprefix
+  pk: 2275
+  fields:
+    uuid: 0cd4249e-2dc1-4561-80d1-c77d411f14ea
+    country: 235
+    prefix: '1573'
+- model: ox_locations.phoneprefix
+  pk: 2276
+  fields:
+    uuid: b52bd428-2c54-4640-ba0e-03b7277976bf
+    country: 235
+    prefix: '1636'
+- model: ox_locations.phoneprefix
+  pk: 2277
+  fields:
+    uuid: a716dad4-d8e1-4cf9-bd51-c4018ef09643
+    country: 235
+    prefix: '1660'
+- model: ox_locations.phoneprefix
+  pk: 2278
+  fields:
+    uuid: ccdcab4c-8e3f-43d9-a365-be8ab9a6dd23
+    country: 235
+    prefix: '1816'
+- model: ox_locations.phoneprefix
+  pk: 2279
+  fields:
+    uuid: 343a52db-6542-4b4f-a9c9-38bea7418cd3
+    country: 235
+    prefix: '1975'
+- model: ox_locations.phoneprefix
+  pk: 2280
+  fields:
+    uuid: 957bac37-c762-4c22-911b-87ae7f2a4ba1
+    country: 235
+    prefix: '1406'
+- model: ox_locations.phoneprefix
+  pk: 2281
+  fields:
+    uuid: be2da722-7db1-4f78-9f1c-24bfb499220a
+    country: 235
+    prefix: '1308'
+- model: ox_locations.phoneprefix
+  pk: 2282
+  fields:
+    uuid: f5c8d830-6b24-48a1-9b6c-05ec69793601
+    country: 235
+    prefix: '1402'
+- model: ox_locations.phoneprefix
+  pk: 2283
+  fields:
+    uuid: 9c8f741a-c862-4713-9e2f-412ae67e68ff
+    country: 235
+    prefix: '1531'
+- model: ox_locations.phoneprefix
+  pk: 2284
+  fields:
+    uuid: fcaa47f0-b62e-4146-b5f1-15969fb34c70
+    country: 235
+    prefix: '1702'
+- model: ox_locations.phoneprefix
+  pk: 2285
+  fields:
+    uuid: 7e613f84-6086-4ade-9c2d-105f47dbe0bb
+    country: 235
+    prefix: '1725'
+- model: ox_locations.phoneprefix
+  pk: 2286
+  fields:
+    uuid: 7601a50c-8ec5-4a93-a6b0-41d40856bb82
+    country: 235
+    prefix: '1775'
+- model: ox_locations.phoneprefix
+  pk: 2287
+  fields:
+    uuid: 11ec1d0f-d7c6-4f2a-8059-a7490a1ac125
+    country: 235
+    prefix: '1603'
+- model: ox_locations.phoneprefix
+  pk: 2288
+  fields:
+    uuid: 4c4633e5-d4c2-48ee-87a3-fdd4e49af96c
+    country: 235
+    prefix: '1201'
+- model: ox_locations.phoneprefix
+  pk: 2289
+  fields:
+    uuid: dccdadc8-56ce-4d0c-b277-5c05fb76c4a5
+    country: 235
+    prefix: '1551'
+- model: ox_locations.phoneprefix
+  pk: 2290
+  fields:
+    uuid: b7df83b4-59ad-4e1e-ad3f-c01a6842a92b
+    country: 235
+    prefix: '1609'
+- model: ox_locations.phoneprefix
+  pk: 2291
+  fields:
+    uuid: eb1c595d-2e01-4f52-9e85-e7cdcc260169
+    country: 235
+    prefix: '1640'
+- model: ox_locations.phoneprefix
+  pk: 2292
+  fields:
+    uuid: 184d84aa-c8da-4ae2-a8a4-2e4d3d5e982d
+    country: 235
+    prefix: '1732'
+- model: ox_locations.phoneprefix
+  pk: 2293
+  fields:
+    uuid: 31366b39-eaf1-4e39-bbef-9890235f5bfa
+    country: 235
+    prefix: '1848'
+- model: ox_locations.phoneprefix
+  pk: 2294
+  fields:
+    uuid: a2836718-b02b-45c9-9523-e64699439f8a
+    country: 235
+    prefix: '1856'
+- model: ox_locations.phoneprefix
+  pk: 2295
+  fields:
+    uuid: c1d95933-803d-4f11-9a75-2ae2d75f07a5
+    country: 235
+    prefix: '1862'
+- model: ox_locations.phoneprefix
+  pk: 2296
+  fields:
+    uuid: 71579f19-7823-4660-b45c-3ca83493b65e
+    country: 235
+    prefix: '1908'
+- model: ox_locations.phoneprefix
+  pk: 2297
+  fields:
+    uuid: c5718775-b92a-44dd-ba9f-5017195e21a8
+    country: 235
+    prefix: '1973'
+- model: ox_locations.phoneprefix
+  pk: 2298
+  fields:
+    uuid: d2e80346-e4fe-46e7-ad8a-9c2c5f3e6f80
+    country: 235
+    prefix: '1505'
+- model: ox_locations.phoneprefix
+  pk: 2299
+  fields:
+    uuid: 1a52f570-e58c-4c1a-ae03-356cf309da6d
+    country: 235
+    prefix: '1575'
+- model: ox_locations.phoneprefix
+  pk: 2300
+  fields:
+    uuid: ff4ae7a0-0ed1-43d4-acb2-427ee5bf2c76
+    country: 235
+    prefix: '1212'
+- model: ox_locations.phoneprefix
+  pk: 2301
+  fields:
+    uuid: c40fcf4f-eeb9-4bf1-8d4e-60786c65c178
+    country: 235
+    prefix: '1315'
+- model: ox_locations.phoneprefix
+  pk: 2302
+  fields:
+    uuid: 924b88ea-f1d7-4bc8-be75-3c3acc488bc9
+    country: 235
+    prefix: '1329'
+- model: ox_locations.phoneprefix
+  pk: 2303
+  fields:
+    uuid: 5e3b58d8-18fb-4cae-a37f-f8962ade2f04
+    country: 235
+    prefix: '1332'
+- model: ox_locations.phoneprefix
+  pk: 2304
+  fields:
+    uuid: 013d62e3-0141-41d4-9aa5-59e0088e90d3
+    country: 235
+    prefix: '1347'
+- model: ox_locations.phoneprefix
+  pk: 2305
+  fields:
+    uuid: 2f697068-3eb0-4bce-bbca-3e16126517a1
+    country: 235
+    prefix: '1363'
+- model: ox_locations.phoneprefix
+  pk: 2306
+  fields:
+    uuid: 8aaf14ac-6ff2-46ca-95b7-02d6e4662e9c
+    country: 235
+    prefix: '1516'
+- model: ox_locations.phoneprefix
+  pk: 2307
+  fields:
+    uuid: 3fc940f3-e8e8-421c-9bb0-0522ea244418
+    country: 235
+    prefix: '1518'
+- model: ox_locations.phoneprefix
+  pk: 2308
+  fields:
+    uuid: 5fdf25cc-87e7-4b83-b7d2-b9e607b8cd31
+    country: 235
+    prefix: '1585'
+- model: ox_locations.phoneprefix
+  pk: 2309
+  fields:
+    uuid: 3f83a3c1-b539-4030-bfae-955c05d56df3
+    country: 235
+    prefix: '1607'
+- model: ox_locations.phoneprefix
+  pk: 2310
+  fields:
+    uuid: 4b4dfe89-f33d-420d-b92b-fc29bb3593c9
+    country: 235
+    prefix: '1624'
+- model: ox_locations.phoneprefix
+  pk: 2311
+  fields:
+    uuid: 3db76822-b7f8-409d-a2c8-dc19348ec600
+    country: 235
+    prefix: '1631'
+- model: ox_locations.phoneprefix
+  pk: 2312
+  fields:
+    uuid: 50d52cdf-d7fb-434c-bd6a-4189dd465de7
+    country: 235
+    prefix: '1646'
+- model: ox_locations.phoneprefix
+  pk: 2313
+  fields:
+    uuid: 08d65c0a-0d0e-4ef6-b8b1-b2ea0bbadb0b
+    country: 235
+    prefix: '1680'
+- model: ox_locations.phoneprefix
+  pk: 2314
+  fields:
+    uuid: 86734fdb-0616-4bca-be64-285fd24af51a
+    country: 235
+    prefix: '1716'
+- model: ox_locations.phoneprefix
+  pk: 2315
+  fields:
+    uuid: cee962e4-518c-4dfe-9e3e-149b37ef556d
+    country: 235
+    prefix: '1718'
+- model: ox_locations.phoneprefix
+  pk: 2316
+  fields:
+    uuid: c28d8740-a347-455e-a2ae-c9b3ff763cc0
+    country: 235
+    prefix: '1838'
+- model: ox_locations.phoneprefix
+  pk: 2317
+  fields:
+    uuid: 2a848e4b-7f50-48ed-84ec-473d77b0854c
+    country: 235
+    prefix: '1845'
+- model: ox_locations.phoneprefix
+  pk: 2318
+  fields:
+    uuid: 3bee861e-0cd1-40b7-8610-2a8689f8bdce
+    country: 235
+    prefix: '1914'
+- model: ox_locations.phoneprefix
+  pk: 2319
+  fields:
+    uuid: c00b251f-f857-4e59-9b90-12fb76f40646
+    country: 235
+    prefix: '1917'
+- model: ox_locations.phoneprefix
+  pk: 2320
+  fields:
+    uuid: 038ccc08-bc8d-4be8-be59-74666fdaeac9
+    country: 235
+    prefix: '1929'
+- model: ox_locations.phoneprefix
+  pk: 2321
+  fields:
+    uuid: 6ca4955f-f97e-4ad6-b3c7-361a8bf660c3
+    country: 235
+    prefix: '1934'
+- model: ox_locations.phoneprefix
+  pk: 2322
+  fields:
+    uuid: 87764a12-7414-4570-93e6-6fdbd2969dc7
+    country: 235
+    prefix: '1252'
+- model: ox_locations.phoneprefix
+  pk: 2323
+  fields:
+    uuid: 08f627f7-b2b2-4fc7-b8c7-d666fef05782
+    country: 235
+    prefix: '1336'
+- model: ox_locations.phoneprefix
+  pk: 2324
+  fields:
+    uuid: 3f38d46b-a4fc-4cc3-8cf6-d42a85147718
+    country: 235
+    prefix: '1472'
+- model: ox_locations.phoneprefix
+  pk: 2325
+  fields:
+    uuid: 386a6004-5fc7-4d80-b1f1-c8191f7ccb05
+    country: 235
+    prefix: '1704'
+- model: ox_locations.phoneprefix
+  pk: 2326
+  fields:
+    uuid: 2a030716-29f3-4cd9-b192-4d7b102d7a4c
+    country: 235
+    prefix: '1743'
+- model: ox_locations.phoneprefix
+  pk: 2327
+  fields:
+    uuid: 066e124a-7e92-4d1c-8c6c-b21da6d115f9
+    country: 235
+    prefix: '1828'
+- model: ox_locations.phoneprefix
+  pk: 2328
+  fields:
+    uuid: 2a5f7fd9-e239-439c-963b-8d2419aac1f2
+    country: 235
+    prefix: '1910'
+- model: ox_locations.phoneprefix
+  pk: 2329
+  fields:
+    uuid: 3cbe1355-4dbd-4bb6-88db-ece03467633f
+    country: 235
+    prefix: '1919'
+- model: ox_locations.phoneprefix
+  pk: 2330
+  fields:
+    uuid: 3ce677fa-93e4-4f77-8fd4-8c39dfbfb168
+    country: 235
+    prefix: '1980'
+- model: ox_locations.phoneprefix
+  pk: 2331
+  fields:
+    uuid: 936ee8b5-a83b-42b4-9488-a677802173c7
+    country: 235
+    prefix: '1984'
+- model: ox_locations.phoneprefix
+  pk: 2332
+  fields:
+    uuid: 900010a3-e4f2-44c1-9fd7-b014285c150f
+    country: 235
+    prefix: '1701'
+- model: ox_locations.phoneprefix
+  pk: 2333
+  fields:
+    uuid: 748e0795-66d7-4b34-b19e-f7f831afff53
+    country: 235
+    prefix: '1216'
+- model: ox_locations.phoneprefix
+  pk: 2334
+  fields:
+    uuid: 3a793c1f-ad4e-4839-a74b-9c277ac3eda3
+    country: 235
+    prefix: '1220'
+- model: ox_locations.phoneprefix
+  pk: 2335
+  fields:
+    uuid: a2965bdd-9c68-41b4-9330-46e5cffc0543
+    country: 235
+    prefix: '1234'
+- model: ox_locations.phoneprefix
+  pk: 2336
+  fields:
+    uuid: adeb581d-78c6-4a0e-b0db-24224b8fc3cf
+    country: 235
+    prefix: '1283'
+- model: ox_locations.phoneprefix
+  pk: 2337
+  fields:
+    uuid: 9f101e9a-e47b-478a-bcc1-3bd2c93e8186
+    country: 235
+    prefix: '1326'
+- model: ox_locations.phoneprefix
+  pk: 2338
+  fields:
+    uuid: b4126602-cca2-4418-87d2-8d7ca45865af
+    country: 235
+    prefix: '1330'
+- model: ox_locations.phoneprefix
+  pk: 2339
+  fields:
+    uuid: a2cc0330-7be3-4f89-8b60-bc2d3a7ae958
+    country: 235
+    prefix: '1380'
+- model: ox_locations.phoneprefix
+  pk: 2340
+  fields:
+    uuid: cd4640dd-3fcf-4565-9479-3f0de46db588
+    country: 235
+    prefix: '1419'
+- model: ox_locations.phoneprefix
+  pk: 2341
+  fields:
+    uuid: d4ea34a6-c955-485e-ba63-71b79ec47de5
+    country: 235
+    prefix: '1436'
+- model: ox_locations.phoneprefix
+  pk: 2342
+  fields:
+    uuid: c34f58a1-cba9-4935-adba-2560f92c49e4
+    country: 235
+    prefix: '1440'
+- model: ox_locations.phoneprefix
+  pk: 2343
+  fields:
+    uuid: fa328028-ab5b-4c20-b34e-b1c0e83d888e
+    country: 235
+    prefix: '1513'
+- model: ox_locations.phoneprefix
+  pk: 2344
+  fields:
+    uuid: 796cf497-6df5-4037-9a83-c0cfbdfe891d
+    country: 235
+    prefix: '1567'
+- model: ox_locations.phoneprefix
+  pk: 2345
+  fields:
+    uuid: a246f839-77f9-40d6-8bb8-fbec4956e2f1
+    country: 235
+    prefix: '1614'
+- model: ox_locations.phoneprefix
+  pk: 2346
+  fields:
+    uuid: fd1690c4-bb59-4bad-bf45-0ab605dd1b72
+    country: 235
+    prefix: '1740'
+- model: ox_locations.phoneprefix
+  pk: 2347
+  fields:
+    uuid: b2a3ce1c-6a63-45c2-9d8f-a7e3a744cce8
+    country: 235
+    prefix: '1937'
+- model: ox_locations.phoneprefix
+  pk: 2348
+  fields:
+    uuid: 5462ac3f-fddf-49be-8a4a-2c7a68346506
+    country: 235
+    prefix: '1405'
+- model: ox_locations.phoneprefix
+  pk: 2349
+  fields:
+    uuid: 13227962-3eb3-4008-9e35-5775531cc699
+    country: 235
+    prefix: '1539'
+- model: ox_locations.phoneprefix
+  pk: 2350
+  fields:
+    uuid: 8b4470d5-f463-4947-a925-249a239b2ef9
+    country: 235
+    prefix: '1572'
+- model: ox_locations.phoneprefix
+  pk: 2351
+  fields:
+    uuid: 2359d3e7-07e5-4813-be76-19d53c13fd8a
+    country: 235
+    prefix: '1580'
+- model: ox_locations.phoneprefix
+  pk: 2352
+  fields:
+    uuid: 4f77a9b8-63a7-4e3a-8674-ee634d21dac4
+    country: 235
+    prefix: '1918'
+- model: ox_locations.phoneprefix
+  pk: 2353
+  fields:
+    uuid: ef12b0d6-65a4-48c0-8930-1bb0344ee49c
+    country: 235
+    prefix: '1458'
+- model: ox_locations.phoneprefix
+  pk: 2354
+  fields:
+    uuid: 8c0864a0-6b17-4298-a990-5c4c0effd36b
+    country: 235
+    prefix: '1503'
+- model: ox_locations.phoneprefix
+  pk: 2355
+  fields:
+    uuid: b5bb13ce-381c-4369-aaae-4539d0999135
+    country: 235
+    prefix: '1541'
+- model: ox_locations.phoneprefix
+  pk: 2356
+  fields:
+    uuid: dca218b5-389f-4339-868b-2dbe463ded72
+    country: 235
+    prefix: '1971'
+- model: ox_locations.phoneprefix
+  pk: 2357
+  fields:
+    uuid: e6e21792-247b-4de8-b0eb-34cb56837e84
+    country: 235
+    prefix: '1215'
+- model: ox_locations.phoneprefix
+  pk: 2358
+  fields:
+    uuid: 540778bf-e0c4-4dba-8ae0-14c1ff29c9b4
+    country: 235
+    prefix: '1223'
+- model: ox_locations.phoneprefix
+  pk: 2359
+  fields:
+    uuid: 61346d64-40d6-43bf-b592-07466c205137
+    country: 235
+    prefix: '1267'
+- model: ox_locations.phoneprefix
+  pk: 2360
+  fields:
+    uuid: 84ff3047-d948-4ae7-9b6f-926d1cac60a8
+    country: 235
+    prefix: '1272'
+- model: ox_locations.phoneprefix
+  pk: 2361
+  fields:
+    uuid: 4e5f6904-b8e7-485c-bce5-232bf23ecb47
+    country: 235
+    prefix: '1412'
+- model: ox_locations.phoneprefix
+  pk: 2362
+  fields:
+    uuid: 03e7f663-cbde-42b7-a6fe-abd08b6f616a
+    country: 235
+    prefix: '1445'
+- model: ox_locations.phoneprefix
+  pk: 2363
+  fields:
+    uuid: b39c83ff-fd12-4af5-a4e2-d32a9f7d0592
+    country: 235
+    prefix: '1484'
+- model: ox_locations.phoneprefix
+  pk: 2364
+  fields:
+    uuid: 4f2beb5e-9ba4-4fb5-a318-91021eb44b98
+    country: 235
+    prefix: '1570'
+- model: ox_locations.phoneprefix
+  pk: 2365
+  fields:
+    uuid: 1bee3f61-c9c8-445e-9a8c-4ca79ba02b6e
+    country: 235
+    prefix: '1582'
+- model: ox_locations.phoneprefix
+  pk: 2366
+  fields:
+    uuid: 4220f974-8e90-4951-9824-8b9137f81391
+    country: 235
+    prefix: '1610'
+- model: ox_locations.phoneprefix
+  pk: 2367
+  fields:
+    uuid: df2a1dc8-3a4f-4396-a669-162d0ed63754
+    country: 235
+    prefix: '1717'
+- model: ox_locations.phoneprefix
+  pk: 2368
+  fields:
+    uuid: a537e777-a8a4-40d6-bbe6-1413db537bc0
+    country: 235
+    prefix: '1724'
+- model: ox_locations.phoneprefix
+  pk: 2369
+  fields:
+    uuid: 02b2591f-e4d8-4449-9a67-51ff3ee6bcd0
+    country: 235
+    prefix: '1814'
+- model: ox_locations.phoneprefix
+  pk: 2370
+  fields:
+    uuid: a8cd8557-d8dd-41a7-bfa2-fca774ede4e7
+    country: 235
+    prefix: '1835'
+- model: ox_locations.phoneprefix
+  pk: 2371
+  fields:
+    uuid: 1b2e984f-c935-46c1-877e-5f30e2b200e4
+    country: 235
+    prefix: '1878'
+- model: ox_locations.phoneprefix
+  pk: 2372
+  fields:
+    uuid: aa640bfe-191d-480a-b333-59def6224365
+    country: 235
+    prefix: '1401'
+- model: ox_locations.phoneprefix
+  pk: 2373
+  fields:
+    uuid: 5fc3f57c-8010-4bd3-ba08-4c3a5082bb63
+    country: 235
+    prefix: '1803'
+- model: ox_locations.phoneprefix
+  pk: 2374
+  fields:
+    uuid: 5d0f4b49-ada9-4c02-b4f4-f54e2ac3a0be
+    country: 235
+    prefix: '1821'
+- model: ox_locations.phoneprefix
+  pk: 2375
+  fields:
+    uuid: 3c720127-35a9-494e-a10f-28049f9b2e6e
+    country: 235
+    prefix: '1839'
+- model: ox_locations.phoneprefix
+  pk: 2376
+  fields:
+    uuid: 2713ed22-a551-4bc0-bd4a-a84a3ca22dbc
+    country: 235
+    prefix: '1843'
+- model: ox_locations.phoneprefix
+  pk: 2377
+  fields:
+    uuid: 6f217727-83c1-4fc7-b46d-3d944ef510c6
+    country: 235
+    prefix: '1854'
+- model: ox_locations.phoneprefix
+  pk: 2378
+  fields:
+    uuid: ed19ea23-9eab-4d21-8b10-6c713fb767b3
+    country: 235
+    prefix: '1864'
+- model: ox_locations.phoneprefix
+  pk: 2379
+  fields:
+    uuid: 092e4ad4-f0a0-4e2d-bc89-c12b6237bc8a
+    country: 235
+    prefix: '1605'
+- model: ox_locations.phoneprefix
+  pk: 2380
+  fields:
+    uuid: 23d2fe01-2e6c-40e8-962d-c8577259bb26
+    country: 235
+    prefix: '1423'
+- model: ox_locations.phoneprefix
+  pk: 2381
+  fields:
+    uuid: 61e38c93-169e-41e5-8e79-e57f4ecf1323
+    country: 235
+    prefix: '1615'
+- model: ox_locations.phoneprefix
+  pk: 2382
+  fields:
+    uuid: 1abaeb76-95a7-4cd7-ad04-ac418fc3be1c
+    country: 235
+    prefix: '1629'
+- model: ox_locations.phoneprefix
+  pk: 2383
+  fields:
+    uuid: dec0f029-67cc-4788-aa46-580c6b1a2ca4
+    country: 235
+    prefix: '1729'
+- model: ox_locations.phoneprefix
+  pk: 2384
+  fields:
+    uuid: 040f1b25-6e6e-4503-8f6f-8194a0cec4d8
+    country: 235
+    prefix: '1731'
+- model: ox_locations.phoneprefix
+  pk: 2385
+  fields:
+    uuid: d3234c57-d741-4834-bb1f-bfc9324edcce
+    country: 235
+    prefix: '1865'
+- model: ox_locations.phoneprefix
+  pk: 2386
+  fields:
+    uuid: 31fbe10f-0647-4ff1-ad01-4ec27ffa4ce2
+    country: 235
+    prefix: '1901'
+- model: ox_locations.phoneprefix
+  pk: 2387
+  fields:
+    uuid: 378102a1-93b2-42ce-8f24-8f4e26c148f1
+    country: 235
+    prefix: '1931'
+- model: ox_locations.phoneprefix
+  pk: 2388
+  fields:
+    uuid: 7adde878-a1d4-49d8-9b3e-18cbeffba5ce
+    country: 235
+    prefix: '1210'
+- model: ox_locations.phoneprefix
+  pk: 2389
+  fields:
+    uuid: 833d7438-4f49-4c5f-b600-d96105a84887
+    country: 235
+    prefix: '1214'
+- model: ox_locations.phoneprefix
+  pk: 2390
+  fields:
+    uuid: 4ed97cc2-529c-47fc-a41b-79fdbc963e56
+    country: 235
+    prefix: '1254'
+- model: ox_locations.phoneprefix
+  pk: 2391
+  fields:
+    uuid: 6371e978-9871-46f8-90b5-7437f483cec9
+    country: 235
+    prefix: '1281'
+- model: ox_locations.phoneprefix
+  pk: 2392
+  fields:
+    uuid: 747a89d6-1023-4c2a-94d7-d2a520362dc8
+    country: 235
+    prefix: '1325'
+- model: ox_locations.phoneprefix
+  pk: 2393
+  fields:
+    uuid: 86f11a94-b13b-416e-8564-2c7989139d56
+    country: 235
+    prefix: '1346'
+- model: ox_locations.phoneprefix
+  pk: 2394
+  fields:
+    uuid: fb6f58b7-4337-47a3-9256-d025e3a890b1
+    country: 235
+    prefix: '1361'
+- model: ox_locations.phoneprefix
+  pk: 2395
+  fields:
+    uuid: e9579a87-f7ee-4a56-a37f-e12cb33a46d4
+    country: 235
+    prefix: '1409'
+- model: ox_locations.phoneprefix
+  pk: 2396
+  fields:
+    uuid: 167a71c3-7153-44fa-9179-49faa0d6f4db
+    country: 235
+    prefix: '1430'
+- model: ox_locations.phoneprefix
+  pk: 2397
+  fields:
+    uuid: dd6a2136-6d52-4511-8397-546275fe9e51
+    country: 235
+    prefix: '1432'
+- model: ox_locations.phoneprefix
+  pk: 2398
+  fields:
+    uuid: b41378cb-f984-423e-9cb3-020ba369a024
+    country: 235
+    prefix: '1469'
+- model: ox_locations.phoneprefix
+  pk: 2399
+  fields:
+    uuid: cf5d3d93-7b16-4d66-a120-6e4a7da1a1fb
+    country: 235
+    prefix: '1512'
+- model: ox_locations.phoneprefix
+  pk: 2400
+  fields:
+    uuid: c8f270c5-d4cd-4239-bff4-8cc9b7c9a2fb
+    country: 235
+    prefix: '1621'
+- model: ox_locations.phoneprefix
+  pk: 2401
+  fields:
+    uuid: 5ebdccdb-6d7a-4771-be45-60f3f6c80450
+    country: 235
+    prefix: '1682'
+- model: ox_locations.phoneprefix
+  pk: 2402
+  fields:
+    uuid: 4cdc48ba-559f-4b02-825c-18d06c5799fc
+    country: 235
+    prefix: '1713'
+- model: ox_locations.phoneprefix
+  pk: 2403
+  fields:
+    uuid: c5279c42-2969-4d67-9a6b-68328f8987ff
+    country: 235
+    prefix: '1726'
+- model: ox_locations.phoneprefix
+  pk: 2404
+  fields:
+    uuid: 8f8e2219-0abd-4d25-ab45-e3d502bb4e79
+    country: 235
+    prefix: '1737'
+- model: ox_locations.phoneprefix
+  pk: 2405
+  fields:
+    uuid: 98cb7dfd-af9c-4909-a643-0e08a732276e
+    country: 235
+    prefix: '1806'
+- model: ox_locations.phoneprefix
+  pk: 2406
+  fields:
+    uuid: c0f10c29-08e4-46be-9d7b-0459187be532
+    country: 235
+    prefix: '1817'
+- model: ox_locations.phoneprefix
+  pk: 2407
+  fields:
+    uuid: 2b67a08b-1ae5-4bff-89ff-23b4cf08fa90
+    country: 235
+    prefix: '1830'
+- model: ox_locations.phoneprefix
+  pk: 2408
+  fields:
+    uuid: cbd55669-e916-4b2e-bf55-22d74fb27fd5
+    country: 235
+    prefix: '1832'
+- model: ox_locations.phoneprefix
+  pk: 2409
+  fields:
+    uuid: dfa989db-83f5-43a1-944d-72da56f7aeef
+    country: 235
+    prefix: '1903'
+- model: ox_locations.phoneprefix
+  pk: 2410
+  fields:
+    uuid: f0b196c5-c2e2-4689-a395-ea4a98c08719
+    country: 235
+    prefix: '1915'
+- model: ox_locations.phoneprefix
+  pk: 2411
+  fields:
+    uuid: 6a9f2b5a-d525-4f8d-91a0-b337982f9cf2
+    country: 235
+    prefix: '1936'
+- model: ox_locations.phoneprefix
+  pk: 2412
+  fields:
+    uuid: d1b1d434-d984-4126-8196-63aaa8df936f
+    country: 235
+    prefix: '1940'
+- model: ox_locations.phoneprefix
+  pk: 2413
+  fields:
+    uuid: 6c807fa9-3d1e-4db2-ba8d-39cdf285dea0
+    country: 235
+    prefix: '1945'
+- model: ox_locations.phoneprefix
+  pk: 2414
+  fields:
+    uuid: 996611c9-adfb-4221-9aa4-8c14b1f2953c
+    country: 235
+    prefix: '1956'
+- model: ox_locations.phoneprefix
+  pk: 2415
+  fields:
+    uuid: 30b83cce-5c28-4c96-bed2-fb4217d22a80
+    country: 235
+    prefix: '1972'
+- model: ox_locations.phoneprefix
+  pk: 2416
+  fields:
+    uuid: 43a00e80-7c96-4ca1-b293-e00f98310ea4
+    country: 235
+    prefix: '1979'
+- model: ox_locations.phoneprefix
+  pk: 2417
+  fields:
+    uuid: f2ba1b5b-8797-413f-9174-02d0adf5ab24
+    country: 235
+    prefix: '1385'
+- model: ox_locations.phoneprefix
+  pk: 2418
+  fields:
+    uuid: 0e033aec-623d-4657-a595-86947d074768
+    country: 235
+    prefix: '1435'
+- model: ox_locations.phoneprefix
+  pk: 2419
+  fields:
+    uuid: 891b4888-7489-46db-9085-316ab0ef48eb
+    country: 235
+    prefix: '1801'
+- model: ox_locations.phoneprefix
+  pk: 2420
+  fields:
+    uuid: 1f7fa78e-d45d-4245-b616-32e7e7e1ac7a
+    country: 235
+    prefix: '1802'
+- model: ox_locations.phoneprefix
+  pk: 2421
+  fields:
+    uuid: 20e5554b-2c76-4f33-9cd0-5b69ccd706d2
+    country: 235
+    prefix: '1276'
+- model: ox_locations.phoneprefix
+  pk: 2422
+  fields:
+    uuid: 6d5f898e-f678-4a75-a3d3-d7bcfc4bd3d2
+    country: 235
+    prefix: '1434'
+- model: ox_locations.phoneprefix
+  pk: 2423
+  fields:
+    uuid: 60e06595-fe87-4365-9a85-73a58b79a9cb
+    country: 235
+    prefix: '1540'
+- model: ox_locations.phoneprefix
+  pk: 2424
+  fields:
+    uuid: 991fe81f-b33c-4c28-9b52-bce49b496f98
+    country: 235
+    prefix: '1571'
+- model: ox_locations.phoneprefix
+  pk: 2425
+  fields:
+    uuid: f77305df-c5eb-4545-8c18-71e7457ca3c2
+    country: 235
+    prefix: '1686'
+- model: ox_locations.phoneprefix
+  pk: 2426
+  fields:
+    uuid: 7e0d3480-cdd5-486d-8cbc-031bcfdc5a82
+    country: 235
+    prefix: '1703'
+- model: ox_locations.phoneprefix
+  pk: 2427
+  fields:
+    uuid: 37c7e832-65c2-4c2c-8376-a4d688546337
+    country: 235
+    prefix: '1757'
+- model: ox_locations.phoneprefix
+  pk: 2428
+  fields:
+    uuid: 08cbe43a-a490-4324-9da9-7ea421bfd917
+    country: 235
+    prefix: '1804'
+- model: ox_locations.phoneprefix
+  pk: 2429
+  fields:
+    uuid: aaabd73c-776a-49c9-9d66-252ced55b4b5
+    country: 235
+    prefix: '1826'
+- model: ox_locations.phoneprefix
+  pk: 2430
+  fields:
+    uuid: 2cc4624c-35bb-40a1-8ee3-04f73e822a05
+    country: 235
+    prefix: '1948'
+- model: ox_locations.phoneprefix
+  pk: 2431
+  fields:
+    uuid: 87633b81-2778-472f-ac04-2b3e2b291ab5
+    country: 235
+    prefix: '1206'
+- model: ox_locations.phoneprefix
+  pk: 2432
+  fields:
+    uuid: 235fd6bd-ed1b-471a-b1e1-c855a003487b
+    country: 235
+    prefix: '1253'
+- model: ox_locations.phoneprefix
+  pk: 2433
+  fields:
+    uuid: bc92182c-7044-4f42-8283-faa91a055615
+    country: 235
+    prefix: '1360'
+- model: ox_locations.phoneprefix
+  pk: 2434
+  fields:
+    uuid: 89047f5c-4ffa-4b79-b9ef-cd3d497aa863
+    country: 235
+    prefix: '1425'
+- model: ox_locations.phoneprefix
+  pk: 2435
+  fields:
+    uuid: af29a8ec-0771-474c-a1be-c7c577b01b00
+    country: 235
+    prefix: '1509'
+- model: ox_locations.phoneprefix
+  pk: 2436
+  fields:
+    uuid: 9f68dc1a-f1a3-4355-8990-8aa0d43e8b7b
+    country: 235
+    prefix: '1564'
+- model: ox_locations.phoneprefix
+  pk: 2437
+  fields:
+    uuid: 35bd1de6-2547-4796-bdb7-55779449fa1e
+    country: 235
+    prefix: '1304'
+- model: ox_locations.phoneprefix
+  pk: 2438
+  fields:
+    uuid: d3c32fb1-97a3-4463-85bb-0abab03851b1
+    country: 235
+    prefix: '1681'
+- model: ox_locations.phoneprefix
+  pk: 2439
+  fields:
+    uuid: 0b39d1ba-5915-4136-b5d3-1c59eb8ffb60
+    country: 235
+    prefix: '1262'
+- model: ox_locations.phoneprefix
+  pk: 2440
+  fields:
+    uuid: 77e496e9-fd63-4efd-9110-d9cf600c8553
+    country: 235
+    prefix: '1274'
+- model: ox_locations.phoneprefix
+  pk: 2441
+  fields:
+    uuid: 88909500-ca94-4b7a-9895-1d0a405cd625
+    country: 235
+    prefix: '1353'
+- model: ox_locations.phoneprefix
+  pk: 2442
+  fields:
+    uuid: 9846fec8-9a79-4374-b55c-fe911f9ac029
+    country: 235
+    prefix: '1414'
+- model: ox_locations.phoneprefix
+  pk: 2443
+  fields:
+    uuid: cd4aead7-f243-4077-bfcb-e503798a2c07
+    country: 235
+    prefix: '1534'
+- model: ox_locations.phoneprefix
+  pk: 2444
+  fields:
+    uuid: facaa296-196c-4a61-b08b-e265307b4fd8
+    country: 235
+    prefix: '1608'
+- model: ox_locations.phoneprefix
+  pk: 2445
+  fields:
+    uuid: d48b2a70-9f43-4340-8d71-9e7c7c28dd2e
+    country: 235
+    prefix: '1715'
+- model: ox_locations.phoneprefix
+  pk: 2446
+  fields:
+    uuid: 38b6b23e-9b03-4b27-b709-408af47ccd2f
+    country: 235
+    prefix: '1920'
+- model: ox_locations.phoneprefix
+  pk: 2447
+  fields:
+    uuid: 219f5cd5-5afb-44f9-82fa-af7ad5a0dbb8
+    country: 235
+    prefix: '1307'
+- model: ox_locations.phoneprefix
+  pk: 2448
+  fields:
+    uuid: a5229566-479e-452b-9c06-cf3948628f5e
+    country: 235
+    prefix: '1808'
+- model: ox_locations.phoneprefix
+  pk: 2449
+  fields:
+    uuid: 6b5fabea-e50b-43e6-9fda-2cc5d38e183e
+    country: 236
+    prefix: '998'
+- model: ox_locations.phoneprefix
+  pk: 2450
+  fields:
+    uuid: 7976f5ca-e961-4158-90ec-6a69e36f1a3b
+    country: 237
+    prefix: '39'
+- model: ox_locations.phoneprefix
+  pk: 2451
+  fields:
+    uuid: 1fa66c72-75ed-478f-9d3d-9126dc38fbc3
+    country: 238
+    prefix: '1784'
+- model: ox_locations.phoneprefix
+  pk: 2452
+  fields:
+    uuid: 0908de24-6126-46fb-82d4-4f5c4e5f5424
+    country: 239
+    prefix: '58'
+- model: ox_locations.phoneprefix
+  pk: 2453
+  fields:
+    uuid: fb901492-5a5b-409b-b00f-55a0ad2facf3
+    country: 240
+    prefix: '1284'
+- model: ox_locations.phoneprefix
+  pk: 2454
+  fields:
+    uuid: 9739a0d5-a11d-48e1-8f52-4749bc6f2df8
+    country: 241
+    prefix: '1340'
+- model: ox_locations.phoneprefix
+  pk: 2455
+  fields:
+    uuid: c99b3fa6-35d4-42a6-ba2b-20183a9c0b15
+    country: 242
+    prefix: '84'
+- model: ox_locations.phoneprefix
+  pk: 2456
+  fields:
+    uuid: 10d3a044-c46c-4658-bbf0-c5f0534dfac5
+    country: 243
+    prefix: '678'
+- model: ox_locations.phoneprefix
+  pk: 2457
+  fields:
+    uuid: 213e740f-2a2a-432c-980b-c8da59826a8f
+    country: 244
+    prefix: '681'
+- model: ox_locations.phoneprefix
+  pk: 2458
+  fields:
+    uuid: ad48c5a9-45fe-453f-9acd-43b74f40336d
+    country: 245
+    prefix: '685'
+- model: ox_locations.phoneprefix
+  pk: 2459
+  fields:
+    uuid: cc06e761-ff91-48e6-ab25-9b26a5f4a84c
+    country: 246
+    prefix: '967'
+- model: ox_locations.phoneprefix
+  pk: 2460
+  fields:
+    uuid: 85be0c75-eb69-4584-a291-22cae79f2198
+    country: 247
+    prefix: '27'
+- model: ox_locations.phoneprefix
+  pk: 2461
+  fields:
+    uuid: 5e635c8e-51c6-40d7-b201-5412bf11528b
+    country: 248
+    prefix: '260'
+- model: ox_locations.phoneprefix
+  pk: 2462
+  fields:
+    uuid: 798f9247-71fb-460a-abbb-cecb08c3f57e
+    country: 249
+    prefix: '263'
