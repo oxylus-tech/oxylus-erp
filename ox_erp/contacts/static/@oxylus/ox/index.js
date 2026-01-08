@@ -1,22 +1,22 @@
 var Q = Object.defineProperty;
 var W = (i, e, t) => e in i ? Q(i, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : i[e] = t;
-var a = (i, e, t) => W(i, typeof e != "symbol" ? e + "" : e, t);
-import { t as c, R as H, c as C, d as J, l as h, a as z, H as G, b as Y, e as X, B as ee, C as te, G as se, M as ie, f as re, P as ne, U as O, u as M, g as ae, S as p, i as oe, h as le, j as ue, k as he, m as D, s as ce, n as de, o as E, r as fe, p as k, q as pe } from "./index2.js";
+var o = (i, e, t) => W(i, typeof e != "symbol" ? e + "" : e, t);
+import { t as d, R as H, c as C, d as J, l as c, a as z, H as G, b as Y, e as X, B as ee, C as te, G as se, M as ie, f as re, P as ne, U as S, u as K, g as ae, S as g, i as oe, h as le, j as ue, k as he, m as D, s as ce, n as de, o as R, r as fe, p as k, q as pe } from "./index2.js";
 import { E as lt, v as ut, A as ht, J as ct, y as dt, z as ft, D as pt, I as mt, K as gt, w as yt, F as wt, x as vt } from "./index2.js";
-import { inject as v, provide as f, reactive as w, computed as m, ref as me, createApp as ge, onMounted as F, watch as x, onUnmounted as L, unref as K, defineAsyncComponent as ye } from "vue";
+import { inject as q, provide as p, reactive as E, computed as y, ref as me, createApp as ge, onMounted as F, watch as O, onUnmounted as L, unref as M, defineAsyncComponent as ye } from "vue";
 import we from "axios";
 import * as ve from "@oxylus/ox/vendor";
-import { c as xe, a as T, m as Ae } from "./vuetify.js";
-function U(i, e) {
-  let t = `enums.${i}.${e}`, s = c(t);
-  return s != t ? s : c(`enums.${i}._.${e}`);
+import { c as xe, a as U, m as Ae } from "./vuetify.js";
+function T(i, e) {
+  let t = `enums.${i}.${e}`, s = d(t);
+  return s != t ? s : d(`enums.${i}._.${e}`);
 }
 const I = {
   get(i, e, t) {
     return e == "items" ? Object.keys(i).filter((s) => s[0] != "_").map((s) => ({
       value: i[s],
-      title: U(i.__prefix, s)
-    })) : e == "toString" ? (s) => U(t.__prefix, s) : Reflect.get(i, e, t);
+      title: T(i.__prefix, s)
+    })) : e == "toString" ? (s) => T(t.__prefix, s) : Reflect.get(i, e, t);
   }
 };
 function be(i, e) {
@@ -30,23 +30,23 @@ class Ee {
     /**
      * The repository that called the request.
      */
-    a(this, "repository");
+    o(this, "repository");
     /**
      * The request configuration.
      */
-    a(this, "config");
+    o(this, "config");
     /**
      * The axios response instance.
      */
-    a(this, "response");
+    o(this, "response");
     /**
      * Entities created by Pinia ORM.
      */
-    a(this, "entities", null);
+    o(this, "entities", null);
     /**
      * Whether if response data is saved to the store or not.
      */
-    a(this, "isSaved", !1);
+    o(this, "isSaved", !1);
     this.repository = e, this.config = t, this.response = s;
   }
   /**
@@ -125,11 +125,11 @@ class _e {
     /**
      * The repository class.
      */
-    a(this, "repository");
+    o(this, "repository");
     /**
      * The default config.
      */
-    a(this, "config", {
+    o(this, "config", {
       save: !0
     });
     this.repository = e, this.registerActions();
@@ -152,8 +152,8 @@ class _e {
     const e = { ...(t = this.repository.config.axiosApi) == null ? void 0 : t.actions, ...(r = (s = this.repository.getModel().$config()) == null ? void 0 : s.axiosApi) == null ? void 0 : r.actions };
     if (e)
       for (const n in e) {
-        const o = e[n];
-        typeof o == "function" ? this.registerFunctionAction(n, o) : this.registerObjectAction(n, o);
+        const a = e[n];
+        typeof a == "function" ? this.registerFunctionAction(n, a) : this.registerObjectAction(n, a);
       }
   }
   /**
@@ -228,12 +228,12 @@ class _e {
 }
 class qe extends H {
   constructor(t, s) {
-    var r, n, o;
+    var r, n, a;
     super(t, s);
-    a(this, "axios");
-    a(this, "globalApiConfig");
-    a(this, "apiConfig");
-    this.axios = ((n = (r = C) == null ? void 0 : r.axiosApi) == null ? void 0 : n.axios) || null, this.globalApiConfig = ((o = C) == null ? void 0 : o.axiosApi) || {}, this.apiConfig = {};
+    o(this, "axios");
+    o(this, "globalApiConfig");
+    o(this, "apiConfig");
+    this.axios = ((n = (r = C) == null ? void 0 : r.axiosApi) == null ? void 0 : n.axios) || null, this.globalApiConfig = ((a = C) == null ? void 0 : a.axiosApi) || {}, this.apiConfig = {};
   }
   api() {
     return Oe(this);
@@ -248,16 +248,16 @@ function Oe(i) {
 function Pe(i) {
   return J((e) => (e.config.axiosApi = i, e));
 }
-const b = class b {
+const $ = class $ {
   constructor(e) {
-    a(this, "repo");
+    o(this, "repo");
     /** Acquired items */
-    a(this, "items");
+    o(this, "items");
     this.repo = e, this.items = {};
   }
   /** Acquire a unique context key */
   acquireKey() {
-    return b._lastKey++;
+    return $._lastKey++;
   }
   /** Acquire provided ids for this key */
   acquire(e, t) {
@@ -276,7 +276,7 @@ const b = class b {
     const s = [];
     for (var r of t) {
       const n = this.items[r];
-      h.pull(n, e), n != null && n.length || (s.push(r), delete this.items[r]);
+      c.pull(n, e), n != null && n.length || (s.push(r), delete this.items[r]);
     }
     s.length && this.repo.destroy(s);
   }
@@ -286,7 +286,7 @@ const b = class b {
    * This optimizes out ids
    */
   releaseAcquire(e, t, s) {
-    this.release(e, h.difference(t, s)), this.acquire(e, h.difference(s, t));
+    this.release(e, c.difference(t, s)), this.acquire(e, c.difference(s, t));
   }
   /** Release all reference for the provided context key. */
   flush(e) {
@@ -302,13 +302,13 @@ const b = class b {
     this.items = {};
   }
 };
-a(b, "_lastKey", 0);
-let A = b;
-class q extends qe {
+o($, "_lastKey", 0);
+let P = $;
+class j extends qe {
   constructor(t, s) {
     super(t, s);
-    a(this, "refs");
-    this.refs = new A(this);
+    o(this, "refs");
+    this.refs = new P(this);
   }
   flush() {
     return this.refs.clear(), super.flush();
@@ -325,7 +325,7 @@ function N(i, e) {
 function B(i) {
   return i instanceof G || i instanceof Y || i instanceof X || i instanceof ee ? i.foreignKey : null;
 }
-const He = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const We = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   ContentType: te,
   Enum: be,
@@ -333,41 +333,41 @@ const He = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   Meta: ie,
   Model: re,
   Permission: ne,
-  RefCounter: A,
-  RefRepository: q,
-  User: O,
+  RefCounter: P,
+  RefRepository: j,
+  User: S,
   asRelation: N,
   enumProxy: I,
   getSourceKey: B
 }, Symbol.toStringTag, { value: "Module" }));
 function $e(i) {
-  M(i);
+  K(i);
   const e = ae();
-  return q.useModel = i, M(q, e);
+  return j.useModel = i, K(j, e);
 }
 function Re(i, { useInject: e = !0, useDefaults: t = !0 } = {}) {
-  var s = e && (v("repos") || {});
+  var s = e && (q("repos") || {});
   const r = e && !!Object.keys(s).length;
-  Array.isArray(i) || (i = Object.values(i)), t && i.push(O);
+  Array.isArray(i) || (i = Object.values(i)), t && i.push(S);
   for (const n of i)
     if (n && n.entity) {
       if (n.entity in s)
         continue;
       s[n.entity] = $e(n);
     }
-  return !r && f("repos", s), s;
+  return !r && p("repos", s), s;
 }
 class je {
   /** Reactive version of AppContext */
   static reactive(e) {
-    const t = w(new this(e));
-    return t.user = m(() => {
+    const t = E(new this(e));
+    return t.user = y(() => {
       var s;
-      return new O(((s = t.data) == null ? void 0 : s.user) || {});
+      return new S(((s = t.data) == null ? void 0 : s.user) || {});
     }), t;
   }
   constructor(e = {}) {
-    Object.assign(this, e), this.state = p.none(), this.showState = !1;
+    Object.assign(this, e), this.state = g.none(), this.showState = !1;
   }
   /**
    * Load data into AppData. If no `value` is provided, read it from
@@ -388,13 +388,13 @@ class je {
     return t.innerText ? JSON.parse(t.innerText) : {};
   }
 }
-function Je(i, e = !0) {
+function He(i, e = !0) {
   const t = je.reactive(i);
-  return e && t.dataEl && t.load(), f("context", t), f("user", t.user), t;
+  return e && t.dataEl && t.load(), p("context", t), p("user", t.user), window.oxylus = { ...window.oxylus, apiUrl: t.apiUrl, appData: t.data }, t;
 }
-function Ge({ props: i, user: e, emits: t = null }) {
-  const s = me(!1), r = m(() => !i.permission || e.can(i.permission, i.item));
-  return { processing: s, run: async (...o) => {
+function Je({ props: i, user: e, emits: t = null }) {
+  const s = me(!1), r = y(() => !i.permission || e.can(i.permission, i.item));
+  return { processing: s, run: async (...a) => {
     if (i.confirm && !confirm(i.confirm))
       return;
     if (i.href) {
@@ -402,14 +402,14 @@ function Ge({ props: i, user: e, emits: t = null }) {
       return;
     }
     s.value = !0;
-    let l = i.run(e, i.item, ...o);
-    return l instanceof Promise && (l = await l), s.value = !1, t && t("completed", i.item, ...o), l;
+    let l = i.run(e, i.item, ...a);
+    return l instanceof Promise && (l = await l), s.value = !1, t && t("completed", i.item, ...a), l;
   }, allowed: r };
 }
-function Ye({ App: i = null, el: e = "#app", onLoad: t = !0, ...s } = {}) {
+function Ge({ App: i = null, el: e = "#app", onLoad: t = !0, ...s } = {}) {
   function r() {
-    const n = Se(i, s), o = e ? n.mount(e) : null;
-    return document.body.classList.remove("loading"), { app: n, el: e, vm: o };
+    const n = Se(i, s), a = e ? n.mount(e) : null;
+    return document.body.classList.remove("loading"), { app: n, el: e, vm: a };
   }
   return new Promise((n) => {
     if (t)
@@ -434,8 +434,8 @@ function Ce({ components: i = {}, defaults: e = {}, ...t }) {
         light: {
           dark: !1,
           colors: {
-            primary: T.green.darken1,
-            secondary: T.green.lighten4
+            primary: U.green.darken1,
+            secondary: U.green.lighten4
           }
         }
       }
@@ -451,7 +451,7 @@ function Ce({ components: i = {}, defaults: e = {}, ...t }) {
     ...t
   });
 }
-function Xe({ axiosConfig: i = null, baseURL: e = null } = {}) {
+function Ye({ axiosConfig: i = null, baseURL: e = null } = {}) {
   e || (e = document.body.dataset.apiUrl);
   const t = ue(), s = he({
     plugins: [
@@ -464,7 +464,7 @@ function Xe({ axiosConfig: i = null, baseURL: e = null } = {}) {
   });
   return ce(t), t.use(s);
 }
-class g {
+class w {
   /**
   * @param {Repos} [repos] all models repositories
   * @param {Repository<M>} [repo] the main repository
@@ -474,22 +474,35 @@ class g {
   }
   /** Fetch items from api. */
   async fetch(e = {}) {
-    var P, $, R, j, S;
+    var v, x, A, b, _;
     e = { ...this.opts, ...e };
-    let { url: t, id: s, repo: r, lookup: n, params: o, relations: l, path: u, ...d } = e;
+    let { url: t, id: s, repo: r, lookup: n, params: a, relations: l, path: u, ...h } = e;
     n ?? (n = "id__in"), r ?? (r = this.repo);
-    let _ = null;
-    if (Array.isArray(s) && (s.length == 1 ? s = s[0] : (_ = s, s = null)), !t) {
+    let m = null;
+    if (Array.isArray(s) && (s.length == 1 ? s = s[0] : (m = s, s = null)), !t) {
       const Z = s;
-      t = ($ = (P = r.use) == null ? void 0 : P.meta) == null ? void 0 : $.getUrl({ path: u, id: Z });
+      t = (x = (v = r.use) == null ? void 0 : v.meta) == null ? void 0 : x.getUrl({ path: u, id: Z });
     }
-    if (s ? d.dataKey = null : "dataKey" in d || (d.dataKey = (S = (j = (R = r.use) == null ? void 0 : R.config) == null ? void 0 : j.axiosApi) == null ? void 0 : S.dataKey), _ && n !== void 0) {
+    if (s ? h.dataKey = null : "dataKey" in h || (h.dataKey = (_ = (b = (A = r.use) == null ? void 0 : A.config) == null ? void 0 : b.axiosApi) == null ? void 0 : _.dataKey), m && n !== void 0) {
       if (s)
         throw Error("Both `ids` and `id` are provided while only one of those arguments is accepted.");
-      o = { ...o || {} }, o[n] = _.join(",");
+      a = { ...a || {} }, a[n] = m.join(",");
     }
-    const y = await r.api().get(t, { ...d, params: o });
-    return d.save === !1 && (y.entities = this.getEntities(y)), l && (y.relations = await this.relations(y.entities, l, { ...d, params: {} })), y;
+    const f = await r.api().get(t, { ...h, params: a });
+    return h.save === !1 && (f.entities = this.getEntities(f)), l && (f.relations = await this.relations(f.entities, l, { ...h, params: {} })), f;
+  }
+  /** Post data to the server. */
+  async post(e, { method: t = "post", ...s } = {}) {
+    var f, v, x, A, b;
+    s = { ...this.opts, ...s };
+    let { url: r, id: n, repo: a, lookup: l, path: u, ...h } = s;
+    if (a ?? (a = this.repo), !r) {
+      const _ = n;
+      r = (v = (f = a.use) == null ? void 0 : f.meta) == null ? void 0 : v.getUrl({ path: u, id: _ });
+    }
+    n ? h.dataKey = null : "dataKey" in h || (h.dataKey = (b = (A = (x = a.use) == null ? void 0 : x.config) == null ? void 0 : A.axiosApi) == null ? void 0 : b.dataKey);
+    const m = await a.api()[t](r, e, h);
+    return h.save == !1 && (m.entities = this.getEntities(m)), m;
   }
   /** Get entities from response **/
   getEntities(e) {
@@ -508,8 +521,8 @@ class g {
     const r = await this.fetch({ ...s });
     let n = r.response.data[e];
     for (; n; ) {
-      const o = await this.fetch({ ...s, url: n });
-      if (o.entities && (r.entities = r.entities !== null ? r.entities.concat(o.entities) : o.entities), n = o.response.data[e], t > 0 && t--, !t) break;
+      const a = await this.fetch({ ...s, url: n });
+      if (a.entities && (r.entities = r.entities !== null ? r.entities.concat(a.entities) : a.entities), n = a.response.data[e], t > 0 && t--, !t) break;
     }
     return r;
   }
@@ -532,9 +545,9 @@ class g {
    * @return the resulting entities.
    */
   async relations(e, t, s = {}) {
-    var o;
+    var a;
     this._ensureRepos("relations");
-    const r = {}, n = (o = this.repo.use) == null ? void 0 : o.fields();
+    const r = {}, n = (a = this.repo.use) == null ? void 0 : a.fields();
     if (n)
       for (const l of t) {
         const u = n[l];
@@ -562,29 +575,29 @@ class g {
     const r = N(this.repo, t);
     if (!r)
       throw Error(`No Relation found for field ${t}.`);
-    const n = r.related.constructor.entity, o = this.repos[n];
-    if (!o)
+    const n = r.related.constructor.entity, a = this.repos[n];
+    if (!a)
       throw Error(`No repository "${n}" found.`);
     const l = B(r);
     if (!l)
       throw Error(`No source ids attributes for ${t}.`);
     const u = [...new Set(de(e, l))];
-    return new g(o, this.repos, { save: this.opts.save }).all({ ...s, id: u, repo: o });
+    return new w(a, this.repos, { save: this.opts.save }).all({ ...s, id: u, repo: a });
   }
 }
-function Me(i, e, t = null) {
+function Xe(i, e, t = null) {
   if (typeof i == "string") {
     if (!(i in e))
       throw Error(`Repository "${i}" is not present in provided repositories.`);
-    return new g(e[i], e, t);
+    return new w(e[i], e, t);
   }
-  return new g(i, e, t);
+  return new w(i, e, t);
 }
 class V {
   constructor(e) {
-    a(this, "state", p.none());
-    a(this, "value", {});
-    e && E(this, e), this.state || (this.state = new p()), this.value ?? (this.value = {}), this.empty ?? (this.empty = {}), this.initial ?? (this.initial = this.props.initial || this.empty), this.valid = !0, this.reset(this.initial);
+    o(this, "state", g.none());
+    o(this, "value", {});
+    e && R(this, e), this.state || (this.state = new g()), this.value ?? (this.value = {}), this.empty ?? (this.empty = {}), this.initial ?? (this.initial = this.props.initial || this.empty), this.valid = !0, this.reset(this.initial);
   }
   get name() {
     return this.props.name;
@@ -614,7 +627,7 @@ class V {
   }
   /** Return wether value has been edited or not */
   isEdited() {
-    return !h.isEqual(this.value, this.initial);
+    return !c.isEqual(this.value, this.initial);
   }
   /**
    * Save data. It will `serialize()` value then `send()` it.
@@ -637,7 +650,7 @@ class V {
       ...t.headers
     } : e = this.serialize(e);
     const s = await this.send(e, t);
-    return s.isOk ? (this.reset(s.data), this.initial = h.cloneDeep(this.value), (r = this.saved) == null || r.call(this, this.value)) : (this.state = s, this.state.data = { ...this.state.data, __value: e }), this.state;
+    return s.isOk ? (this.reset(s.data), this.initial = c.cloneDeep(this.value), (r = this.saved) == null || r.call(this, this.value)) : (this.state = s, this.state.data = { ...this.state.data, __value: e }), this.state;
   }
   /**
    * This method is called when editor successfully saved the
@@ -658,19 +671,19 @@ class V {
     throw "not implemented";
   }
 }
-class ke {
+class Ke {
   constructor(e = null) {
-    a(this, "index", "list.table");
-    a(this, "view", "");
-    a(this, "value", null);
-    a(this, "item", null);
-    a(this, "editions", /* @__PURE__ */ new Set());
+    o(this, "index", "list.table");
+    o(this, "view", "");
+    o(this, "value", null);
+    o(this, "item", null);
+    o(this, "editions", /* @__PURE__ */ new Set());
     /**
      * Translation key for message displayed on `confirm()` to leave unsaved
      * changes.
      */
-    a(this, "confirmTKey", "panel.confirm");
-    e && E(this, e), this.view ?? (this.view = this.index || "");
+    o(this, "confirmTKey", "panel.confirm");
+    e && R(this, e), this.view ?? (this.view = this.index || "");
   }
   /** Panel name (based on props) **/
   get name() {
@@ -726,18 +739,18 @@ class ke {
   canLeave() {
     if (!this.edited)
       return !0;
-    const e = c(this.confirmTKey);
+    const e = d(this.confirmTKey);
     return confirm(e);
   }
 }
-class Ke {
+class ke {
   constructor(e = null) {
-    a(this, "panel", "");
-    a(this, "params", {});
-    a(this, "paramsString", "");
-    a(this, "children", {});
-    a(this, "current");
-    e && E(this, e);
+    o(this, "panel", "");
+    o(this, "params", {});
+    o(this, "paramsString", "");
+    o(this, "children", {});
+    o(this, "current");
+    e && R(this, e);
   }
   /**
    * Set {@link Panels.params based on current document location.
@@ -787,11 +800,11 @@ class Ke {
     e && e != this.panel && !this.canLeave() || (this.panel = e || this.panel, this.params = s, this.current = this.children[this.panel], (n = this.current) == null || n.show({ ...this.params, silent: t }));
   }
 }
-class Te {
+class Me {
   constructor(e = null) {
-    a(this, "state", p.none());
-    a(this, "save", !0);
-    e && E(this, e);
+    o(this, "state", g.none());
+    o(this, "save", !0);
+    e && R(this, e);
   }
   /** The repository of contained items. */
   get repo() {
@@ -854,21 +867,21 @@ class Te {
     return !e.relations && this.relations && this.fetchRelations && (e.relations = this.relations), e.url || (e.url = this.url), "save" in e || (e.save = this.save), e;
   }
 }
-class Ue extends Te {
+class Ue extends Me {
   constructor() {
     super(...arguments);
     // /** Reference counter key **/
     // $id: number
-    a(this, "ids", []);
-    a(this, "filters", {});
-    a(this, "nextUrl", null);
-    a(this, "prevUrl", null);
-    a(this, "count", null);
-    a(this, "page_size", null);
-    a(this, "dataKey", "results");
-    a(this, "nextKey", "next");
-    a(this, "prevKey", "previous");
-    a(this, "countKey", "count");
+    o(this, "ids", []);
+    o(this, "filters", {});
+    o(this, "nextUrl", null);
+    o(this, "prevUrl", null);
+    o(this, "count", null);
+    o(this, "page_size", null);
+    o(this, "dataKey", "results");
+    o(this, "nextKey", "next");
+    o(this, "prevKey", "previous");
+    o(this, "countKey", "count");
   }
   get length() {
     return this.ids.length;
@@ -938,7 +951,7 @@ class Ue extends Te {
    */
   async handleResponse({ append: t = !1, ...s }, r) {
     if (r = await super.handleResponse(s, r), !this.state.isError && s.save !== !1) {
-      const n = h.map(r.entities, "id");
+      const n = c.map(r.entities, "id");
       this.update(n, t), this.nextUrl = r.response.data[this.nextKey] || null, this.prevUrl = r.response.data[this.prevKey] || null, this.count = r.response.data[this.countKey] || this.ids.length;
     }
     return r;
@@ -951,7 +964,7 @@ class Ue extends Te {
    *                                  When `false`, remove all previous ids.
    */
   update(t, s = !1) {
-    typeof s == "number" ? this.ids.splice(s, 0, ...t) : s && this.ids.length ? this.ids = h.union(this.ids, t) : this.ids = t;
+    typeof s == "number" ? this.ids.splice(s, 0, ...t) : s && this.ids.length ? this.ids = c.union(this.ids, t) : this.ids = t;
   }
   /**
    * Update the list with the provided items.
@@ -965,7 +978,7 @@ class Ue extends Te {
     this.repo.insert(t), this.update(t.map((r) => r.id), s);
   }
 }
-class ze extends V {
+class Te extends V {
   constructor(e) {
     e.fields = Object.keys(e.props.repo.use.fields()), e.empty ?? (e.empty = new e.props.repo.use()), super(e);
   }
@@ -976,7 +989,7 @@ class ze extends V {
     return this.props.name || `${this.repo.use.entity}-edit`;
   }
   isEdited() {
-    return !h.isEqual(h.pick(this.value, this.fields), h.pick(this.initial, this.fields));
+    return !c.isEqual(c.pick(this.value, this.fields), c.pick(this.initial, this.fields));
   }
   get url() {
     var t, s;
@@ -988,7 +1001,7 @@ class ze extends V {
   reset(e = null) {
     (!e || !Object.keys(e).length) && (e = this.empty);
     const t = this.fields.filter((s) => s in e);
-    this.value = h.cloneDeep(h.pick(e, t)) || {}, this.state.none();
+    this.value = c.cloneDeep(c.pick(e, t)) || {}, this.state.none();
   }
   serialize(e) {
     const t = this.repo.use;
@@ -997,16 +1010,16 @@ class ze extends V {
   async send(e, t = {}) {
     let [s, r] = ["post", this.url];
     return this.value.id && (r = `${r}${this.value.id}/`, s = "put"), await this.repo.api()[s](r, e, t).then(
-      (n) => p.ok(n.entities[0]),
-      (n) => p.error(n.response.data)
+      (n) => g.ok(n.entities[0]),
+      (n) => g.error(n.response.data)
     );
   }
 }
-class De extends ke {
+class ze extends Ke {
   constructor(t) {
     var s;
     super(t);
-    a(this, "showFilters", !1);
+    o(this, "showFilters", !1);
     this.showFilters = ((s = this.props) == null ? void 0 : s.showFilters) || !1;
   }
   /** Current model's repository. */
@@ -1028,16 +1041,16 @@ class De extends ke {
   }
   /** Return panel's title based on view and current item. */
   get title() {
-    var n, o, l, u;
+    var n, a, l, u;
     const { props: t, list: s } = this, r = this.repo.use;
     if (r) {
       if ((n = this.view) != null && n.startsWith("list."))
-        return c(k.model(r), 3);
-      if ((o = this.view) != null && o.startsWith("detail.")) {
+        return d(k.model(r), 3);
+      if ((a = this.view) != null && a.startsWith("detail.")) {
         if ((l = this.value) != null && l.$title)
           return this.value.$title;
-        const d = c(k.model(r));
-        return (u = this.value) != null && u.id ? c("models._.title", { model: d, id: this.value.id }) : c("models._.title.new", { model: d });
+        const h = d(k.model(r));
+        return (u = this.value) != null && u.id ? d("models._.title", { model: h, id: this.value.id }) : d("models._.title.new", { model: h });
       }
     }
     return super.title;
@@ -1060,14 +1073,14 @@ class De extends ke {
   }
   show({ id: t = null, ...s }) {
     if (t)
-      Me(this.repo).fetch({ id: t, relations: this.props.relations }).then((r) => (super.show({ ...s, value: r.entities[0] }), r));
+      this.query.fetch({ id: t, relations: this.props.relations }).then((r) => (super.show({ ...s, value: r.entities[0] }), r));
     else
       return super.show(s);
   }
 }
 function et(i) {
-  const e = w(new Ke(i));
-  f("panels", e), F(() => {
+  const e = E(new ke(i));
+  p("panels", e), F(() => {
     e.readDocumentLocation(), e.panel && e.show({
       panel: e.panel,
       silent: !0,
@@ -1077,46 +1090,46 @@ function et(i) {
     s.state && e.show({ ...s.state, silent: !0 });
   });
   const t = document.title;
-  return x(() => {
+  return O(() => {
     var s;
     return (s = e.current) == null ? void 0 : s.title;
   }, (s) => {
     s ? document.title = `${s} | ${t}` : document.title = t;
   }), e;
 }
-function Fe(i, e) {
-  const t = w(new e(i));
-  return f("panel", t), F(() => t.panels.register(t.name, t)), L(() => t.panels.unregister(t.name)), { panel: t };
+function De(i, e) {
+  const t = E(new e(i));
+  return p("panel", t), F(() => t.panels.register(t.name, t)), L(() => t.panels.unregister(t.name)), { panel: t };
 }
 function tt({ query: i, repos: e, ...t }) {
-  e ?? (e = v("repos")), i ?? (i = new g(t.props.repo, e)), t.panels ?? (t.panels = v("panels"));
-  const { list: s, items: r } = Le({
+  e ?? (e = q("repos")), i ?? (i = new w(t.props.repo, e)), t.panels ?? (t.panels = q("panels"));
+  const { list: s, items: r } = Fe({
     query: i,
     relations: t.props.relations,
     fetchRelations: t.props.fetchRelations
-  }), { panel: n } = Fe({ list: s, name: t.props.name, ...t }, De), o = m(() => {
-    const u = s.getSiblingIndex(K(n.value), 1);
+  }), { panel: n } = De({ list: s, ...t }, ze), a = y(() => {
+    const u = s.getSiblingIndex(M(n.value), 1);
     return r.value[u] ?? null;
-  }), l = m(() => {
-    const u = s.getSiblingIndex(K(n.value), -1);
+  }), l = y(() => {
+    const u = s.getSiblingIndex(M(n.value), -1);
     return r.value[u] ?? null;
   });
-  return { panels: n.panels, panel: n, list: s, items: r, next: o, prev: l };
+  return { panels: n.panels, panel: n, list: s, items: r, next: a, prev: l };
 }
-function Le(i, e = Ue) {
-  const t = w(new e(i)), s = t.repo.refs.acquireKey(), r = m(() => t.length ? t.queryset(t.ids).orderBy((n) => t.ids.indexOf(n)).get() : []);
-  return x(
+function Fe(i, e = Ue) {
+  const t = E(new e(i)), s = t.repo.refs.acquireKey(), r = y(() => t.length ? t.queryset(t.ids).orderBy((n) => t.ids.indexOf(n)).get() : []);
+  return O(
     () => t.ids,
-    pe((n, o) => t.repo.refs.releaseAcquire(s, o, n))
-  ), L(() => t.repo.refs.flush(s)), f("list", t), f("items", r), { list: t, items: r, listId: s };
+    pe((n, a) => t.repo.refs.releaseAcquire(s, a, n))
+  ), L(() => t.repo.refs.flush(s)), p("list", t), p("items", r), { list: t, items: r, listId: s };
 }
 function st(i, e = null, t) {
-  const s = new g(i, e, t), r = p.none();
-  async function n(o) {
+  const s = new w(i, e, t), r = g.none();
+  async function n(a) {
     r.processing();
     let l = null;
     try {
-      l = await s.fetch(o), r.none();
+      l = await s.fetch(a), r.none();
     } catch (u) {
       r.error(u);
     }
@@ -1124,25 +1137,25 @@ function st(i, e = null, t) {
   }
   return { state: r, query: s, fetch: n };
 }
-function Ie(i, e = V) {
+function Le(i, e = V) {
   i.initial || i.props.initial;
-  const t = w(new e(i));
-  f("editor", t);
-  const s = m(() => t.isEdited());
-  x(() => t.props.initial, (n) => {
-    const o = n || t.empty;
-    t.initial = o, t.reset(o);
+  const t = E(new e(i));
+  p("editor", t);
+  const s = y(() => t.isEdited());
+  O(() => t.props.initial, (n) => {
+    const a = n || t.empty;
+    t.initial = a, t.reset(a);
   });
-  const r = v("panel");
-  return r && x(() => t.edited, (n) => r.setEdition(t.name, n)), { editor: t, edited: s };
+  const r = q("panel");
+  return r && O(() => t.edited, (n) => r.setEdition(t.name, n)), { editor: t, edited: s };
 }
-function it(i, e = ze) {
-  return Ie(i, e);
+function it(i, e = Te) {
+  return Le(i, e);
 }
 const rt = {
   /** Field is required */
   required(i) {
-    return i || i === 0 ? !0 : c("fields._.required");
+    return i || i === 0 ? !0 : d("fields._.required");
   },
   /**
    * Return a rule validating field errors returned from the server based
@@ -1162,7 +1175,7 @@ const rt = {
   },
   /** Rule validating email */
   email(i) {
-    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(i) || c("fields.email.rule");
+    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(i) || d("fields.email.rule");
   },
   /** Rule validating username */
   username(i) {
@@ -1170,17 +1183,18 @@ const rt = {
   },
   /** Rule validating url for HTTP protocol */
   httpUrl(i) {
-    return /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(i) || c("rules.http_url");
+    return /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(i) || d("rules.http_url");
   },
   /** Rule validating url for other protocols */
   url(i) {
-    return /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(i) || c("rules.url");
+    return /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(i) || d("rules.url");
   }
 };
 function nt(i, e) {
-  return ye(() => import(i).then((t) => (i.endsWith(".js") && Ne(import.meta.resolve(i.replace(/\.js$/, ".css"))), e ? Object.values(t).filter((r) => r.__name == e)[0] : t)));
+  return ye(() => import(i).then((t) => (i.endsWith(".js") && Ie(import.meta.resolve(i.replace(/\.js$/, ".css"))).catch(() => {
+  }), e ? Object.values(t).filter((r) => r.__name == e)[0] : t)));
 }
-function Ne(i) {
+function Ie(i) {
   return new Promise((e, t) => {
     if (document.querySelector(`link[href="${i}"]`)) {
       e();
@@ -1193,21 +1207,21 @@ function Ne(i) {
 export {
   je as AppContext,
   V as Editor,
-  Te as ModelController,
-  ze as ModelEditor,
+  Me as ModelController,
+  Te as ModelEditor,
   Ue as ModelList,
-  De as ModelPanel,
-  ke as Panel,
-  Ke as Panels,
-  g as Query,
-  p as State,
+  ze as ModelPanel,
+  Ke as Panel,
+  ke as Panels,
+  w as Query,
+  g as State,
   lt as States,
-  E as assignNonEmpty,
+  R as assignNonEmpty,
   de as collectAttr,
   D as config,
   Se as createApp,
   ut as createI18n,
-  Xe as createPinia,
+  Ye as createPinia,
   Ce as createVuetify,
   ht as csrfToken,
   nt as defineAsyncComponent,
@@ -1218,26 +1232,26 @@ export {
   oe as i18n,
   mt as ifNotEqual,
   pe as ifNotEqualFn,
-  Ye as init,
+  Ge as init,
   gt as injectOrProvide,
   yt as loadI18nScripts,
   wt as mapToObject,
-  He as models,
-  Me as query,
+  We as models,
+  Xe as query,
   fe as reset,
   rt as rules,
-  c as t,
+  d as t,
   k as tKeys,
   vt as te,
-  Ge as useAction,
-  Je as useAppContext,
-  Ie as useEditor,
+  Je as useAction,
+  He as useAppContext,
+  Le as useEditor,
   le as useI18n,
   it as useModelEditor,
-  Le as useModelList,
+  Fe as useModelList,
   tt as useModelPanel,
   Re as useModels,
-  Fe as usePanel,
+  De as usePanel,
   et as usePanels,
   st as useQuery,
   $e as useRepo

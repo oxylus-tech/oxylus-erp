@@ -1,13 +1,13 @@
 from rest_framework import serializers
 
-from ox.core.serializers import RelatedField, ModelSerializer
+from ox.core.serializers import RelatedField, ModelSerializer, NestedSerializer
 from ox.apps.mails.serializers import BaseMailSerializer
 
 from ox_erp.contacts.models import Contact, ContactList, Subscription
 from . import models
 
 
-__all__ = ("ContactMailSerializer",)
+__all__ = ("ContactMailSerializer", "SubscriptionSerializer", "ContactSubscriptionsSerializer")
 
 
 class ContactMailSerializer(BaseMailSerializer):
@@ -19,18 +19,28 @@ class ContactMailSerializer(BaseMailSerializer):
         fields = "__all__"
 
 
-class ContactSubscription(ModelSerializer):
+class SubscriptionSerializer(ModelSerializer):
     """Subscription serializer used for contacts to manage their subscriptions."""
 
-    name = serializers.CharField(source="contact_list__name", read_only=True)
+    id = serializers.UUIDField(source="uuid", required=False)
+    """ This value is write allowed, NestedSerializer ensure it already exists. """
+    name = serializers.CharField(source="contact_list.name", read_only=True)
     """ The contact list name. """
-    description = serializers.CharField(source="contact_list__description", read_only=True)
+    description = serializers.CharField(source="contact_list.description", read_only=True)
     """ Contact list description. """
-    contact = serializers.CharField(source="contact__name", read_only=True)
-    """ Contact's informations. """
-    contact_email = serializers.CharField(source="contact__email", read_only=True)
-    """ Contact's informations. """
 
     class Meta:
         model = Subscription
-        fields = ("name", "description", "contact", "status")
+        fields = ("id", "name", "description", "status")
+
+
+class ContactSubscriptionsSerializer(NestedSerializer):
+    """Used by SubscriptionViewSet for contact to edit their subscriptions."""
+
+    subscriptions = SubscriptionSerializer(many=True)
+
+    class Meta:
+        model = models.Contact
+        fields = ("id", "name", "email", "subscriptions")
+        nested = (("subscriptions", False),)
+        read_only_fields = ("name", "email")

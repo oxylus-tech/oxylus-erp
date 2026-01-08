@@ -55,7 +55,7 @@ export class Subscription extends models.Model {
             status: this.number(0),
 
             $contact_list: this.belongsTo(ContactList, 'contact_list'),
-            $contact: this.belongsTo(models.Contact, 'contact')
+            $contact: this.belongsTo(Contact, 'contact')
         }
     }
 }

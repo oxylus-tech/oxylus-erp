@@ -14,6 +14,7 @@ __all__ = (
 )
 
 
+# Note: defined as separate member to make it available to vue-i18n
 class SubscriptionStatus(models.IntegerChoices):
     """Status of a contact subscription."""
 
@@ -25,9 +26,13 @@ class SubscriptionStatus(models.IntegerChoices):
 class Subscription(Timestamped, Model):
     """A contact subscription to a ContactList."""
 
-    contact_list = models.ForeignKey("ox_contacts.contactlist", models.CASCADE, verbose_name=_("Contacts"))
-    contact = models.ForeignKey(Contact, models.CASCADE, verbose_name=_("Contact"))
-    status = models.IntegerField(_("Status"), choices=SubscriptionStatus.choices, default=SubscriptionStatus.SUBSCRIBED)
+    Status = SubscriptionStatus
+
+    contact_list = models.ForeignKey(
+        "ox_contacts.contactlist", models.CASCADE, related_name="subscriptions", verbose_name=_("Contacts")
+    )
+    contact = models.ForeignKey(Contact, models.CASCADE, related_name="subscriptions", verbose_name=_("Contact"))
+    status = models.IntegerField(_("Status"), choices=Status.choices, default=Status.SUBSCRIBED)
 
     class Meta:
         verbose_name = _("Subscription")

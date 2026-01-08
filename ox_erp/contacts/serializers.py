@@ -1,7 +1,7 @@
 from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 
-from ox.core.serializers import ModelSerializer, RelatedField
+from ox.core.serializers import ModelSerializer, NestedSerializer, RelatedField
 
 from ox_erp.locations.models import Country
 from . import models
@@ -64,7 +64,7 @@ class ContactListSerializer(ModelSerializer):
         }
 
 
-class BaseContactSerializer(ModelSerializer):
+class BaseContactSerializer(NestedSerializer):
     addresses = AddressSerializer(source="address_set", many=True, required=False)
     emails = EmailSerializer(source="email_set", many=True, required=False)
     phones = PhoneSerializer(source="phone_set", many=True, required=False)

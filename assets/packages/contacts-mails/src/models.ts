@@ -1,6 +1,6 @@
 import { models, t } from "@oxylus/ox"
 import { BaseMail } from "@oxylus/mails/models"
-import { Contact, ContactList, Subscription } from '@oxylus/contacts/models'
+import { Contact, ContactList, Subscription as $Subscription} from '@oxylus/contacts/models'
 
 
 /** Contact Mail */
@@ -27,25 +27,23 @@ export class ContactMail extends BaseMail {
 
 
 /** Subscription as provided to contact */
-export class ContactSubscription extends models.Model {
+export class ContactSubscriptions extends models.Model {
     static entity = "contactSubscriptions"
     static meta = new models.Meta({
         app: 'ox_contacts_mails',
         model: 'subscription',
-        url: 'ox/contacts-mails/subscription/',
+        url: 'ox/contacts-mails/subscriptions/',
         title: 'name'
+        // TODO: permission by pass
     })
-
-    static Status = Subscription.Status
 
     static fields() {
         return {
             id: this.attr(null),
             name: this.string(""),
-            description: this.string(""),
-            contact: this.string(""),
-            contact_email: this.string(""),
-            status: this.number(0),
+            email: this.string(""),
+            // TODO: Subscription model
+            subscriptions: this.attr([]),
         }
     }
 }

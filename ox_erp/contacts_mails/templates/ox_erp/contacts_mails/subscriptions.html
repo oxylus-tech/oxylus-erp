@@ -1,0 +1,6 @@
+{% extends "ox/core/app.html" %}
+
+{% block app-main %}
+{{ block.super }}
+<ox-subscription-panel jwt="{{ view.jwt_str }}"></ox-subscription-panel>
+{% endblock %}

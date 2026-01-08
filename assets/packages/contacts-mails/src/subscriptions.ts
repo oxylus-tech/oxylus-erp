@@ -1,11 +1,11 @@
 import {init, createPinia} from '@oxylus/ox'
 import {App as $App} from '@oxylus/ox/components'
 
-import * as components from './components'
+import OxSubscriptionPanel from './components/OxSubscriptionPanel.vue'
 
 const App = {
     extends: $App,
-    components,
+    components: {OxSubscriptionPanel},
 }
 
 export default App;

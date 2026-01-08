@@ -7,7 +7,7 @@ from . import panels, views
 
 router = DefaultRouter()
 router.register("mail", views.ContactMailViewSet)
-router.register("subscription", views.ContactSubscriptionViewSet)
+router.register("subscriptions", views.ContactSubscriptionsViewSet)
 
 api_urls = router.urls
 
@@ -20,4 +20,5 @@ urls = [
         ),
         name="index",
     ),
+    path("subscriptions/<str:jwt>/", views.SubscriptionAppView.as_view(), name="subscriptions"),
 ]
