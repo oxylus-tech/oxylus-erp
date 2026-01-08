@@ -58,19 +58,19 @@ function types(editor) {
     if(!country)
         return []
 
-    const items = repos.organisationtypes.where("country", country).get()
+    const items = repos.organisationTypes.where("country", country).get()
     if(!items.length && tried != country) {
         tried = country // this avoids looping
-        query(repos.organisationtypes).all({params: {country__uuid__exact: country}})
-        return repos.organisationtypes.where("country", country).get()
+        query(repos.organisationTypes).all({params: {country__uuid__exact: country}})
+        return repos.organisationTypes.where("country", country).get()
     }
     return items
 }
 
 function countryUpdated(editor) {
-    const type = editor.value.type && repos.organisationtypes.find(editor.value.type)
+    const type = editor.value.type && repos.organisationTypes.find(editor.value.type)
     // reset organisation type when country changes
-    if(type && type.country != editor.value.country)
+    if(!type || type.country != editor.value.country)
         editor.value.type = null
 }
 </script>
