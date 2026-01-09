@@ -1,17 +1,9 @@
 <template>
     <ox-panel :state="state" name="subscriptions">
-        <header>
-            <h1>{{ initial?.name }}</h1>
-            <h2>{{ initial?.email }}</h2>
-            <p>You can enable and disable your subscriptions.</p>
-        </header>
+        <v-toolbar v-if="initial">
+            <v-toolbar-title>{{ initial.name }} <small>{{ initial.email }}</small></v-toolbar-title>
+        </v-toolbar>
         <v-list v-if="initial">
-            <!-- TODO: select/unselect all
-            <v-list-item>
-                <v-switch @update:modelValue="" />
-            </v-list-item>
-            -->
-
             <v-list-item v-for="item, index in initial.subscriptions">
                 <v-list-item-title v-text="item.name"/>
                 <v-list-item-subtitle v-text="item.description"/>
@@ -21,6 +13,18 @@
                         color="primary" hide-details />
                 </template>
             </v-list-item>
+
+            <template v-if="initial.subscriptions?.length > 0">
+                <v-divider/>
+                <v-list-item base-color="info">
+                    <v-list-item-title>Subscribe or unsubscribe from all lists</v-list-item-title>
+                    <template #append>
+                        <v-switch v-model="edit.selectAll" :value="true"
+                            color="info" hide-details
+                            @update:modelValue="toggleAll" />
+                    </template>
+                </v-list-item>
+            </template>
 
             <v-list-item>
                 <v-row>
@@ -45,6 +49,7 @@
             </v-list-item>
         </v-list>
 
+        <!--
         <v-alert color="secondary">
             <p>
                 You can delete all subscriptions from our database. This means that:<br/>
@@ -59,12 +64,12 @@
                     Delete all my subscriptions
                 </v-btn>
             </div>
-        </v-alert>
+        </v-alert>-->
     </ox-panel>
 </template>
 <script setup lang="ts">
 import { isEqual } from 'lodash'
-import { computed, ref, reactive, onMounted, toRaw } from 'vue'
+import { computed, ref, reactive, onMounted, toRaw, watch } from 'vue'
 import { useModelList, useModels, useQuery } from '@oxylus/ox'
 import { OxPanel, OxValidationBtn } from '@oxylus/ox/components'
 
@@ -79,28 +84,10 @@ const {query, state} = useQuery(repos.contactSubscriptions, repos)
 
 
 const initial = ref({})
-const edit = reactive({})
-
-async function load() {
-    const resp = await query.fetch({ params: {jwt: props.jwt}})
-    const contact = resp.entities[0]
-    if(!contact)
-        return
-
-    initial.value = contact
-    edit.subscriptions = getSubscribed()
-}
+const edit = reactive({ selectAll: false, subscriptions: []})
 
 
-function getSubscribed(subscriptions: string[]|null =null) {
-    subscriptions ??= initial.value?.subscriptions
-    if(!subscriptions)
-        return []
-
-    return subscriptions.filter(item => item.status == Subscription.Status.SUBSCRIBED).map(i => i.id)
-}
-
-
+// ---- Props
 const rmSubscriptions = computed(
     () => updated.value && edit.subscriptions && getSubscribed().filter(i => !edit.subscriptions.includes(i)).length || 0
 )
@@ -117,6 +104,44 @@ const updated = computed(() => {
     const initials = getSubscribed()
     return !isEqual(initials, edit.subscriptions)
 })
+
+
+function getSubscribed(subscriptions: ContactSubscriptions[]|null =null) {
+    subscriptions ??= initial.value?.subscriptions
+    if(!subscriptions)
+        return []
+
+    return subscriptions.filter(item => item.status == Subscription.Status.SUBSCRIBED).map(i => i.id)
+}
+
+
+// ---- Actions
+function toggleAll(val) {
+    edit.subscriptions = val ? initial.value?.subscriptions.map(i => i.id) : []
+}
+
+
+watch(() => edit?.subscriptions, (val) => {
+    if(!initial.value || !edit.subscriptions)
+        return
+
+    if(val.length == initial.value.subscriptions.length)
+        edit.selectAll = true
+    else
+        edit.selectAll = false
+})
+
+
+// ---- API / Reset
+async function load() {
+    const resp = await query.fetch({ params: {jwt: props.jwt}})
+    const contact = resp.entities[0]
+    if(!contact)
+        return
+
+    initial.value = contact
+    edit.subscriptions = getSubscribed()
+}
 
 function reset() { edit.subscriptions = getSubscribed() }
 
@@ -135,5 +160,6 @@ async function validate() {
     edit.subscriptions = getSubscribed()
 }
 
-onMounted(() => load())
+
+onMounted(load)
 </script>

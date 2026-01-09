@@ -24,7 +24,7 @@ class SubscriptionAppView(JWTokenViewMixin, AppView):
         owner=apps.AppConfig,
     )
     icon = "mdi-email-check"
-    extra_context = {"no_nav": True, "title": _("Manage your subscriptions")}
+    extra_context = {"no_nav": True, "title": _("Manage your preferences")}
 
 
 class ContactMailViewSet(BaseMailViewSet):
