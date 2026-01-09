@@ -125,10 +125,7 @@ class ContactSerializer(ModelSerializer):
         fields = ("id", "name", "email", "organisation", "person")
 
     def get_name(self, obj):
-        if person := getattr(obj, "person", None):
-            return person.full_name
-        else:
-            return obj.organisation.name
+        return obj.name
 
 
 class SubscriptionSerializer(ModelSerializer):

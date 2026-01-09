@@ -17,7 +17,9 @@
             <template v-if="initial.subscriptions?.length > 0">
                 <v-divider/>
                 <v-list-item base-color="info">
-                    <v-list-item-title>Subscribe or unsubscribe from all lists</v-list-item-title>
+                    <v-list-item-title>
+                        {{ t('contacts_mails.list.subscribe_all') }}
+                    </v-list-item-title>
                     <template #append>
                         <v-switch v-model="edit.selectAll" :value="true"
                             color="info" hide-details
@@ -40,37 +42,17 @@
                     <v-col cols="6">
                         <ox-validation-btn :state="state" :disabled="!updated"
                             size="small" class="mb-3"
-                            @reset="reset()" @validate="validate()">
-                            <template #prepend="{disabled, attrs}">
-                            </template>
-                        </ox-validation-btn>
+                            @reset="reset()" @validate="validate()" />
                     </v-col>
                 </v-row>
             </v-list-item>
         </v-list>
-
-        <!--
-        <v-alert color="secondary">
-            <p>
-                You can delete all subscriptions from our database. This means that:<br/>
-
-                - We no longer have your contact linked to any mailing list.<br/>
-                - We still keep your contact informations in our db.<br/>
-                - You can be readded to a mailing-list later since we don't know anymore wether you're subscribed or unsubscribed.<br/>
-            </p>
-            <div class="text-right mt-3">
-                <v-btn class="me-2" v-bind="attrs" :disabled="disabled"
-                       color="red-lighten-1" size="small" prepend-icon="mdi-delete">
-                    Delete all my subscriptions
-                </v-btn>
-            </div>
-        </v-alert>-->
     </ox-panel>
 </template>
 <script setup lang="ts">
 import { isEqual } from 'lodash'
 import { computed, ref, reactive, onMounted, toRaw, watch } from 'vue'
-import { useModelList, useModels, useQuery } from '@oxylus/ox'
+import { useModelList, useModels, useQuery, t } from '@oxylus/ox'
 import { OxPanel, OxValidationBtn } from '@oxylus/ox/components'
 
 import { Subscription } from '@oxylus/contacts/models'

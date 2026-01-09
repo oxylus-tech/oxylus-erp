@@ -31,7 +31,7 @@
     "eslint-plugin-vue": "^8.7.1",
     "happy-dom": "^18.0.1",
     "npm": "^10.9.4",
-    "sass": "^1.97.0",
+    "sass": "^1.97.2",
     "typedoc": "^0.28.15",
     "typedoc-plugin-markdown": "^4.9.0",
     "typedoc-plugin-no-inherit": "^1.6.1",

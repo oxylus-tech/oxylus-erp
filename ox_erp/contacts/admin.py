@@ -30,6 +30,7 @@ class PhoneInline(admin.TabularInline):
     model = models.Phone
 
 
+@admin.register(models.Contact)
 class ContactAdmin(admin.ModelAdmin):
     inlines = [
         EmailInline,
