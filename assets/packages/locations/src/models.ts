@@ -1,4 +1,4 @@
-import { models, t } from "@oxylus/ox"
+import { models, t, getCountryFlag } from "@oxylus/ox"
 
 
 export class Currency extends models.Model {
@@ -63,15 +63,6 @@ export class Country extends models.Model {
     })
 
     get flag() {
-        if (typeof this.code !== 'string' || this.code.length !== 2)
-            return ''
-
-        const OFFSET = 0x1F1E6
-        const chars = this.code.toUpperCase().split('')
-        const isValid = chars.every((c: string) => c >= 'A' && c <= 'Z')
-
-        return isValid
-            ? String.fromCodePoint(...chars.map(c => OFFSET + c.charCodeAt(0) - 65))
-            : ''
+        return getCountryFlag(this.code)
     }
 }

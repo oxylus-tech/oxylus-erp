@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: contacts/apps.py:12 contacts/models/contact.py:39
+#: contacts/models/contact_list.py:32 contacts/models/contact_list.py:74
+#: contacts/panels.py:7
+msgid "Contacts"
+msgstr "Contacts"
+
+#: contacts/models/contact.py:27 contacts/models/contact_info.py:53
+#: contacts/models/contact_info.py:56
+msgid "Email"
+msgstr "Courriel"
+
+#: contacts/models/contact.py:38 contacts/models/contact_info.py:23
+#: contacts/models/contact_list.py:34
+msgid "Contact"
+msgstr "Countact"
+
+#: contacts/models/contact.py:45 contacts/models/contact.py:62
+msgid "Country"
+msgstr "Pays"
+
+#: contacts/models/contact.py:46
+msgid "Code"
+msgstr "Code"
+
+#: contacts/models/contact.py:47
+msgid "Abbreviation"
+msgstr "Abréviation"
+
+#: contacts/models/contact.py:48
+msgid "Language Code"
+msgstr "Code de langue"
+
+#: contacts/models/contact.py:56
+msgid "Short Name"
+msgstr "Nom abbrégé"
+
+#: contacts/models/contact.py:57
+msgid "Reference Number"
+msgstr "Référence"
+
+#: contacts/models/contact.py:58
+msgid "VAT"
+msgstr "TVA"
+
+#: contacts/models/contact.py:60
+msgid "Organisation Type"
+msgstr "Type d'organisation"
+
+#: contacts/models/contact.py:60
+msgid "Organisation Types"
+msgstr "Types d'organisation"
+
+#: contacts/models/contact.py:65 contacts/models/contact_list.py:60
+msgid "Organisation"
+msgstr "Organisation"
+
+#: contacts/models/contact.py:66 contacts/models/contact.py:82
+#: contacts/panels.py:21
+msgid "Organisations"
+msgstr "Organisations"
+
+#: contacts/models/contact.py:76
+#: contacts/templates/ox/contacts/components/person_panel.html:6
+msgid "User"
+msgstr "Utilisateur"
+
+#: contacts/models/contact.py:77
+msgid "This contact is related to a user of the plateform"
+msgstr "Ce contact est lié à un utilisateur de la plateforme"
+
+#: contacts/models/contact.py:79
+msgid "First name"
+msgstr "Prénom"
+
+#: contacts/models/contact.py:80
+msgid "Last name"
+msgstr "Nom"
+
+#: contacts/models/contact.py:86
+msgid "Person"
+msgstr "Personne"
+
+#: contacts/models/contact.py:87 contacts/panels.py:11
+msgid "Persons"
+msgstr "Personnes"
+
+#: contacts/models/contact_info.py:15
+msgid "Main"
+msgstr "Principal"
+
+#: contacts/models/contact_info.py:16
+msgid "Professional"
+msgstr "Professionel"
+
+#: contacts/models/contact_info.py:17
+msgid "Home"
+msgstr "Domicile"
+
+#: contacts/models/contact_info.py:18
+msgid "Legal"
+msgstr "Légal"
+
+#: contacts/models/contact_info.py:19
+msgid "Other"
+msgstr "Autre"
+
+#: contacts/models/contact_info.py:24
+msgid "Info kind"
+msgstr "Type d'information"
+
+#: contacts/models/contact_info.py:31
+msgid "Street"
+msgstr "Rue"
+
+#: contacts/models/contact_info.py:32
+msgid "Street 2"
+msgstr "Rue - 2"
+
+#: contacts/models/contact_info.py:33
+msgid "Number"
+msgstr "Numéro"
+
+#: contacts/models/contact_info.py:34
+msgid "Box"
+msgstr "Boite"
+
+#: contacts/models/contact_info.py:35
+msgid "Postcode"
+msgstr "Code postal"
+
+#: contacts/models/contact_info.py:36
+msgid "City"
+msgstr "Ville"
+
+#: contacts/models/contact_info.py:40 contacts/models/contact_info.py:64
+msgid "Address"
+msgstr "Adresse"
+
+#: contacts/models/contact_info.py:41
+msgid "Addresses"
+msgstr "Adresses"
+
+#: contacts/models/contact_info.py:45 contacts/models/contact_info.py:48
+msgid "Phone"
+msgstr "Téléphone"
+
+#: contacts/models/contact_info.py:49
+msgid "Phones"
+msgstr "Téléphones"
+
+#: contacts/models/contact_info.py:57
+msgid "Emails"
+msgstr "Courriels"
+
+#: contacts/models/contact_info.py:62
+msgid "IBAN"
+msgstr "IBAN"
+
+#: contacts/models/contact_info.py:63
+msgid "SWIFT/BIC"
+msgstr "SWIFT/BIC"
+
+#: contacts/models/contact_info.py:65
+msgid "Bank Name"
+msgstr "Nom de la banque"
+
+#: contacts/models/contact_info.py:68
+msgid "IBAN Account"
+msgstr "Compte IBAN"
+
+#: contacts/models/contact_info.py:69
+msgid "IBAN Accounts"
+msgstr "Comptes IBAN"
+
+#: contacts/models/contact_list.py:21
+msgid "Invitation Send"
+msgstr "Invitation envoyée"
+
+#: contacts/models/contact_list.py:22
+msgid "Subscribed"
+msgstr "Abonné"
+
+#: contacts/models/contact_list.py:23
+msgid "Unsubscribed"
+msgstr "Désabonné"
+
+#: contacts/models/contact_list.py:35
+msgid "Status"
+msgstr "Statut"
+
+#: contacts/models/contact_list.py:38
+msgid "Subscription"
+msgstr "Abonnement"
+
+#: contacts/models/contact_list.py:39
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#: contacts/models/contact_list.py:50
+msgid "Group"
+msgstr "Groupe"
+
+#: contacts/models/contact_list.py:52
+msgid "This list is related to a group"
+msgstr "Cette liste est liée à un groupe"
+
+#: contacts/models/contact_list.py:61
+msgid "This list is related to an organisation"
+msgstr "Cette liste est liée à une organisation"
+
+#: contacts/models/contact_list.py:64
+msgid "Subscription list"
+msgstr "Liste d'abonnement"
+
+#: contacts/models/contact_list.py:67
+msgid ""
+"This list is used for mailing-lists. It allows contacts to unsubscribe from "
+"the list among other things."
+msgstr ""
+"Cette liste est utilisée pour les mailing-lists. Cela permet aux contacts de se "
+"désabonner entre autres choses."
+
+#: contacts/models/contact_list.py:81
+msgid "Contact List"
+msgstr "Liste de contacts"
+
+#: contacts/models/contact_list.py:82 contacts/panels.py:30
+msgid "Contact Lists"
+msgstr "Listes de contacts"
+
+#: contacts/panels.py:39
+msgid "Settings"
+msgstr "Paramètres"
+
+#: contacts/serializers.py:92
+msgid "Please select a country in order to input VAT"
+msgstr "Veuillez sélectionner un pays avant d'entrer un numéro de TVA"
+
+#: contacts/serializers.py:94
+msgid "Invalid VAT number for this country"
+msgstr "Numéro de TVA invalide pour ce pays"
+
+#: contacts/serializers.py:113
+msgid "Default email can't be changed for a contact linked to a user"
+msgstr "L'adresse du courriel ne peut être changé pour le contact d'un utilisateur"

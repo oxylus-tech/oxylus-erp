@@ -1,7 +1,16 @@
 <template>
     <ox-model-panel v-bind="props" :repo="repos.contactLists">
-        <template v-for="(_, name) in slots" :key="name" #[name]="bind">
+        <template v-for="(_, name) in forwardSlots" :key="name" #[name]="bind">
             <slot :name="name" v-bind="bind"></slot>
+        </template>
+
+        <template #list.filters="{list,filters}">
+            <v-checkbox
+                density="compact" hide-details
+                v-model="filters.is_subscription"
+                :label="t('fields.is_subscription')" />
+
+            <slot name="list.filters" :list="list" :filters="filters"/>
         </template>
 
         <template #item.name="{item}">
@@ -10,7 +19,6 @@
 
         <template #item.contact_count="{item}">
             {{ t('fields.contact_count.value', item.contact_count, {count: item.contact_count}) }}
-            <v-chip v-if="item.is_subscription" density="compact" color="info">{{ t('fields.is_subscription') }}</v-chip>
         </template>
 
         <template #views.detail.edit.default="{value, saved}">
@@ -30,6 +38,7 @@ import OxContactListName from './OxContactListName.vue'
 import OxContactListEdit from './OxContactListEdit.vue'
 
 const slots = useSlots()
+const forwardSlots = Object.keys(slots).filter(x => !(['list.filters', 'top'].includes(x)))
 
 const repos = useContactList()
 const props = withDefaults(defineProps<IModelPanelProps>(), {

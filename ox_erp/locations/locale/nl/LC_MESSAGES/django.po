@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Locations"
+msgstr "Locaties"
+
+msgid "Africa"
+msgstr "Afrika"
+
+msgid "Antartica"
+msgstr "Antarctica"
+
+msgid "Asia"
+msgstr "Azië"
+
+msgid "Europe"
+msgstr "Europa"
+
+msgid "North America"
+msgstr "Noord-Amerika"
+
+msgid "Oceania"
+msgstr "Oceanië"
+
+msgid "South America"
+msgstr "Zuid-Amerika"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Code 3"
+msgstr "Code 3"
+
+msgid "Continent"
+msgstr "Continent"
+
+msgid "Currency"
+msgstr "Valuta"
+
+msgid "IBAN Sample"
+msgstr "IBAN-voorbeeld"
+
+msgid "IBAN length"
+msgstr "IBAN-lengte"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Countries"
+msgstr "Landen"
+
+msgid "Prefix"
+msgstr "Prefix"
+
+msgid "Contains international and optional area code, without \"+\" or \"00\"."
+msgstr "Bevat de internationale en optionele netcode, zonder \"+\" of \"00\"."
+
+msgid "Phone Prefix"
+msgstr "Telefoonprefix"
+
+msgid "Phone Prefixes"
+msgstr "Telefoonprefixes"
+
+msgid "Numeric code"
+msgstr "Numerieke code"
+
+msgid "Decimals"
+msgstr "Decimalen"
+
+msgid "Is ISO"
+msgstr "Is ISO"
+
+msgid "Withdrawal Date"
+msgstr "Vervaldatum"
+
+msgid "Currencies"
+msgstr "Valuta’s"

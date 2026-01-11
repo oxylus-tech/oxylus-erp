@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: contacts_mails/apps.py:12
+msgid "Contacts"
+msgstr "Contact"
+
+#: contacts_mails/models.py:15
+msgid "Recipients"
+msgstr "Destinataire"
+
+#: contacts_mails/models.py:16
+msgid "Contact Lists"
+msgstr "Listes de contacts"
+
+#: contacts_mails/models.py:21
+msgid "Contact Mail"
+msgstr "Courriel aux contacts"
+
+#: contacts_mails/models.py:22 contacts_mails/panels.py:14
+msgid "Contact Mails"
+msgstr "Courriels"
+
+#: contacts_mails/views.py:27
+msgid "Manage your preferences"
+msgstr "Gérer vos préférences"

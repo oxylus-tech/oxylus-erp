@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Contacts"
+msgstr "Contacten"
+
+msgid "Recipients"
+msgstr "Ontvangers"
+
+msgid "Contact Lists"
+msgstr "Contactenlijsten"
+
+msgid "Contact Mail"
+msgstr "Contactmail"
+
+msgid "Contact Mails"
+msgstr "Contactmails"
+
+msgid "Manage your preferences"
+msgstr "Beheer uw voorkeuren"

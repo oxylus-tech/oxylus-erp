@@ -48,8 +48,8 @@ class OrganisationType(LongNamed, Model):
     language_code = models.CharField(_("Language Code"), max_length=4, blank=True, default="")
 
     class Meta:
-        verbose_name = _("Company Form")
-        verbose_name_plural = _("Company Forms")
+        verbose_name = _("Organisation Type")
+        verbose_name_plural = _("Organisation Types")
 
 
 class Organisation(OnlyDescribed, Colored, Contact):

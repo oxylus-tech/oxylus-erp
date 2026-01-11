@@ -21,6 +21,7 @@ ALLOWED_HOSTS = ["127.0.0.1"]
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-bg*enkwcea%4xjcvkpbb_h@6#ue78#t1q(z^w@faagal7**^9i"
 
+LOCALE_PATHS = [BASE_DIR / "ox_erp" / "locale"]
 
 # Application definition
 INSTALLED_APPS = [

@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Locations"
+msgstr "Standorte"
+
+msgid "Africa"
+msgstr "Afrika"
+
+msgid "Antartica"
+msgstr "Antarktis"
+
+msgid "Asia"
+msgstr "Asien"
+
+msgid "Europe"
+msgstr "Europa"
+
+msgid "North America"
+msgstr "Nordamerika"
+
+msgid "Oceania"
+msgstr "Ozeanien"
+
+msgid "South America"
+msgstr "Südamerika"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Code 3"
+msgstr "Code 3"
+
+msgid "Continent"
+msgstr "Kontinent"
+
+msgid "Currency"
+msgstr "Währung"
+
+msgid "IBAN Sample"
+msgstr "IBAN-Beispiel"
+
+msgid "IBAN length"
+msgstr "IBAN-Länge"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Countries"
+msgstr "Länder"
+
+msgid "Prefix"
+msgstr "Vorwahl"
+
+msgid "Contains international and optional area code, without \"+\" or \"00\"."
+msgstr "Enthält die internationale und optionale Ortsvorwahl, ohne \"+\" oder \"00\"."
+
+msgid "Phone Prefix"
+msgstr "Telefonvorwahl"
+
+msgid "Phone Prefixes"
+msgstr "Telefonvorwahlen"
+
+msgid "Numeric code"
+msgstr "Numerischer Code"
+
+msgid "Decimals"
+msgstr "Dezimalstellen"
+
+msgid "Is ISO"
+msgstr "Ist ISO"
+
+msgid "Withdrawal Date"
+msgstr "Ablaufdatum"
+
+msgid "Currencies"
+msgstr "Währungen"

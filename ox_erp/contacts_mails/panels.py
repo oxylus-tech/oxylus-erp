@@ -6,7 +6,7 @@ from ox.core.panels import Panel, Panels
 
 panels = Panels(
     "contacts_mails",
-    _("Contacts Mails"),
+    _("Contact Mails"),
     order=100,
     items=[
         Panel(

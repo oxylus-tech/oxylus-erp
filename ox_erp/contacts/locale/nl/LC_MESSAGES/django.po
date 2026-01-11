@@ -1,0 +1,190 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Contacts"
+msgstr "Contacten"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Abbreviation"
+msgstr "Afkorting"
+
+msgid "Language Code"
+msgstr "Taalcode"
+
+msgid "Short Name"
+msgstr "Korte naam"
+
+msgid "Reference Number"
+msgstr "Referentienummer"
+
+msgid "VAT"
+msgstr "BTW"
+
+msgid "Organisation Type"
+msgstr "Organisatietype"
+
+msgid "Organisation Types"
+msgstr "Organisatietypes"
+
+msgid "Organisation"
+msgstr "Organisatie"
+
+msgid "Organisations"
+msgstr "Organisaties"
+
+msgid "User"
+msgstr "Gebruiker"
+
+msgid "This contact is related to a user of the plateform"
+msgstr "Dit contact is gekoppeld aan een gebruiker van het platform"
+
+msgid "First name"
+msgstr "Voornaam"
+
+msgid "Last name"
+msgstr "Achternaam"
+
+msgid "Person"
+msgstr "Persoon"
+
+msgid "Persons"
+msgstr "Personen"
+
+msgid "Main"
+msgstr "Hoofd"
+
+msgid "Professional"
+msgstr "Professioneel"
+
+msgid "Home"
+msgstr "Privé"
+
+msgid "Legal"
+msgstr "Juridisch"
+
+msgid "Other"
+msgstr "Overig"
+
+msgid "Info kind"
+msgstr "Type informatie"
+
+msgid "Street"
+msgstr "Straat"
+
+msgid "Street 2"
+msgstr "Straat 2"
+
+msgid "Number"
+msgstr "Nummer"
+
+msgid "Box"
+msgstr "Bus"
+
+msgid "Postcode"
+msgstr "Postcode"
+
+msgid "City"
+msgstr "Stad"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Addresses"
+msgstr "Adressen"
+
+msgid "Phone"
+msgstr "Telefoon"
+
+msgid "Phones"
+msgstr "Telefoons"
+
+msgid "Emails"
+msgstr "E-mails"
+
+msgid "IBAN"
+msgstr "IBAN"
+
+msgid "SWIFT/BIC"
+msgstr "SWIFT/BIC"
+
+msgid "Bank Name"
+msgstr "Banknaam"
+
+msgid "IBAN Account"
+msgstr "IBAN-rekening"
+
+msgid "IBAN Accounts"
+msgstr "IBAN-rekeningen"
+
+msgid "Invitation Send"
+msgstr "Uitnodiging verzonden"
+
+msgid "Subscribed"
+msgstr "Geabonneerd"
+
+msgid "Unsubscribed"
+msgstr "Uitgeschreven"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Subscription"
+msgstr "Abonnement"
+
+msgid "Subscriptions"
+msgstr "Abonnementen"
+
+msgid "Group"
+msgstr "Groep"
+
+msgid "This list is related to a group"
+msgstr "Deze lijst is gekoppeld aan een groep"
+
+msgid "This list is related to an organisation"
+msgstr "Deze lijst is gekoppeld aan een organisatie"
+
+msgid "Subscription list"
+msgstr "Abonnementenlijst"
+
+msgid "This list is used for mailing-lists. It allows contacts to unsubscribe from the list among other things."
+msgstr "Deze lijst wordt gebruikt voor mailinglijsten. Ze stelt contacten onder andere in staat zich uit te schrijven."
+
+msgid "Contact List"
+msgstr "Contactenlijst"
+
+msgid "Contact Lists"
+msgstr "Contactenlijsten"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Please select a country in order to input VAT"
+msgstr "Selecteer een land om een btw-nummer in te voeren"
+
+msgid "Invalid VAT number for this country"
+msgstr "Ongeldig btw-nummer voor dit land"
+
+msgid "Default email can't be changed for a contact linked to a user"
+msgstr "Het standaard e-mailadres kan niet worden gewijzigd voor een contact dat aan een gebruiker is gekoppeld"

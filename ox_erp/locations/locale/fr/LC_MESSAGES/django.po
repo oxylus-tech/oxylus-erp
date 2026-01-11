@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 13:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: locations/apps.py:12 locations/panels.py:8
+msgid "Locations"
+msgstr "Localisations"
+
+#: locations/models.py:15
+msgid "Africa"
+msgstr "Afrique"
+
+#: locations/models.py:16
+msgid "Antartica"
+msgstr "Antarctique"
+
+#: locations/models.py:17
+msgid "Asia"
+msgstr "Asie"
+
+#: locations/models.py:18
+msgid "Europe"
+msgstr "Europe"
+
+#: locations/models.py:19
+msgid "North America"
+msgstr "Amérique du Nord"
+
+#: locations/models.py:20
+msgid "Oceania"
+msgstr "Océanie"
+
+#: locations/models.py:21
+msgid "South America"
+msgstr "Amérique du Sud"
+
+#: locations/models.py:29
+msgid "Name"
+msgstr "Nom"
+
+#: locations/models.py:30 locations/models.py:95
+msgid "Code"
+msgstr "Code"
+
+#: locations/models.py:31
+msgid "Code 3"
+msgstr "Code 3"
+
+#: locations/models.py:32
+msgid "Continent"
+msgstr "Continent"
+
+#: locations/models.py:36 locations/models.py:106
+msgid "Currency"
+msgstr "Monnaie"
+
+#: locations/models.py:39
+msgid "IBAN Sample"
+msgstr "Example d'IBAN"
+
+#: locations/models.py:40
+msgid "IBAN length"
+msgstr "Longueur de l'IBAN"
+
+#: locations/models.py:53
+msgid "Country"
+msgstr "Pays"
+
+#: locations/models.py:54 locations/panels.py:12
+msgid "Countries"
+msgstr "Pays"
+
+#: locations/models.py:83
+msgid "Prefix"
+msgstr "Préfixe"
+
+#: locations/models.py:86
+msgid "Contains international and optional area code, without \"+\" or \"00\"."
+msgstr "Contient les code de région internationaux et régionaux (optionel), sans \"+\" ni \"00\"."
+
+#: locations/models.py:90
+msgid "Phone Prefix"
+msgstr "Préfixe téléphonique"
+
+#: locations/models.py:91
+msgid "Phone Prefixes"
+msgstr "Préfixes téléphonique"
+
+#: locations/models.py:96
+msgid "Numeric code"
+msgstr "Code numérique"
+
+#: locations/models.py:100
+msgid "Decimals"
+msgstr "Décimales"
+
+#: locations/models.py:102
+msgid "Is ISO"
+msgstr "Est ISO"
+
+#: locations/models.py:103
+msgid "Withdrawal Date"
+msgstr "Date d'expiration"
+
+#: locations/models.py:107 locations/panels.py:20
+msgid "Currencies"
+msgstr "Monnaies"
