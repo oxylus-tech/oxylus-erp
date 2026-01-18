@@ -1,5 +1,18 @@
-import { useModels, query } from '@oxylus/ox'
+import { useModels, query, locales, useI18n, type LocaleLoaders } from '@oxylus/ox'
 import { Country, Currency } from './models'
+
+
+/** The ox locations locales loader **/
+export const locationsLocales: LocaleLoaders = {
+    ...locales,
+    ox_locations: import.meta.glob('./locale/*.json', { import: 'default'})
+}
+
+
+/** Use ox locations locales **/
+export function useLocationsI18n(locales?: LocaleLoaders = {}) {
+    return useI18n({...locationsLocales, ...locales})
+}
 
 
 /** Use @oxylus/locations models. */

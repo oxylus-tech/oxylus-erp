@@ -41,7 +41,7 @@ export class Subscription extends models.Model {
         title: 'id'
     })
 
-    static Status = models.Enum("status", {
+    static Status = models.Enum("ox_contacts.enums.subscriptionstatus", {
         INVITED: 1,
         SUBSCRIBED: 2,
         UNSUBSCRIBED: 3,
@@ -191,7 +191,7 @@ export class ContactInfo extends models.Model {
         }
     }
 
-    static Kind = models.Enum("kind", {
+    static Kind = models.Enum("ox_contacts.enums.contactinfokind", {
         MAIN: 0,
         PROFESSIONAL: 1,
         HOME: 2,

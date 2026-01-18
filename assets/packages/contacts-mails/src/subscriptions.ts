@@ -1,14 +1,12 @@
 import {init, createPinia} from '@oxylus/ox'
-import {App as $App} from '@oxylus/ox/components'
+import {App} from '@oxylus/ox/components'
 
 import OxSubscriptionPanel from './components/OxSubscriptionPanel.vue'
-
-const App = {
-    extends: $App,
-    components: {OxSubscriptionPanel},
-}
-
-export default App;
+import {contactsMailsLocales} from './composables.ts'
 
 const pinia = createPinia()
-init({App, plugins: [pinia] })
+init({
+    App: { extends: App, components: {OxSubscriptionPanel} },
+    plugins: [pinia],
+    locales: contactsMailsLocales
+})

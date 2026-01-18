@@ -1,8 +1,24 @@
-import {models as oxModels, useModels, t} from '@oxylus/ox'
-import {Country} from '@oxylus/locations/models'
-import * as models from './models'
+import {models as oxModels, useModels, t, useI18n} from '@oxylus/ox'
 import type {IUseModelOpts} from '@oxylus/ox'
 import type {Model, Repos} from '@oxylus/ox/models'
+
+import {Country} from '@oxylus/locations/models'
+import * as models from './models'
+
+// FIXME: files instead of ox
+import {filesLocales} from '@oxylus/files/composables'
+
+
+/** The ox contacts locales loader **/
+export const contactsLocales: LocaleLoaders = {
+    ...filesLocales,
+    ox_contacts: import.meta.glob('./locale/*.json', { import: 'default'})
+}
+
+/** Use ox contacts locales **/
+export function useContactsI18n(locales?: LocaleLoaders = {}) {
+    return useI18n({...contactsLocales, ...locales})
+}
 
 
 /**

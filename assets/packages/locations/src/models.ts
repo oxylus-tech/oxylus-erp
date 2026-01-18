@@ -52,7 +52,7 @@ export class Country extends models.Model {
         }
     }
 
-    static Continent = models.Enum('continent', {
+    static Continent = models.Enum('ox_locations.enums.continent', {
         AFRICA: 1,
         ANTARCTICA: 2,
         ASIA: 3,

@@ -1,6 +1,7 @@
 <template>
     <v-select v-model="value" v-bind="attrs"
-        :placeholder="t('fields.continent')"
+        :label="t([Country, 'fields.continent'])"
+        :placeholder="t([Country, 'fields.continent'])"
         :items="Country.Continent.items">
         <template #detail="bind">
             <slot name="detail" v-bind="bind"/>

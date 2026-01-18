@@ -18,7 +18,7 @@
                 <v-divider/>
                 <v-list-item base-color="info">
                     <v-list-item-title>
-                        {{ t('contacts_mails.list.subscribe_all') }}
+                        {{ t('ox_contacts_mails.list.subscribe_all') }}
                     </v-list-item-title>
                     <template #append>
                         <v-switch v-model="edit.selectAll" :value="true"

@@ -7,8 +7,7 @@
 
         <template #list.filters="{list,filters}">
             <ox-continent-input class="ml-3" density="compact" hide-details
-                v-model="filters.continent"
-                :label="t('fields.continent')" />
+                v-model="filters.continent" />
 
             <slot name="list.filters" :list="list" :filters="filters"/>
         </template>
