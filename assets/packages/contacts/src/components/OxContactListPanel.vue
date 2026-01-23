@@ -21,15 +21,19 @@
             {{ t('fields.contact_count.value', item.contact_count, {count: item.contact_count}) }}
         </template>
 
-        <template #views.detail.edit.default="{value, saved}">
+        <template #views.edit="{value, saved}">
             <ox-contact-list-edit :initial="value" :saved="saved"/>
+        </template>
+
+        <template #views.create="{saved}">
+            <ox-contact-list-edit :saved="saved"/>
         </template>
     </ox-model-panel>
 </template>
 <script setup lang="ts">
 import { defineProps, useSlots, withDefaults } from 'vue'
 
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 import { t } from '@oxylus/ox'
 
 import { OxModelPanel } from '@oxylus/ox/components'
@@ -41,7 +45,7 @@ const slots = useSlots()
 const forwardSlots = Object.keys(slots).filter(x => !(['list.filters', 'top'].includes(x)))
 
 const repos = useContactList()
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     relations: ['$group', '$organisation'],
     fetchRelations: true,
     headers: ['name', 'contact_count'],

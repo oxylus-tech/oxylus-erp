@@ -20,7 +20,11 @@
             {{ item.$currency?.code }}
         </template>
 
-        <template #views.detail.edit.default="{value, saved}">
+        <template #views.edit="{value, saved}">
+            <ox-country-edit :initial="value" :saved="saved"/>
+        </template>
+
+        <template #views.create="{value, saved}">
             <ox-country-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>
@@ -30,7 +34,7 @@ import { defineProps, useSlots, withDefaults } from 'vue'
 
 import { query, t } from '@oxylus/ox'
 import {OxModelPanel} from '@oxylus/ox/components'
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 
 import {useLocationModels} from '../composables'
 import OxContinentInput from './OxContinentInput.vue'
@@ -44,7 +48,7 @@ const repos = useLocationModels()
 // FIXME: acquire/release
 query(repos.currencies).allOnce()
 
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     name: 'countries',
     relations: ['$currency'],
     fetchRelations: false,

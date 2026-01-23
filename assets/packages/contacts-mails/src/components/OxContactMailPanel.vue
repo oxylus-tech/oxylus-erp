@@ -4,7 +4,7 @@
             <slot :name="name" v-bind="bind"/>
         </template>
 
-        <template #views.detail.edit.default="{value, owner, saved}">
+        <template #views.edit="{value, owner, saved}">
             <ox-contact-mail-edit :owner="owner?.id" :initial="value" :saved="saved"/>
         </template>
     </ox-mail-panel>

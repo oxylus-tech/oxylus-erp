@@ -14,7 +14,11 @@
             <v-icon v-else class="text-error">mdi-close-circle</v-icon>
         </template>
 
-        <template #views.detail.edit.default="{value, saved}">
+        <template #views.edit="{value, saved}">
+            <ox-currency-edit :initial="value" :saved="saved"/>
+        </template>
+
+        <template #views.create="{value, saved}">
             <ox-currency-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>
@@ -24,7 +28,7 @@ import { computed, defineProps, inject, useSlots, withDefaults } from 'vue'
 
 import { useModels, query, t } from '@oxylus/ox'
 import {OxModelPanel} from '@oxylus/ox/components'
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 
 import {useLocationModels} from '../composables'
 import OxCurrencyEdit from './OxCurrencyEdit.vue'
@@ -42,7 +46,7 @@ const kanbanHeaders = computed(() => {
     ]
 })
 
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     name: 'currencies',
     headers: ['name', 'code', 'numeric', 'is_iso', 'valid_to'],
 })

@@ -48,7 +48,11 @@
             </template>
         </template>
 
-        <template #views.detail.edit.default="{value, saved}">
+        <template #views.edit="{value, saved}">
+            <ox-person-edit :initial="value" :saved="saved"/>
+        </template>
+
+        <template #views.create="{value, saved}">
             <ox-person-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>
@@ -58,7 +62,7 @@ import { computed, defineProps, inject, useSlots, withDefaults } from 'vue'
 
 import { query, t } from '@oxylus/ox'
 import {OxModelPanel} from '@oxylus/ox/components'
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 
 import {useContactModels} from '../composables'
 import OxPersonEdit from './OxPersonEdit.vue'
@@ -74,7 +78,7 @@ query(repos.organisations).all()
 
 const organisations = computed(() => repos.organisations.all())
 
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     name: 'persons',
     relations: ['$organisations'],
     headers: ['first_name', 'last_name', 'email', 'phone', 'organisations'],

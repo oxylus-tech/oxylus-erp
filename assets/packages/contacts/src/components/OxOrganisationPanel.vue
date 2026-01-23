@@ -43,7 +43,11 @@
             </template>
         </template>
 
-        <template #views.detail.edit.default="{value, saved}">
+        <template #views.edit="{value, saved}">
+            <ox-organisation-edit :initial="value" :saved="saved"/>
+        </template>
+
+        <template #views.create="{value, saved}">
             <ox-organisation-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>
@@ -53,7 +57,7 @@ import { computed, defineProps, useSlots, withDefaults } from 'vue'
 
 import { query, t } from '@oxylus/ox'
 import {OxModelPanel} from '@oxylus/ox/components'
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 import {OxCountryInput} from '@oxylus/locations/components'
 
 import {useContactModels} from '../composables'
@@ -67,7 +71,7 @@ query(repos.organisations).all({dataKey: 'results'})
 
 const organisations = computed(() => repos.organisations.all())
 
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     name: 'organisations',
     relations: ['$country'],
     fetchRelations: true,

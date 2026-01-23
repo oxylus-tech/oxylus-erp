@@ -1,5 +1,5 @@
 <template>
-    <ox-model-panel v-bind="props" :repo="repos.organisationTypes"
+    <ox-model-panel v-bind="props" :repo="repos.organisationTypes" :repos="repos"
             :warning="t('alerts.danger_zone_system_data')">
         <template v-for="name in forwardSlots" :key="name" #[name]="bind">
             <slot :name="name" v-bind="bind"/>
@@ -18,7 +18,11 @@
             {{ item.$country?.flag }} {{ item.$country?.name }}
         </template>
 
-        <template #views.detail.edit.default="{value, saved}">
+        <template #views.edit="{value, saved}">
+            <ox-organisation-type-edit :initial="value" :saved="saved"/>
+        </template>
+
+        <template #views.create="{value, saved}">
             <ox-organisation-type-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>
@@ -28,7 +32,7 @@ import { defineProps, useSlots, withDefaults } from 'vue'
 
 import { useModels, query, t } from '@oxylus/ox'
 import {OxModelPanel} from '@oxylus/ox/components'
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 
 import {OxCountryInput} from '@oxylus/locations/components'
 import OxOrganisationTypeEdit from './OxOrganisationTypeEdit.vue'
@@ -38,7 +42,7 @@ const slots = useSlots()
 const forwardSlots = Object.keys(slots).filter(x => !(['list.filters', 'top'].includes(x)))
 
 const repos = useContactModels()
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     name: 'organisationTypes',
     relations: ['$country'],
     fetchRelations: true,
