@@ -3,6 +3,8 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import User
 
 from ox.core.models import Model, QuerySet
+from ox.apps.content.models import Message
+
 from ox_erp.locations.models import Country
 from ox.utils.models import Named, LongNamed, OnlyDescribed, Colored, SaveHookQuerySet
 
@@ -13,6 +15,7 @@ __all__ = (
     "Person",
     "Organisation",
     "OrganisationType",
+    "ContactComment",
 )
 
 
@@ -94,3 +97,13 @@ class Person(Contact):
 
     def __str__(self):
         return self.full_name
+
+
+class ContactComment(Message):
+    """Comment on a contact."""
+
+    thread = models.ForeignKey(Contact, models.CASCADE, related_name="comments", verbose_name=_("Contact"))
+
+    class Meta:
+        verbose_name = _("Comment")
+        verbose_name_plural = _("Comments")

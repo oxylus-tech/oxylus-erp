@@ -1,4 +1,4 @@
-from .contact import ContactQuerySet, Contact, Person, Organisation, OrganisationType
+from .contact import ContactQuerySet, Contact, Person, Organisation, OrganisationType, ContactComment
 from .contact_info import ContactInfoKind, ContactInfo, Address, Phone, Email, BankAccount
 from .contact_list import ContactList, SubscriptionStatus, Subscription
 
@@ -8,6 +8,7 @@ __all__ = (
     "Person",
     "Organisation",
     "OrganisationType",
+    "ContactComment",
     "ContactInfoKind",
     "ContactInfo",
     "Address",

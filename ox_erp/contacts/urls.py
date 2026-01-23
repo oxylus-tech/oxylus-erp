@@ -11,6 +11,7 @@ router.register("organisation", views.OrganisationViewSet)
 router.register("person", views.PersonViewSet)
 router.register("contactlist", views.ContactListViewSet)
 router.register("organisationtype", views.OrganisationTypeViewSet)
+router.register("contact-comment", views.ContactCommentViewSet, basename="contact-comment")
 
 api_urls = router.urls
 

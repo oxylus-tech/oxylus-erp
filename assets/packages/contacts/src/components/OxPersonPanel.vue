@@ -55,19 +55,31 @@
         <template #views.create="{value, saved}">
             <ox-person-edit :initial="value" :saved="saved"/>
         </template>
+
+        <template #views.edit.sections="{value, ...bind}">
+            <ox-section name="comments" :title="t(ContactComment, 2)">
+                <ox-message-list v-if="value"
+                    :repo="repos.contactComments" :repos="repos"
+                    :thread="value.id"
+                    can-send can-update reverse />
+            </ox-section>
+            <slot name="views.edit.section" v-bind="bind" :value="value"/>
+        </template>
     </ox-model-panel>
 </template>
 <script setup lang="ts">
 import { computed, defineProps, inject, useSlots, withDefaults } from 'vue'
 
 import { query, t } from '@oxylus/ox'
-import {OxModelPanel} from '@oxylus/ox/components'
+import {OxModelPanel, OxSection} from '@oxylus/ox/components'
 import type {ModelPanelDefinition} from '@oxylus/ox'
+import {OxMessageList} from '@oxylus/content/components'
 
 import {useContactModels} from '../composables'
+import {ContactComment} from '../models'
 import OxPersonEdit from './OxPersonEdit.vue'
 
-const context = inject('context')
+const user = inject('user')
 const slots = useSlots()
 const forwardSlots = Object.keys(slots).filter(x => !(['list.filters', 'item.groups'].includes(x)))
 

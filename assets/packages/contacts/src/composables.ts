@@ -29,7 +29,7 @@ export function useContactModels(items: Array<typeof Model> =[], opts: IUseModel
         oxModels.User, oxModels.Group,
 
         Country, models.Person,
-        models.Organisation, models.OrganisationType,
+        models.Organisation, models.OrganisationType, models.ContactComment,
         ...items
     ], opts)
 }

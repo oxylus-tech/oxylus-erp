@@ -2,6 +2,7 @@ from django.db.models import Count
 from rest_framework.permissions import DjangoModelPermissionsOrAnonReadOnly
 
 from ox.core.views import ModelViewSet
+from ox.apps.content.views import MessageViewSet
 from . import models, serializers
 
 
@@ -89,3 +90,8 @@ class PersonViewSet(ModelViewSet):
     }
     search_fields = ["last_name", "first_name", "email", "phone__number", "email_set__email", "organisations__name"]
     ordering_fields = ["last_name", "first_name", "organisations"]
+
+
+class ContactCommentViewSet(MessageViewSet):
+    queryset = models.ContactComment.objects.all().order_by("-created")
+    serializer_class = serializers.ContactCommentSerializer

@@ -50,17 +50,29 @@
         <template #views.create="{value, saved}">
             <ox-organisation-edit :initial="value" :saved="saved"/>
         </template>
+
+        <template #views.edit.sections="{value, ...bind}">
+            <ox-section name="comments" :title="t(ContactComment, 2)">
+                <ox-message-list v-if="value"
+                    :repo="repos.contactComments" :repos="repos"
+                    :thread="value.id"
+                    can-send can-update reverse />
+            </ox-section>
+            <slot name="views.edit.section" v-bind="bind" :value="value"/>
+        </template>
     </ox-model-panel>
 </template>
 <script setup lang="ts">
 import { computed, defineProps, useSlots, withDefaults } from 'vue'
 
 import { query, t } from '@oxylus/ox'
-import {OxModelPanel} from '@oxylus/ox/components'
+import {OxModelPanel, OxSection} from '@oxylus/ox/components'
 import type {ModelPanelDefinition} from '@oxylus/ox'
+import {OxMessageList} from '@oxylus/content/components'
 import {OxCountryInput} from '@oxylus/locations/components'
 
 import {useContactModels} from '../composables'
+import {ContactComment} from '../models'
 import OxOrganisationEdit from './OxOrganisationEdit.vue'
 
 const slots = useSlots()

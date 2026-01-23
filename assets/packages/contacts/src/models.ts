@@ -1,4 +1,5 @@
 import { models, t } from "@oxylus/ox"
+import { Message } from '@oxylus/content/models'
 import { Country } from '@oxylus/locations/models'
 
 
@@ -179,6 +180,20 @@ export class Contact extends models.Model {
             organisation: this.attr(null),
         }
     }
+}
+
+
+
+/**
+ * Model for ContactComment.
+ */
+export class ContactComment extends Message {
+    static entity = "contactComments"
+    static meta = new models.Meta({
+        app: "ox_contacts",
+        model: "contactcomment",
+        url: "ox/contacts/contact-comment/",
+    })
 }
 
 

@@ -1,7 +1,8 @@
 from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 
-from ox.core.serializers import ModelSerializer, NestedSerializer, RelatedField
+from ox.core.serializers import ModelSerializer, NestedSerializer, RelatedField, RelatedObjectField
+from ox.apps.content.serializers import MessageSerializer
 
 from ox_erp.locations.models import Country
 from . import models
@@ -135,3 +136,16 @@ class SubscriptionSerializer(ModelSerializer):
     class Meta:
         model = models.Subscription
         fields = ("contact_list", "contact", "status")
+
+
+class BaseContactCommentSerializer(MessageSerializer, ModelSerializer):
+    thread = RelatedField(queryset=models.Contact.objects.all())
+    source = RelatedField(queryset=models.ContactComment.objects.all(), required=False)
+
+    class Meta:
+        model = models.ContactComment
+        fields = MessageSerializer.Meta.fields
+
+
+class ContactCommentSerializer(BaseContactCommentSerializer):
+    source = RelatedObjectField(models.ContactComment.objects.all(), BaseContactCommentSerializer, required=False)
