@@ -17,9 +17,10 @@
                 v-if="!editor.value.group && !editor.value.organisation"/>
 
             <v-expansion-panels v-if="attrs.initial?.id" multiple :modelValue="['contacts']">
-                <v-expansion-panel :title="t('models.contact', 2)" value="contacts" >
+                <v-expansion-panel :title="t('ox_contacts.contact', 2)" value="contacts" >
                     <template #text>
-                        <ox-contact-model-list v-model="editor.value.contacts" />
+                        <ox-contact-model-list v-model="editor.value.contacts"
+                            :filters="{contact_lists__uuid: attrs.initial.id}"/>
                     </template>
                 </v-expansion-panel>
             </v-expansion-panels>
@@ -40,6 +41,7 @@ const repos = useContactList()
 const user = inject('user')
 const attrs = useAttrs()
 
+/*
 const {list, items} = useModelList({
     query: query(repos.contacts)
 })
@@ -53,4 +55,5 @@ onMounted(() => {
     list.filters.contact_lists__uuid = id
     id && list.load()
 })
+*/
 </script>
