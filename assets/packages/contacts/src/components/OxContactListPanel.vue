@@ -21,11 +21,11 @@
             {{ t('fields.contact_count.value', item.contact_count, {count: item.contact_count}) }}
         </template>
 
-        <template #views.edit="{value, saved}">
+        <template #views.edit.default="{value, saved}">
             <ox-contact-list-edit :initial="value" :saved="saved"/>
         </template>
 
-        <template #views.create="{saved}">
+        <template #views.create.default="{saved}">
             <ox-contact-list-edit :saved="saved"/>
         </template>
     </ox-model-panel>

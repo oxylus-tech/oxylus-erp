@@ -14,11 +14,11 @@
             <v-icon v-else class="text-error">mdi-close-circle</v-icon>
         </template>
 
-        <template #views.edit="{value, saved}">
+        <template #views.edit.default="{value, saved}">
             <ox-currency-edit :initial="value" :saved="saved"/>
         </template>
 
-        <template #views.create="{value, saved}">
+        <template #views.create.default="{value, saved}">
             <ox-currency-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>

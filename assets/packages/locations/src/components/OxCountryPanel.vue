@@ -20,11 +20,11 @@
             {{ item.$currency?.code }}
         </template>
 
-        <template #views.edit="{value, saved}">
+        <template #views.edit.default="{value, saved}">
             <ox-country-edit :initial="value" :saved="saved"/>
         </template>
 
-        <template #views.create="{value, saved}">
+        <template #views.create.default="{value, saved}">
             <ox-country-edit :initial="value" :saved="saved"/>
         </template>
     </ox-model-panel>

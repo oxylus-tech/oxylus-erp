@@ -43,15 +43,15 @@
             </template>
         </template>
 
-        <template #views.edit="{value, saved}">
+        <template #views.edit.default="{value, saved}">
             <ox-organisation-edit :initial="value" :saved="saved"/>
         </template>
 
-        <template #views.create="{value, saved}">
+        <template #views.create.default="{value, saved}">
             <ox-organisation-edit :initial="value" :saved="saved"/>
         </template>
 
-        <template #views.edit.sections="{value, ...bind}">
+        <template #views.edit="{value, ...bind}">
             <ox-section name="comments" :title="t(ContactComment, 2)">
                 <ox-message-list v-if="value"
                     :repo="repos.contactComments" :repos="repos"
