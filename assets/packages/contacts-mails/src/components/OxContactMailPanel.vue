@@ -7,6 +7,10 @@
         <template #views.edit.default="{value, owner, saved}">
             <ox-contact-mail-edit :owner="owner?.id" :initial="value" :saved="saved"/>
         </template>
+
+        <template #views.create.default="{value, owner, saved}">
+            <ox-contact-mail-edit :owner="owner?.id" :initial="value" :saved="saved"/>
+        </template>
     </ox-mail-panel>
 </template>
 <script setup lang="ts">
@@ -17,7 +21,7 @@ import { computed, defineProps, inject, useSlots, withDefaults } from 'vue'
 
 import { t } from '@oxylus/ox'
 import {OxMailPanel} from '@oxylus/mails/components'
-import type {IModelPanelProps} from '@oxylus/ox'
+import type {ModelPanelDefinition} from '@oxylus/ox'
 
 import {useContactMailModels} from '../composables'
 import OxContactMailEdit from './OxContactMailEdit.vue'
@@ -27,7 +31,7 @@ const forwardSlots = slots
 
 const repos = useContactMailModels()
 
-const props = withDefaults(defineProps<IModelPanelProps>(), {
+const props = withDefaults(defineProps<ModelPanelDefinition>(), {
     name: 'contactMails',
     headers: ['subject', 'state', 'updated'],
 })

@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     "ox.apps.tasks",
     "ox.apps.files",
     "ox.apps.auth",
-    "ox.core",
+    "ox.apps.core",
     "caps",
     "django_filters",
     "django_tasks",

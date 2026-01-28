@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from ox.assets import Asset, Assets, ox_assets
+from ox.core.assets import Asset, Assets, ox_assets
 from ox.core.views import AppView, ModelViewSet
 from ox.apps.mails.views import BaseMailViewSet
 from ox.utils.jwt import JWTokenViewMixin
