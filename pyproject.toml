@@ -3,13 +3,18 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 
-[tool.poetry]
+[project]
 name = "oxylus-erp"
 description = "Oxylus applications for enterprise and organisations management system."
-version = "0.0.1"
-authors = ["Thomas Baquet <thomas oxylus app>"]
 readme = "README.rst"
 license = "GPL-3.0-or-later"
+
+dynamic = ["version"]
+
+
+[tool.poetry]
+version = "0.0.1"
+authors = ["Thomas Baquet <thomas oxylus app>"]
 packages = [
     { include = "ox_erp" },
 ]
@@ -47,6 +52,7 @@ jwt = "^1.4.0"
 beautifulsoup4 = "^4.14.3"
 oxylus = { git = "https://github.com/oxylus-tech/oxylus.git", branch="main" }
 
+
 [tool.poetry.group.dev]
 optional = true
 
@@ -59,7 +65,6 @@ pytest-django = "*"
 pytest-asyncio = "^1.0.0"
 pytest-mock = "^3.14.1"
 
-oxylus = { path = "../oxylus" }
 
 [tool.poetry.group.doc]
 optional = true
